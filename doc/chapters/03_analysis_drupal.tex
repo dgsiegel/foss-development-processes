@@ -1,0 +1,242 @@
+\section{Drupal Project Analysis} % {{{
+\label{sec:Drupal Project Analysis}
+
+\marginpar{\includegraphics[width=\marginparwidth]{drupal/logo}}
+
+\subsection{Introduction} % {{{
+\label{sub:Introduction}
+
+Drupal is a \ac{CMS} and a \ac{CMF}. It is written in the PHP programming
+language and licensed under the \ac{GPL}. Drupal is used for a wide range
+of capabilities such as blogs, company and political websites, communities and
+is directed to be a widely spread cms \cite{DrupalOverview}. Drupal is also
+known as \emph{Drupal Core} inside the Community and contains the base
+functionality of the cms. However it can be extended through numerous modules.
+In the following though only Drupal Core will be analysed.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{drupal/commits_by_author}
+  \caption{Monthly activity of the most active Drupal Core developers}
+\end{figure}
+
+% }}}
+
+\subsection{History} % {{{
+\label{sub:History}
+
+The first version of Drupal was released in 2001 by Dries Buytaert
+\cite{DrupalHistory}. Originally the software took action in providing a black
+board like directory. However quickly a fully-fledged \ac{CMS} emerged out of
+the initial version. The name originates from the dutch word \emph{druppel}
+which translated has the meaning of a drop. Especially in the last years it
+experienced a wide distribution and is used for at least \unit[1.7]{\%} of all
+websites worldwide and holds a marketshare of \unit[6.2]{\%}
+\cite{DrupalBuiltWith,DrupalW3Techs}.
+
+% }}}
+
+\subsection{Community} % {{{
+\label{sub:Community}
+
+The Drupal project has a large user and developer community available.
+According to own statements, over 250.000 users were registered on
+\url{drupal.org} in August 2011. About 1200 of those were additionally listed
+as developers, whereas the number might be a bit higher \cite{DrupalBuytaert}.
+
+Twice a year the community holds a conference under the name \emph{Drupal
+Conference} or \emph{DrupalCon}. To alleviate the journey of the attendants the
+conference takes place alternatively in Europe and North America.
+
+The communication possibilities sprawl from forums on \url{drupal.org}, mailing
+lists and discussion groups on groups.drupal.org. Additionally there exist a
+wide range of \ac{IRC} channels for different aspects of the Drupal project.
+
+\begin{table}
+  \centering
+  \begin{tabularx}{\textwidth}{XXl}
+    \toprule
+    \tableheadline{Venue} & \tableheadline{Date}  & \tableheadline{Attendees} \\
+    \midrule
+    Munich                & August 2012           & N/A \\
+    Denver                & March 2012            & N/A \\
+    London                & August 2011           & 1751 \\
+    Chicago               & March 2011            & 3000 \\
+    Kopenhagen            & August 2010           & 1200 \\
+    San Francisco         & April 2010            & 3000 \\
+    Paris                 & September 2009        & 850 \\
+    Washington, D.C.      & March 2009            & 1400 \\
+    Szeged                & August 2008           & 500 \\
+    Boston                & March 2008            & 850 \\
+    Barcelona             & September 2007        & 450 \\
+    Sunnyvale             & March 2007            & \textasciitilde 300 \\
+    Brussels              & September 2006        & 150 \\
+    Vancouver             & February 2006         & \textasciitilde 150 \\
+    Amsterdam             & October 2005          & \textasciitilde 100 \\
+    Portland              & August 2005           & 100 \\
+    Antwerpen             & February 2005         & \textasciitilde 50 \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Previous and planned DrupalCon events \cite{DrupalWalling}}
+\end{table}
+
+Next to the last-mentioned classification of users and developers, people can
+-- provided that they are working on Drupal Core -- classified into one of the
+following categories \cite{DrupalCoreDevelopers}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{drupal/commits_by_year}
+  \caption{Yearly overview of commits to Drupal Core}
+\end{figure}
+
+\begin{description}
+
+  \item[Founder and Lead Developer] Dries Buytaert, the founder of the Drupal
+    project, holds the role of the project leader and therefore decides about
+    the direction in which the project is heading to. Furthermore he is the
+    one, who most often takes a decision and also often makes the last
+    decision. Though in some cases he also gives away this control to a trusted
+    person.
+
+  \item[Core Committer] Only few people have write access to the Drupal Core
+    repository. They are known as Core Committer and look through code changes
+    and propositions and decide about acceptance of a patch. At this juncture
+    there is a distionction between permanent Core Committers and Branch
+    Maintainers.
+
+    \begin{description}
+      \item[Permanent Core Committer] Dries Buytaert
+      \item[Branch Maintainer] Next to Dries Buytaert they are in charge of
+      maintaining a particular Drupal version.
+      \begin{itemize}
+        \item Gerhard Killesreiter for Drupal 4.7.x.
+        \item Neil Drumm for Drupal 5.x.
+        \item Gábor Hojtsy for Drupal 6.x.
+        \item Angela Byron for Drupal 7.x.
+      \end{itemize}
+    \end{description}
+
+  \item[Maintainer] While they not have to be involved in the decision making
+    progress, maintainer have the liability of small portions of Drupal Core.
+    Most of them are particular Core modules or technical domains such as
+    JavaScript. The assignment happens over Dries Buytaert, whom interested
+    developers can approach or will be invited to join.
+
+  \item[Core Contributor] All developers who bring in code or documentation for
+    Drupal Core are known as Core Contributors. All modification proposals are
+    looked through another Core Committer in a review process and then either
+    accepted or dropped.
+
+\end{description}
+
+% }}}
+
+\subsection{Release Process} % {{{
+\label{sub:Release Process}
+
+For releases, Drupal uses a version naming with two numbers since Drupal 5. The
+numbers stand for major and minor versions \cite{DrupalUpgrade}. New major
+releases are quite scarce and will get released every few years. They are
+planned for a long time in advance, often with incompatible changes. Before
+Drupal 5 a three numbers versioning scheme was used.
+
+While the time periods between single Drupal Core major releases are not bound,
+the time until a stable release is divided into single phases
+\cite{DrupalReleaseCycle}. The length of a single phase is additionally not
+fixated either but limited by a range of factors which will be explained in the
+following.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{drupal/releases}
+  \caption{Major Releases of Drupal}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{drupal/punchcard}
+  \caption{Time based view on commits of Core Contributors}
+\end{figure}
+
+\begin{description}
+
+  \item[Code Thaw] After each major release a new branch will be created in the
+    Drupal Core repository. In this phase all new features and modifications
+    can be discussed and added. No restrictions apply.
+
+  \item[Code Slush] This phase was added to the Drupal 7 release cycle to
+    restrict the time between major releases. Important features will be
+    elaborated and with the help of so called initiatives handled. In this
+    phase no new features except the chosen initiatives are allowed. Though
+    changes will be accepted if the fix errors or add missing functionality.
+
+    At the end of this phase, the \ac{API} freeze will be declared. At this
+    point in time, the \ac{API} can not be changed anymore except critical
+    errors are found and have to be corrected.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{drupal/release_phases}
+  \caption{Drupal Release Phases}
+\end{figure}
+
+  \item[Polish Phase] In this phase Drupal Core will be polished and the last
+    enhancements on performance, accessibility, documentation and other are
+    brought in. At the end of the phase string freeze and user interface freeze
+    will be in place.
+
+  \item[Release Phase] Lastly in this phase there will be several alpha, beta,
+    release candidates and in the long run the final release released. The
+    first release candidate will be published once there are no more critical
+    bugs present. Additional release candidates will be released if new
+    critical bugs appear, otherwise, if no new critical bugs appear, the final
+    release is published.
+
+\end{description}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{drupal/commits_by_month}
+  \caption{Amount of commits per month of Core Contributors}
+\end{figure}
+
+% }}}
+
+\subsection{Development} % {{{
+\label{sub:Development}
+
+The Drupal project changed it's development workflow for the upcoming Drupal 8
+release. Until then, the development was mostly driven through the issue
+queues, which is a bug tracking system on \url{drupal.org}. While it is still
+used for communication, bugs and new features, the development process features
+a number of core initiatives which will stand for a major area of Drupal
+\cite{DrupalInitiatives}. Each initiative has one or two initiative owner who
+leads the development and coordinates the initiative while working closely with
+Dries Buytaert.
+
+Initiatives can be created by any Drupal developer, however Dries Buytaert
+choses which initiative will be followed for the next major release of Drupal.
+He also choses the initiative leader and remains in close contact with him.
+Furthermore each initiative has defined a small set of goals which should be
+reached by the time of the next major release. For the Drupal 8 release, the
+following initiatives will be followed.
+
+\begin{itemize}
+  \item Configuration Management
+  \item Web Services Context Core Initiative
+  \item Design 4 Drupal
+  \item Drupal 8 Multi-Lingual Initiative
+  \item HTML5
+  \item Mobile
+\end{itemize}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{drupal/authors_by_month}
+  \caption{Amount of distinct authors of Drupal Core over time}
+\end{figure}
+
+% }}}
+
+% }}}

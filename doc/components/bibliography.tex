@@ -1,0 +1,44 @@
+% bibliography
+
+\manualmark
+\markboth{\spacedlowsmallcaps{\bibname}}{\spacedlowsmallcaps{\bibname}}
+
+\phantomsection
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}
+\addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
+
+\defbibnote{websites-lastchecked}{\textit{All stated websites were last checked on
+December 31\textsuperscript{st}, 2011.}}
+
+\printbibliography[prenote=websites-lastchecked,
+                   title=Drupal Ressources,
+                   keyword=Drupal,
+                  ]
+\printbibliography[prenote=websites-lastchecked,
+                   title=Plone Ressources,
+                   keyword=Plone
+                  ]
+\printbibliography[prenote=websites-lastchecked,
+                   title=Python Ressources,
+                   keyword=Python
+                  ]
+\printbibliography[prenote=websites-lastchecked,
+                   title=PHP Ressources,
+                   keyword=PHP
+                  ]
+\printbibliography[prenote=websites-lastchecked,
+                   title=GNOME Ressources,
+                   keyword=GNOME
+                  ]
+\printbibliography[prenote=websites-lastchecked,
+                   title=KDE Ressources,
+                   keyword=KDE
+                  ]
+
+\printbibliography[notkeyword=Drupal,
+                   notkeyword=Plone,
+                   notkeyword=Python,
+                   notkeyword=PHP,
+                   notkeyword=GNOME,
+                   notkeyword=KDE,
+                  ]

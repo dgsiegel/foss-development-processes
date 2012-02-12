@@ -1,0 +1,32 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \draw (0cm, 0cm) -- (12cm, 0cm);
+  \foreach \x in {00,02,04,06,08,10,12}
+    \draw (\x cm, 3pt) -- (\x cm, - 3pt) node[below=3pt] {\scriptsize 20\x};
+  \foreach \x in {1,3,5,...,11}
+    \draw (\x cm, 1.5pt) -- (\x cm, - 1.5pt);
+
+  \draw (1.08cm, 0cm) -- (1.08cm,  1cm)  node[above=5pt] {1.0.0};
+  \draw (1.28cm, 0cm) -- (1.28cm,  -1cm)  node[below=5pt] {2.0.0};
+  \draw (1.75cm, 0cm) -- (1.75cm,  0.6cm)  node[above=5pt] {3.0.0};
+  \draw (2.50cm, 0cm) -- (2.50cm,  -1cm)  node[below=5pt] {4.0.0};
+  \draw (3.08cm, 0cm) -- (3.08cm,  1cm)  node[above=5pt] {4.1.0};
+  \draw (3.66cm, 0cm) -- (3.66cm,  -1cm)  node[below=5pt] {4.2.0};
+  \draw (3.91cm, 0cm) -- (3.91cm,  0.7cm)  node[above=5pt] {4.3.0};
+  \draw (4.33cm, 0cm) -- (4.33cm,  -0.6cm)  node[below=5pt] {4.4.0};
+  \draw (4.83cm, 0cm) -- (4.83cm,  1cm)  node[above=5pt] {4.5.0};
+  \draw (5.33cm, 0cm) -- (5.33cm,  -1cm)  node[below=5pt] {4.6.0};
+  \draw (6.41cm, 0cm) -- (6.41cm,  -1cm)  node[below=5pt] {4.7.0};
+  \draw (7.08cm, 0cm) -- (7.08cm,  1cm)  node[above=5pt] {5.0};
+  \draw (8.16cm, 0cm) -- (8.16cm,  1cm)  node[above=5pt] {6.0};
+  \draw (11.08cm, 0cm)-- (11.08cm, 1cm) node[above=5pt] {7.0};
+\end{tikzpicture}
+
+\end{document}

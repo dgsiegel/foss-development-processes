@@ -1,0 +1,80 @@
+\documentclass{standalone}
+
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}
+\usepackage{pgfplots}
+\usepackage{../../styles/tangocolors}
+
+\pgfplotsset{width=12cm,compat=newest}
+\usepgfplotslibrary{dateplot}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+  x tick label style={/pgf/number format/1000 sep=},
+  ylabel=Version,
+  xlabel=Time,
+  legend columns=2,
+  legend style={at={(0.5,-0.30)}, anchor=north, /tikz/every even column/.append style={column sep=0.5cm}},
+  symbolic y coords={5.3,5.4,5.5,5.6,6.0,6.1},
+  ytick={5.3,5.4,5.5,5.6,6.0,6.1},
+  y=0.6cm,
+]
+
+% 5.3
+\addplot[thick, dashed, mark=, chameleon1] coordinates  { (2011.0,5.3) (2011.0,5.3) };
+\addplot[thick, dashed, mark=, skyblue1] coordinates    { (2011.0,5.3) (2012.0,5.3) };
+\addplot[thick, dashed, mark=, plum1] coordinates       { (2012.0,5.3) (2012.5,5.3) };
+\addplot[thick, mark=*, scarletred1] coordinates        { (2012.5,5.3) (2012.5,5.3) };
+
+% 5.4
+\addplot[thick, dashed, mark=, chameleon1] coordinates  { (2011.0,5.4) (2011.5,5.4) };
+\addplot[thick, dashed, mark=, skyblue1] coordinates    { (2011.5,5.4) (2013.5,5.4) };
+\addplot[thick, dashed, mark=, plum1] coordinates       { (2013.5,5.4) (2014.5,5.4) };
+\addplot[thick, mark=*, scarletred1] coordinates        { (2014.5,5.4) (2014.5,5.4) };
+
+% 5.5
+\addplot[thick, dashed, mark=, chameleon1] coordinates  { (2012.0,5.5) (2012.5,5.5) };
+\addplot[thick, dashed, mark=, skyblue1] coordinates    { (2012.5,5.5) (2014.5,5.5) };
+\addplot[thick, dashed, mark=, plum1] coordinates       { (2014.5,5.5) (2015.5,5.5) };
+\addplot[thick, mark=*, scarletred1] coordinates        { (2015.5,5.5) (2015.5,5.5) };
+
+% 5.6
+\addplot[thick, dashed, mark=, chameleon1] coordinates  { (2013.0,5.6) (2013.5,5.6) };
+\addplot[thick, dashed, mark=, skyblue1] coordinates    { (2013.5,5.6) (2015.5,5.6) };
+\addplot[thick, dashed, mark=, plum1] coordinates       { (2015.5,5.6) (2016.5,5.6) };
+\addplot[thick, mark=*, scarletred1] coordinates        { (2016.5,5.6) (2016.5,5.6) };
+
+% 6.0
+\addplot[thick, dashed, mark=, chameleon1] coordinates  { (2014.0,6.0) (2014.5,6.0) };
+\addplot[thick, dashed, mark=, skyblue1] coordinates    { (2014.5,6.0) (2016.5,6.0) };
+\addplot[thick, dashed, mark=, plum1] coordinates       { (2016.5,6.0) (2017.5,6.0) };
+\addplot[thick, mark=*, scarletred1] coordinates        { (2017.5,6.0) (2017.5,6.0) };
+
+% 6.1
+\addplot[thick, dashed, mark=, chameleon1] coordinates  { (2015.0,6.1) (2015.5,6.1) };
+\addplot[thick, dashed, mark=, skyblue1] coordinates    { (2015.5,6.1) (2017.5,6.1) };
+\addplot[thick, dashed, mark=, plum1] coordinates       { (2017.5,6.1) (2018.5,6.1) };
+\addplot[thick, mark=*, scarletred1] coordinates        { (2018.5,6.1) (2018.5,6.1) };
+
+\legend{Pre Release Phase, Release Lifetime, Security fixes only, End of Life}
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+
+%**** pre release phase
+%++++ release lifetime with all bug fixes, no feature addition
+%---- release lifetime security  fixes only
+%D    EOL
+%Version Time ->
+%       2011        2012       2013         2014        2015        2016        2017
+%        |     |     |     |     |     |     |     |     |     |     |     |     |
+%5.3     +++++++++++++-----D
+%5.4     |*****+++++++++++++++++++++++++-----------D
+%5.5     |     |     |******++++++++++++++++++++++++-----------D
+%5.6     |     |     |     |     |******++++++++++++++++++++++++-----------D
+%6.0     |     |     |     |                 |******++++++++++++++++++++++++-----------D
+%6.1     |     |     |     |                             |******++++++++++++++++++++++++-----------D

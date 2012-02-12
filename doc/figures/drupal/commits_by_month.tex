@@ -1,0 +1,48 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{pgfplots}
+\usepackage{../../styles/tangocolors}
+
+\pgfplotsset{width=12cm,compat=newest}
+\usepgfplotslibrary{dateplot}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+  date coordinates in=x,
+  x tick label style={/pgf/number format/1000 sep=},
+  xticklabel={\year},
+  ylabel=\#\,Commits,
+  xlabel=Time,
+  enlargelimits=0.15,
+  legend columns=2,
+  legend style={at={(0.5,-0.15)}, anchor=north, /tikz/every even column/.append style={column sep=0.5cm}},
+  xtick={2000-01-01,
+         2002-01-01,
+         2004-01-01,
+         2006-01-01,
+         2008-01-01,
+         2010-01-01,
+         2012-01-01},
+  minor xtick={2001-01-01,
+               2003-01-01,
+               2005-01-01,
+               2007-01-01,
+               2009-01-01,
+               2011-01-01}
+]
+
+\addplot+[smooth, no markers, color=skyblue1]
+  table [x=date, y index=1] {data/commits_by_month.dat};
+
+\addplot+[smooth, dashed, no markers, color=scarletred1]
+  table [x=date, y index=1] {data/commits_by_month_average.dat};
+
+\legend{Commits, Average}
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

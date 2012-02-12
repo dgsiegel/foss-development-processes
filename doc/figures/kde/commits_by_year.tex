@@ -1,0 +1,35 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{pgfplots}
+\usepackage{../../styles/tangocolors}
+
+\pgfplotsset{width=12cm,compat=newest}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+  x tick label style={/pgf/number format/1000 sep=},
+  ylabel=\#\,Commits,
+  xlabel=Time,
+  enlargelimits=0.15,
+  legend columns=2,
+  legend style={at={(0.5,-0.15)}, anchor=north, /tikz/every even column/.append style={column sep=0.5cm}},
+  ybar,
+  bar width=12pt,
+  nodes near coords=\rotatebox{90}{\pgfmathprintnumber\pgfplotspointmeta},
+  minor x tick num=1,
+  xmin=1997.5,
+  ymin=3500,
+  ymax=31000,
+  scaled ticks=false,
+]
+
+\addplot[color=black, fill=skyblue1]
+  table [y index=1] {data/commits_by_year.dat};
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

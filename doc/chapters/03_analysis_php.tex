@@ -1,0 +1,291 @@
+\section{PHP Project Analysis} % {{{
+\label{sec:PHP Project Analysis}
+
+\marginpar{\includegraphics[width=\marginparwidth]{php/logo}}
+
+\subsection{Introduction} % {{{
+\label{sub:Introduction}
+
+PHP is a server side, interpreted programming language designed for web
+applications and development \cite{PHPIntro}. As such, it requires a web server
+with a connected PHP installation, though it can also be used with a command
+line interface. It is widely available for all major platforms and is licenced
+under the PHP Licence \cite{PHPManual}. It is worth noticing, that while it is
+a Free Software licence, it is incompatible to the widely used \ac{GPL}. PHP
+comes with an extensive standard library and supports many programming
+paradigms, such as object oriented, imperative or procedural programming
+styles. The abbreviation PHP originally stood for Personal Home Page
+\cite{PHPHistory}. With PHP version 3, the project changed it's name to PHP
+Hypertext Processor. PHP is a very popular programming language for web
+development and featuring a large number of websites
+\cite{PHPW3Techs,PHPStats}.
+
+% }}}
+
+\subsection{History} % {{{
+\label{sub:History}
+
+In 1994, Rasmus Lerdorf created the first version of PHP for his own website,
+naming the program Personal Home Page Tools \cite{PHPHistory}. He published the
+bundle one year later, after rewriting the original version. That also included
+the first name change to FI (Forms Interpreter) and then to Personal Home Page
+Construction Kit the same year. At that time, PHP could be considered as a
+advanced programming interface.
+
+However, it received another makeover in 1996, combining the two previous names
+to PHP/FI. This time, PHP truly began to evolve to a full featured programming
+language. It included several modules for database or browser interaction. This
+version was also known as PHP/FI 2.0. Following a popularity boom in 1997 and
+1998 it reached it's limitations due to the design of the project and by being
+almost solely developed by Lerdorf.
+
+In 1997 Andi Gutmans and Zeev Suraski rewrote the PHP interpreter and
+approached Lerdorf discussing the problems PHP had at that time. Together, they
+rewrote and redesigned the language and also changed the name to PHP Hypertext
+Processor. Version 3.0 of PHP was then released in 1998 and replaced PHP/FI 2.0
+completely. On of the most important features of the new approach was to
+provide an interface for modules, which can be used directly from the
+programming language.
+
+The design of the language was improved further in 1998 improving performance
+and the modularity of modules and code. The new engine was called Zend Engine
+and provided the core of PHP 4.0, which was released in 2000.
+
+Four years later, PHP 5 was released featuring the successor Zend Engine 2.0.
+This release was incompatible to the previous 4.0 version and a large
+initiative was planned to promote the transition from PHP 4 to PHP 5.
+
+% }}}
+
+\subsection{Community} % {{{
+\label{sub:Community}
+
+The PHP project consists of a large user and developer community
+\cite{Magnusson2010}. Additionally to the PHP interpreter, there are many
+people working on PHP extensions and components, which get distributed
+alongside the standard interpreter.
+
+The PHP community provides a large amount of conferences and workshops to meet
+in person and work together on PHP. While the International PHP conference was
+the first of it's kind in 2001 \cite{PHPConferences}, there are many
+opportunities to meet other PHP contributors. A lot of local PHP User Groups
+exist and provide weekly or monthly meetings and meet-ups such as workshops.
+
+Most of the communication inside the PHP project is done through mailing lists
+\cite{Magnusson2010}. It has mailing lists for most aspects of the project,
+however the most important is the internals mailing list. Most of the
+development process, future ideas and new contributions are handled over that
+list. Of course, there are also several \ac{IRC} channels and blogs of PHP
+developers available.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{php/commits_by_author}
+  \caption{Monthly activity of the most active PHP Developers}
+\end{figure}
+
+Officially, there is no categorizing of developers and everyone is treated
+equally. However the project uses a concept named karma, which basically means
+that one increases his karma by contributing to the project with code,
+discussions and new ideas \cite{Magnusson2010}. Furthermore, several people are
+responsible for different parts of the code or modules and can be classified
+using those criteria \cite{PHPCredits}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{php/commits_by_year}
+  \caption{Yearly overview of commits to PHP}
+\end{figure}
+
+\begin{description}
+
+  \item[Developer] One is able to call himself a PHP Developer, once he gets a
+    PHP Subversion account. According to the PHP community, an account needs to
+    be earned, which basically means that one has to provide several patches
+    and contributions to the PHP project first. Once one has shown enough
+    commitment, he can apply for an account. The account however will be only
+    granted if a reference person approves.
+
+  \item[Module Author] Each developer has the possibility to become a module
+    author. This role has the responsibility for a certain PHP module, which
+    gets distributed with the PHP release. Examples for such modules are
+    database or imaging modules. For each module, there can be more than one
+    module authors, who share the responsibility.
+
+  \item[PHP Author] This role defines a certain section of the PHP interpreter
+    and it's responsibility for it. It is quite similar to the module author
+    role, except that it covers only PHP itself.
+
+  \item[Language Designer] Currently only Rasmus Lerdorf, Andi Gutmans and Zeev
+    Suraski hold this role. They are the only who can actively change the
+    programming language syntax and concepts.
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=\textwidth]{php/punchcard}
+  \caption{Time based view on commits of contributors}
+\end{figure}
+
+\end{description}
+
+% }}}
+
+\subsection{Release Process} % {{{
+\label{sub:Release Process}
+
+In 2010, the PHP project set up a new release plan with detailed information
+about how the release process should work \cite{PHPRelease}. Before,
+individuals decided when a release happened and which features it included. The
+new release cycle features two Release Managers, who are voted by PHP
+Developers and are managing the release process. The PHP project uses a scheme
+with three numbers for releases: major, minor and micro. Major releases get
+published quite seldom, can break backwards compatibility and are planned a
+long time in advance. Minor releases can have new features and bug fixes,
+however backwards compatibility must be kept. Micro release are bugfix only
+releases where backwards and API compatibility must be kept. Each major release
+is followed by a number of minor releases, which themselves are followed by a
+number of micro releases.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{php/releases}
+  \caption{Major Releases of PHP}
+\end{figure}
+
+Starting with PHP 5.4 a major or minor release will get published each year. Each
+yearly release is then followed by a number of micro releases for 2 years,
+which contains bug fixes only. After that period, only micro releases with
+security relevant fixes will get published.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{php/release_plan}
+  \caption{Preliminary PHP release cycle}
+\end{figure}
+
+% }}}
+
+\subsection{Development} % {{{
+\label{sub:Development}
+
+Most of the development process is handled over the PHP mailing lists
+\cite{PHPRelease,Magnusson2010,PHPVoting}. Not every patch however needs to be
+discussed and approved first, minor features or changes often get directly
+committed to the repository. Though every change gets through a peer review
+process, where other developers review the made changes. Every change gets
+reviewed by other developers, who in case the need arises, discuss the change
+on the developers mailing list. They then often result in a more comprehensive
+change or in new features.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/commits_by_month}
+  \caption{Amount of commits per month of Core Contributors}
+\end{figure}
+
+To help the development and decision process, the PHP project keeps track of
+new ideas, features and proposals through so called \ac{RFC} \cite{PHPRFC}.
+Those are documents which describe the new feature and it's rationale. A
+\ac{RFC} document is always owned by at least one person, who is responsible
+for it. The \ac{RFC} process begins with the author's submission of the
+\ac{RFC} to the PHP wiki and an announcement to the internals mailing list.
+Depending on the importance and affected sections of the PHP project, the
+following discussion period is set to a minimum of one to two weeks. It can be
+longer however, but not shorter \cite{PHPVoting}.
+
+After the discussion period has passed, the author can either call for a vote
+or extend the discussion period as needed \cite{PHPVoting}. The vote is
+announced on the mailing list and followed by a voting period which should be
+at least one week, but can be extended if required.
+
+Depending on the importance of a \ac{RFC}, it needs either 2/3 of all votes or
+\unit[50]{\%} plus one to get accepted. The importance is defined by whether it
+actually changes the syntax or behaviour of the PHP language and is therefore
+irreversible or not. A failed proposal can be resurrected at least six months
+after the last vote or if the author makes considerably large changes to the
+\ac{RFC}. There is no definition by the PHP project, what considerably large
+changes constitute, however the opinion is that it should be changed in a
+matter, that it significantly can change a vote's outcome.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[auto]
+   \node[rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (draft) {Draft};
+   \node[below=0.5cm of draft, rectangle, rounded corners, text width=6.5em, minimum height=2em, text centered]
+     (dummy) {};
+   \node[below=0.5cm of dummy, rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (withdrawn) {Withdrawn};
+
+   \node[right=1cm of draft, rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (discussion) {Discussion};
+   \node[below=0.5cm of discussion, rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (accepted) {Accepted};
+   \node[below=0.5cm of accepted, rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (implemented) {Implemented};
+
+   \node[right=1cm of discussion, rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (voting) {Voting};
+   \node[below=0.5cm of voting, rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
+     (declined) {Declined};
+
+   \path[draw, -latex] (draft) -- (discussion);
+   \path[draw, -latex] (discussion) -- (voting);
+   \path[draw, -latex] ($(discussion.south) - (0.5cm,0)$) |-+(0,-0.2cm)-| (withdrawn);
+   \path[draw, -latex] ($(voting.south) - (0.5cm,0)$) |-+(0,-0.2cm)-| (accepted);
+   \path[draw, -latex] ($(voting.south) + (0.5cm,0)$) -- ($(declined.north) + (0.5cm,0)$);
+   \path[draw, -latex] (accepted) -- (implemented);
+   \path[draw, -latex] (declined.south) -- ++(0,-0.4cm) -- 
+   ([yshift=-0.4cm, xshift=0.4cm] declined.south east) --
+   ([yshift=0.4cm, xshift=0.4cm] voting.north east) -| (draft.north);
+  \end{tikzpicture}
+  \caption{Possible paths of the status of \ac{RFC} documents}
+\end{figure}
+
+All PHP developers are allowed to vote and if needed, representatives from
+the PHP community, such as participants of PHP related discussions or
+developers of PHP appendant projects can participate in the
+voting process. Those however have to be chosen by PHP developers
+\cite{PHPWhoVote}.
+
+During the whole development process, a \ac{RFC} has a status assigned, which can be
+one of the following \cite{PHPRFC}.
+
+\begin{description}
+
+  \item[Draft] Once a \ac{RFC} gets submitted to the PHP wiki, it gets this
+    status assigned. The Draft status means, that the \ac{RFC} is not ready yet
+    for a discussion, however it can be improved by other people as well and a
+    preliminary discussion can be started.
+
+  \item[Discussion] Once the author of a \ac{RFC} announces it for discussion,
+    it gets this status assigned. As previously described, the discussion phase
+    starts with this status.
+
+  \item[Voting] After the discussion phase the voting phase begins. While
+    developers can vote for or against the \ac{RFC}, the Voting status gets
+    assigned including a link to the voting site.
+
+  \item[Accepted] Once a voting was successful, the \ac{RFC} is accepted and
+    will be implemented or taken in action in near future.
+
+  \item[Declined] If the majority voted against the \ac{RFC}, it gets declined.
+    After six months and several changes to it, the author can resubmit it.
+
+  \item[Implemented] If the voting was successful, the \ac{RFC} will get
+    implemented or taken in action if it describes a community process.
+
+  \item[Withdrawn] The author can withdraw the \ac{RFC} without calling for a
+    vote if he thinks the \ac{RFC} is irrelevant or won't pass a vote.
+
+\end{description}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/authors_by_month}
+  \caption{Amount of distinct authors of PHP over time}
+\end{figure}
+
+% }}}
+
+% }}}

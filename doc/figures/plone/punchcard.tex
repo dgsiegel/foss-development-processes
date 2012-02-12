@@ -1,0 +1,40 @@
+\documentclass[class=minimal]{standalone}
+
+\usepackage{mathpazo}
+\usepackage{pgfplots}
+\usepackage{../../styles/tangocolors}
+
+\pgfplotsset{width=12cm,compat=newest}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+  grid=major,
+  point meta=explicit,
+  xmin=-0.7,
+  xmax=23.8,
+  ylabel=Day,
+  xlabel=Hour,
+  scatter/@pre marker code/.code={%
+    \pgfmathparse{\pgfplotspointmetatransformed/1000*50+50}%
+    \let\opacity=\pgfmathresult
+    \pgfmathparse{\pgfplotspointmetatransformed/1000*7.5+1}%
+    \def\markopts{mark=*, color=skyblue1!\opacity, fill=skyblue1!\opacity, mark size=\pgfmathresult}%
+    \expandafter\scope\expandafter[\markopts]
+  },
+  scatter/@post marker code/.code={\endscope},
+  symbolic y coords={Sunday,Saturday,Friday,Thursday,Wednesday,Tuesday,Monday},
+  ytick={Sunday,Saturday,Friday,Thursday,Wednesday,Tuesday,Monday},
+  xtick = {0,...,23},
+  x=0.59cm,
+  y=0.59cm,
+]
+
+\addplot[only marks,scatter]
+  table[x index=0, y index=1, meta index=2] {data/punchcard.dat};
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

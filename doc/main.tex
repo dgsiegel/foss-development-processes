@@ -1,0 +1,79 @@
+% main file
+
+\documentclass[openright,
+               titlepage,
+               numbers=noenddot,
+               headinclude,
+               footinclude=true,
+               cleardoublepage=empty,
+               abstractoff,
+               BCOR=5mm,
+               paper=a4,
+               fontsize=11pt,
+              ]{scrreprt}
+
+
+\input{components/info}
+\input{components/packages}
+\input{components/settings}
+
+\begin{document}
+
+  \frenchspacing
+  \raggedbottom
+
+  \selectlanguage{english}
+
+  \pagenumbering{roman}
+  \pagestyle{plain}
+
+  \input{components/cover}
+
+  \input{components/titlepage}
+
+  \cleardoublepage
+  \input{components/disclaimer}
+
+  \cleardoublepage
+  \input{components/abstract}
+
+  \pagestyle{scrheadings}
+
+  \cleardoublepage
+  \input{components/contents}
+
+  \pagenumbering{arabic}
+
+  \cleardoublepage
+  \part{Introduction}
+
+  \cleardoublepage
+  \input{chapters/01_introduction}
+  \cleardoublepage
+  \input{chapters/02_relatedwork}
+
+  \cleardoublepage
+  \part{Analysis \& Comparison}
+
+  \cleardoublepage
+  \input{chapters/03_analysis}
+  \cleardoublepage
+  \input{chapters/04_comparison}
+
+  \cleardoublepage
+  \part{Evaluation \& Conclusion}
+
+  \cleardoublepage
+  \input{chapters/05_evaluation}
+  \cleardoublepage
+  \input{chapters/06_conclusion}
+
+  \appendix
+  \cleardoublepage
+  \part{Appendix}
+
+  \cleardoublepage
+  \input{components/bibliography}
+
+
+\end{document}

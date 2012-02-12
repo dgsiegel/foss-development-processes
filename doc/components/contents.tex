@@ -1,0 +1,34 @@
+% table of contents
+
+\phantomsection
+\pdfbookmark[1]{\contentsname}{tableofcontents}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+\manualmark
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+\tableofcontents
+\automark[section]{chapter}
+\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+\cleardoublepage
+
+\phantomsection
+\pdfbookmark[1]{Acronyms}{acronyms}
+\markboth{\spacedlowsmallcaps{Acronyms}}{\spacedlowsmallcaps{Acronyms}}
+
+\chapter*{Acronyms}
+\begin{acronym}[GNU LGPL]
+  \acro{ABI}{Application Binary Interface}
+  \acro{API}{Application Programming Interface}
+  \acro{BDFL}{Benevolent Dictator For Life}
+  \acro{CMF}{Content Management Framework}
+  \acro{CMS}{Content Management System}
+  \acro{GPL}[GNU GPL]{GNU General Public Licence}
+  \acro{LGPL}[GNU LGPL]{GNU Lesser General Public Licence}
+  \acro{IRC}{Internet Relay Chat}
+  \acro{KDE SC}{KDE Software Compilation}
+  \acro{PEP}{Python Enhancement Proposal}
+  \acro{PLIP}{Plone Improvement Proposal}
+  \acro{RFC}{Request for Comments}
+\end{acronym}
