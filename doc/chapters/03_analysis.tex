@@ -331,4 +331,195 @@ thousands of users and contributors \cite{PostgreSQLPressKit}.
 
 % }}}
 
+\section{MySQL/MariaDB Project Analysis} % {{{
+
+\marginpar{\includegraphics[width=\marginparwidth]{mariadb/logo}}
+
+MySQL is according to the project the world's most used \ac{ORDBMS}
+\cite{MySQLSun}. It runs on all major platforms and is widely used for many web
+applications. MySQL was originally developed by MySQL AB, later bought by Sun
+Microsystems and now owned by Oracle Corporation
+\cite{MySQLSun,MySQLOracle,MySQLHistory}.
+
+MariaDB was forked from the original MySQL when Oracle bought Sun Corporations
+as it was unclear how the development and licensing of MySQL would change after
+Oracle's acquisition \cite{MySQLAbout,MySQLBehind}. It is intended to be a
+\emph{drop-in} replacement for MySQL with full compatibility to it. Also, many
+of the original MySQL developers moved to the MariaDB project making it
+interesting to analyze both projects together.
+
+\begin{description}
+
+  \item[Project Category] MySQL and MariaDB are database management systems, more
+    specifically \acp{ORDBMS} \cite{MySQLAbout}.
+
+  \item[Scope of Analysis] The MySQL Server package and MariaDB will be
+    analyzed. Both provide a compatible database server together with several
+    tools for running it.
+
+  \item[License] MySQL is dual-licensed under the \ac{GPL} and a proprietary
+    license. MariaDB is single licensed under the \ac{GPL} \cite{MySQLLicense}.
+
+  \item[History] The MySQL project was started in 1994 by Michael Widenius and
+    David Axmark by lanching the company MySQL AB \cite{MySQLHistory}.
+    Originally it was a clone of the at that time quite popular mSQL project.
+    In 2000 MySQL was released as \ac{FOSS} under a dual licensing model. Sun
+    Microsystems bought MySQL AB in 2008 which lead to the abandonment of the
+    MySQL founders Micheal Widenius and David Axmark \cite{MySQLSun}. In 2010
+    Oracle Corporation bought Sun Microsystems and announced changes to the
+    current development processes \cite{MySQLOracle}. As the future of MySQL in
+    terms of \ac{FOSS} was quite unclear at that time Michael Widenius forked
+    MySQL in order to provide a community developed, \ac{FOSS} database
+    \cite{MySQLBehind}. The first version of MariaDB was released in 2010 as
+    MariaDB 5.1 which is compatible to MySQL 5.1 \cite{MySQLMariaDB5.1}. Since
+    then the MariaDB project tries to stay compatible with MySQL but also to
+    provide better performance and more features.
+
+  \item[Community] As most of the key-authors of MySQL moved to different
+    projects, such as MariaDB and as there is not much insight available about
+    the current happenings inside Oracle, the MariaDB community will be
+    analyzed including facts about the pre Oracle era of MySQL.
+
+  \begin{description}
+
+    \item[Size of the Community] The specific size of the community is not
+      known, however it is fracturing after the two acquisitions by Sun
+      Microsystems and Oracle Corporation. The newly founded Monty Program Ab
+      company however lists at least 20 people working on MariaDB
+      \cite{MySQLBehind}.
+
+    \item[Communication inside the Project] The communication mostly happens
+      over mailing lists, although also \ac{IRC} channels exist. The most
+      important mailing list for development are the maria-developers and
+      maria-captains mailing lists \cite{MySQLDevelopers}.
+
+    \item[Conferences and Meet-ups] The MariaDB project has not yet set up a
+      conference, however the MySQL project mostly meet at the yearly MySQL
+      Users Conference \& Expo which first happened in 2003
+      \cite{MySQLConference}.
+
+    \item[Roles] The developers are split into two groups. A developer is a
+      person who produces enhancements and new features for MariaDB
+      \cite{MySQLContributingCode,MySQLContributing,MySQLCaptain}. However he
+      has no right to commit his work which has to be reviewed. The captains
+      are developers who are working for a long time for the project and have
+      made substantial improvements. To become a captain one has to make a
+      formal request on which the other captains will vote \cite{MySQLCaptain}.
+      Captains give the direction of the project, do the code reviews and take
+      care of the project. Finally there exists a Release Coordinator which
+      normally is a captain \cite{MySQLReleaseCoordinator}. By definition he
+      gains no additional rights and only leads the communication and release
+      management of the project.
+
+    \item[Role of the Founders] Micheal Widenius took a vital role in the fork
+      and new project MariaDB \cite{MySQLBehind,MySQLAbout}. If nevertheless
+      MariaDB is mostly driven by MariaDB captains (which he belongs too) he
+      has an important voice in the community and still gives general
+      directions. David Axmark however left Sun in 2008 and is not really
+      actively involved in either the MySQL nor MariaDB project however follows
+      their development.
+
+  \end{description}
+
+  \item[Release Process] The used release process is structured and will be
+    described in the following.
+
+  \begin{description}
+
+    \item[Version Naming] The MySQL/MariaDB project uses a three digit number
+      scheme which consists of a major, minor and micro number
+      \cite{MySQLVersion}.
+
+    \item[Characterization of Major and Minor Releases] The incrementation of a
+      major number defines big and often incompatible changes to their
+      predecessors \cite{MySQLVersion}. In the current releases it marks the
+      file format in which the database is stored. A major release is defined
+      by an incrementation of the minor number and allows new features to be
+      added to the release. In most cases the releases are backwards
+      compatible, but if not, there are always upgrade paths available
+      \cite{MySQLMariaDB5.1}. Finally, the micro number defines minor releases
+      in which only bug and security fixes may apply.
+
+    \item[Release Schedule] The MariaDB project does not have a fixed release
+      schedule and is quite similar to the MySQL release schedule
+      \cite{MySQLReleaseCriteria,MySQLRoadmap,MySQLPlans}. It has criteria in
+      place when specific releases can happen. After the last stable major
+      release, all new features for the next stable major release will be
+      collected. Every feature a MariaDB developer agrees to implement in the
+      timeframe to the next major release will be considered as a new feature.
+      After most features are nearly finished one or several alpha releases
+      follow. The criteria for beta releases are that the proposed features are
+      finished and no serious bugs are open. The gamma or release candidate
+      releases are believed to be ready for general usage, however testing is
+      still required. Finally the stable release should have no more open bugs
+      or critical errors and is ready for general usage.
+
+    \item[Important Steps in the Schedule] The feature proposal period, alpha
+      and beta releases are of course the most important steps in this schedule
+      as they restrict new features or code changes more and more
+      \cite{MySQLReleaseCriteria}. For example, after a beta release the whole
+      API must not be changed anymore.
+
+  \end{description}
+
+  \item[Development] The development of the MySQL/MariaDB project is loosely
+    entangled with the release process and will be described in the following.
+
+  \begin{description}
+
+    \item[Development Lead] The development of the MariaDB project is mostly
+      driven by the MariaDB captains \cite{MySQLContributing,MySQLDevelopers}.
+      The founder of MariaDB and MySQL Micheal Widenius plays an important role
+      and even if not stated by the project has an important voice about the
+      direction.
+
+    \item[Development Workflow] Small patches are often submitted directly to
+      the repository if they are done by a captain. All other patches by
+      developers will be reviewed and applied if they suit the project well
+      \cite{MySQLRoadmap,MySQLPlans}. Bigger features will be accepted after
+      each major release.
+
+    \item[Feature Inclusion Process] After a major release a developer can
+      propose new features \cite{MySQLPlans}. A feature will be accepted if a
+      developer accepts that feature and is willing to implement it
+      \cite{MySQLContributingCode,MySQLContributing}. It then will move to the
+      so called worklog page of MariaDB where other developers see the current
+      status of a feature. A feature can have multiple states, such as the
+      following.
+
+      \begin{description}
+
+        \item[Assigned] The feature was assigned to a developer who is in
+          charge to provide the feature for the next release.
+
+        \item[Cancelled] The feature was cancelled for this release but might
+          be proposed for the next.
+
+        \item[Code-Review] The feature will be reviewed by other MariaDB
+          developers and captains.
+
+        \item[Complete] The feature is ready and will be part of the next
+          release.
+
+        \item[In-Documentation] The feature is completed code-wise but still
+          has to be documented.
+
+        \item[In-Progress] A developer is currently implementing this feature.
+
+        \item[On-Hold] The feature will not be developed further until the
+          status can be changed back to in progress. This could happen if a
+          technical problem arises or the feature is put up for a discussion.
+
+        \item[Un-Assigned] The feature is still unassigned and no developer has
+          claimed this feature yet.
+
+      \end{description}
+
+
+  \end{description}
+
+\end{description}
+
+% }}}
+
 % }}}
