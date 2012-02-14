@@ -154,4 +154,181 @@ projects.
 
 % }}}
 
+\section{PostgreSQL Project Analysis} % {{{
+
+\marginpar{\includegraphics[width=\marginparwidth]{postgresql/logo}}
+
+The PostgreSQL project provides an \ac{ORDBMS} which runs on all major systems
+such as Linux, UNIX, Microsoft Windows or Mac OS X
+\cite{PostgreSQLAbout,PostgreSQLFAQ}. The group behind the project is known as
+PostgreSQL Global Development Group which consists of several volunteers and
+employed developers. PostgreSQL is quite popular amongst it's users and has won
+several prizes for the best database management system \cite{PostgreSQLAwards}.
+According to the project it is the leading \ac{FOSS} database system with
+thousands of users and contributors \cite{PostgreSQLPressKit}.
+
+\begin{description}
+
+  \item[Project Category] PostgreSQL is a database management system, more
+    specifically a \ac{ORDBMS} \cite{PostgreSQLAbout}.
+
+  \item[Scope of Analysis] The PostgreSQL Core Distribution will be analyzed,
+    which consists of the PostgreSQL database server, several tools and
+    bindings around it \cite{PostgreSQLDownload}.
+
+  \item[License] The PostgreSQL project makes use of the PostgreSQL license,
+    which is a \ac{FOSS} license \cite{PostgreSQLFAQ,PostgreSQLLicense}. It
+    only requires to maintain the copyright and licensing information in the
+    licensed source code and therefore it is quite similar to a BSD license.
+
+  \item[History] The project was started in 1986 by Lawrence A. Rowe and
+    Michael R. Stonebraker at the University of California in Berkeley under
+    the name POSTGRES \cite{PostgreSQLHistory}. Not until 1996 it was developed
+    in a university style fashion trying to explore new areas in database
+    management systems. It was then released as \ac{FOSS} by two students of
+    Stonebraker with the new name PostgreSQL the adopted \ac{SQL}. It then
+    received a big development boost and emerged to one of the leading
+    \acp{ORDBMS}.
+
+  \item[Community] The PostgreSQL project has a quite large community available
+    which will be described in the following.
+
+  \begin{description}
+
+    \item[Size of the Community] According to the project there are 6 core team
+      members, 38 major contributors and 42 contributors
+      \cite{PostgreSQLContributors}. Adding no longer active persons the number
+      sums up to around 140. The number of total contributors might however be
+      higher, as the project only includes people who have made contributions
+      over a long time.
+
+    \item[Communication inside the Project] The communication mostly happens
+      over mailing lists, although also \ac{IRC} channels exist. The most
+      important mailing list for development is the pgsql-hackers mailing list
+      \cite{PostgreSQLDevFAQ}.
+
+    \item[Conferences and Meet-ups] The most important international conference
+      is the annual PgCon which first happened in 2007 \cite{PostgreSQLEvents}.
+      However there are a lot of local conferences and workshops available.
+
+    \item[Roles] The developers are split into three groups
+      \cite{PostgreSQLContributors}. The core team decides on the general
+      direction of the PostgreSQL project as well as the release cycle and the
+      releases. Major contributors are people who introduced or maintain big
+      features to the project. The contributors are all other who provide
+      patches to the project.
+
+    \item[Role of the Founders] Michael R. Stonebraker and Lawrence A. Rowe did
+      not follow the project when it was published as \ac{FOSS} in 1996
+      \cite{PostgreSQLHistory}. They are therefore no longer actively involved
+      in the project.
+
+  \end{description}
+
+  \item[Release Process] The used release process is highly structured and will
+    be described in the following.
+
+  \begin{description}
+
+    \item[Version Naming] The PostgreSQL project uses a three digit number
+      scheme which consists of a major, minor and micro number
+      \cite{PostgreSQLVersioning}.
+
+    \item[Characterization of Major and Minor Releases] The incrementation of a
+      major or minor number defines a major release including new features and
+      often backwards incompatible changes \cite{PostgreSQLVersioning}. Such a
+      release occurs roughly once a year
+      \cite{PostgreSQLDevelopment,PostgreSQLFAQ}. For each major release there
+      exist a number of minor releases which are defined by incrementing the
+      micro version number. Only bug and security fixes are allowed for those
+      releases. Each major release is supported for five years by the
+      PostgreSQL project. However in some cases the project can decide to drop
+      support for a specific release if bugs cannot be resolved without risking
+      the stability.
+
+    \item[Release Schedule] As major releases occur every year, the project
+      uses the same release schedule every year along with some minor
+      improvements from the last years \cite{PostgreSQLDevelopment}. The
+      release schedule gets planned and decided during the PgCon conference. It
+      basically starts each June with a commit review in which possible patches
+      might be included in the next major release. Such reviews, also known as
+      Commit Fest happen four times each two months apart. In the month between
+      an alpha release is published. After the last Commit Fest, more alpha
+      releases can follow, if not beta releases are published. If no more
+      critical errors are found several release candidates will be published
+      which will lead to the next major release.
+
+    \item[Important Steps in the Schedule] The Commit Fest are the only
+      possibility to add new features to the project and are therefore a vital
+      part of the development process
+      \cite{PostgreSQLDevelopment,PostgreSQLCommitFest}. 
+
+  \end{description}
+
+  \item[Development] The development of the PostgreSQL project is closely
+    entangled with the release process and will be described in the following.
+
+  \begin{description}
+
+    \item[Development Lead] The PostgreSQL project is mostly driven by the core
+      team \cite{PostgreSQLDevFAQ,PostgreSQLFAQ,PostgreSQLContributors}. Quite
+      all decisions are made by them as well as most new features and code
+      contributions.
+
+    \item[Development Workflow] Small patches are often submitted directly to
+      the repository if they are done by a major contributor or a core team
+      member \cite{PostgreSQLDevFAQ}. All other patches however have to be
+      reviewed and therefore be sent to the pgsql-hackers mailing list. New
+      features are proposed in the Commit Fests.
+
+    \item[Feature Inclusion Process] The already mentioned Commit Fest is a
+      periodic break in which no new development is done, however already
+      existing patches are reviewed and get feedback
+      \cite{PostgreSQLCommitFest}. Not only the core team does those reviews
+      but also other developers. A single Commit Fest usually runs for about
+      one month explaining the gap of one month between each Commit Fest. One
+      such event is lead by a Commit Fest Manager who is responsible that all
+      submitted patches will be reviewed. Often, a review results in a
+      discussion on the mailing list and follows an acceptance, a return with
+      feedback or a rejection. A patch can have several states, depending on
+      whether it is in progress or if it is finished
+      \cite{PostgreSQLCommitFestRunning}. If a patch is in progress, the
+      following states might apply.
+
+      \begin{description}
+
+        \item[Needs Review] A patch is not reviewed and waiting for a review.
+
+        \item[Waiting on Author] A new version of the patch is expected by the
+          author.
+
+        \item[Discussing Review Results] The review was done, however it is
+          discussed on the mailing list.
+
+        \item[Ready for Committer] The review was done and no issues were
+          found. It is now waiting for a final review.
+
+      \end{description}
+
+      The in progress states of a patch are the following.
+
+      \begin{description}
+
+        \item[Returned With Feedback] The patch was reviewed and feedback was
+          given. A new version of the patch is expected for the next Commit Fest.
+
+        \item[Rejected] The patch was rejected and won't make it into the next
+          major release.
+
+        \item[Committed] The patch was applied and no remaining issues are
+          assured.
+
+      \end{description}
+
+  \end{description}
+
+\end{description}
+
+% }}}
+
 % }}}
