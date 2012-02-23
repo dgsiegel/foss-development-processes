@@ -522,4 +522,159 @@ interesting to analyze both projects together.
 
 % }}}
 
+\section{Fedora Project Analysis} % {{{
+
+\marginpar{\includegraphics[width=\marginparwidth]{fedora/logo}}
+
+The Fedora project provides a so called Linux distribution which is a
+collection of \ac{FOSS} and is based on the Linux kernel
+\cite{FedoraAbout,FedoraTogami}. The distribution is also called Fedora
+operating system or Fedora project, however the latter one refers to the
+community which builds the project. As it only features \ac{FOSS}, the Fedora
+operating system is also \ac{FOSS}. The mission of the project is to lead the
+advancement and it is also known to incorporate new products and software very
+quickly. The project is mostly sponsored by Red Hat, however due to it's
+structure it can be seen as independent from a companies influence.
+
+\begin{description}
+
+  \item[Project Category] The Fedora operating system is, as the name already
+    states, an operating system \cite{FedoraAbout}.
+
+  \item[Scope of Analysis] The operating system provided by the Fedora project
+    will be analyzed, which consists of a large collection of \ac{FOSS} needed
+    to run and work on a computer.
+
+  \item[License] As the projects goal is to provide a product which only
+    consists of \ac{FOSS} only Free and Open Source licenses are allowed
+    \cite{FedoraLicensing}. The project provides a list of acceptable licenses.
+    For own software creations the \ac{GPL} is mostly used.
+
+  \item[History] The original Fedora project was created in 2002 by Warren
+    Togami in order to enhance the quality and number of packages available for
+    the at that time existing Red Hat Linux distribution
+    \cite{FedoraAbout,FedoraTogami,FedoraHistoricalSchedules}. In 2003 the
+    development of Red Hat Linux stopped and was merged with the Fedora
+    project. Since then the Fedora project provides a community distribution
+    while Red Hat Enterprise Linux is an officially supported Linux
+    distribution which derives from Fedora versions. Until 2006 the operating
+    system was known as Fedore Core. Later the project changed the name to
+    Fedora. The name Fedora originates from the Red Hat logo which shows a
+    person with a fedora hat.
+
+  \item[Community] The Fedora project has a quite large community available
+    which will be described in the following.
+
+  \begin{description}
+
+    \item[Size of the Community] The exact size of the community is unknown,
+      however the project consists of a quite large community
+      \cite{FedoraStatistics}. For example the total number of active accounts
+      exceeds 30,000 people. This number however does not describe the actual
+      size accurately as it includes many users of the operating system.
+
+    \item[Communication inside the Project] Most of the communication is done
+      through mailing lists \cite{FedoraAbout,FedoraJoin,FedoraSIG}. Each of
+      the mailing list is quite focused on a certain sub-topic, however the
+      most important general development related mailing list is the devel
+      mailing list. Additional communication happens through several \ac{IRC}
+      channels, forums, blogs or the weekly newsletter
+      \cite{FedoraFWN,FedoraCommunicating}.
+
+    \item[Conferences and Meet-ups] Since 2005 the Fedora project organizes the
+      Fedora Users and Developers Conference (FUDCon) which is held annually in
+      various places around the world \cite{FedoraFUDCon}. Usually the
+      conference takes place in several regions in several continents.
+
+    \item[Roles] The Fedora project uses a quite flat structure with several
+      teams and \acp{SIG} \cite{FedoraJoin,FedoraCommunicating,FedoraSIG}. Each
+      team or \ac{SIG} is in charge for a specific sub project or area in the
+      project. Each team is lead by one or several people and the usual way to
+      be a part of a specific team is to provide several contributions until
+      one can apply. Examples for such teams and \acp{SIG} are Release
+      Engineering, Desktop or Usability. The technical leadership is handled by
+      the \ac{FESCo} which is a community elected team and handles new
+      features, \acp{SIG} or technical matters \cite{FedoraFESCo}. The general
+      direction and guiding decisions however are handled of the Fedora project
+      board which consists of five community elected persons and four appointed
+      by Red Hat \cite{FedoraBoard}.
+
+    \item[Role of the Founders] Warrent Togami is still involved in the Fedora
+      project, however he works more on Fedora related projects, such as
+      SpamAssassin or K12Linux which is a distribution built on top of Fedora
+      \cite{FedoraTogami}.
+
+  \end{description}
+
+  \item[Release Process] The used release process is highly structured and will
+    be described in the following.
+
+  \begin{description}
+
+    \item[Version Naming] The Fedora project uses a single number versioning
+      scheme \cite{FedoraHistoricalSchedules,FedoraLifeCycle}. This single
+      number defines major releases.
+
+    \item[Characterization of Major and Minor Releases] There are no minor
+      releases as updates to the operating system come via single updates of
+      the affected packages \cite{FedoraHistoricalSchedules,FedoraLifeCycle}.
+      Therefore each incrementation of the version number defines a new major
+      release.
+
+    \item[Release Schedule] The Fedora project uses a fixed release cycle with
+      a new major release every six months
+      \cite{FedoraLifeCycle,FedoraReleaseEngineering}. Each major release is
+      then maintained until one month after another two releases or 13 months.
+      The release schedule is proposed by the Release Engineering team and
+      approved by the \ac{FESCo}. In some cases, the schedule can be slightly
+      adjusted if critical bugs appear and can't be solved in the original time
+      frame. After a major release the planning and development can start. One
+      week before the alpha release, no new feature will be accepted. The alpha
+      release will be followed by a beta and final release candidate release.
+      Depending on whether each of the previous releases was postponed or not
+      the final release will be published approximately six months after the
+      previous major release.
+
+    \item[Important Steps in the Schedule] The most important steps are the
+      feature acceptance, feature freeze and feature complete milestones in the
+      release schedule \cite{FedoraLifeCycle}. In each of the named steps the
+      \ac{FESCo} will decide if a feature will be accepted or be in the next
+      release depending on it's completeness.
+
+  \end{description}
+
+  \item[Development] The development of the Fedora project is quite entangled
+    with the release process and will be described in the following.
+
+  \begin{description}
+
+    \item[Development Lead] The development of the Fedora project is mostly
+      driven by the \ac{FESCo} which decides on new features and the technical
+      direction of the project \cite{FedoraFESCo}.
+
+    \item[Development Workflow] The development process of the Fedora project
+      is a quite open one \cite{FedoraReleaseEngineering,FedoraSIG}. As already
+      stated above, there are many \acp{SIG} available which steer the
+      development of a certain area in the project. Depending on the \ac{SIG}
+      the development workflow can vary, however the general direction is
+      always given by the \ac{FESCo}.
+
+    \item[Feature Inclusion Process] To propose a feature for the next major
+      release a formal feature proposal has to be made
+      \cite{FedoraFeatures,FedoraFESCo}. This includes a description of the
+      problem, an owner, the current status and several other points. Any
+      Fedora community member can propose them and the \ac{FESCo} decides on
+      the acceptance of the feature. Additionally a feature can be dropped if
+      it is not completed at the feature freeze or before the beta release or
+      if the owner does not update the feature status. A feature can be either
+      incomplete when the proposal is not ready, ready when it is disposed for
+      review, ready for \ac{FESCo} when it can be proposed to the committee and
+      finally accepted if the voting by the \ac{FESCo} was successful.
+
+  \end{description}
+
+\end{description}
+
+% }}}
+
 % }}}
