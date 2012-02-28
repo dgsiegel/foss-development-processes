@@ -167,165 +167,172 @@ several prizes for the best database management system \cite{PostgreSQLAwards}.
 According to the project it is the leading \ac{FOSS} database system with
 thousands of users and contributors \cite{PostgreSQLPressKit}.
 
+\subsection{Project Category}
+
+PostgreSQL is a database management system, more specifically a \ac{ORDBMS}
+\cite{PostgreSQLAbout}.
+
+\subsection{Scope of Analysis}
+
+The PostgreSQL Core Distribution will be analyzed, which consists of the
+PostgreSQL database server, several tools and bindings around it
+\cite{PostgreSQLDownload}.
+
+\subsection{License}
+
+The PostgreSQL project makes use of the PostgreSQL license, which is a
+\ac{FOSS} license \cite{PostgreSQLFAQ,PostgreSQLLicense}. It only requires to
+maintain the copyright and licensing information in the licensed source code
+and therefore it is quite similar to a BSD license.
+
+\subsection{History}
+
+The project was started in 1986 by Lawrence A. Rowe and Michael R. Stonebraker
+at the University of California in Berkeley under the name POSTGRES
+\cite{PostgreSQLHistory}. Not until 1996 it was developed in a university style
+fashion trying to explore new areas in database management systems. It was then
+released as \ac{FOSS} by two students of Stonebraker with the new name
+PostgreSQL the adopted \ac{SQL}. It then received a big development boost and
+emerged to one of the leading \acp{ORDBMS}.
+
+\subsection{Community}
+
+The PostgreSQL project has a quite large community available which will be
+described in the following.
+
 \begin{description}
 
-  \item[Project Category] PostgreSQL is a database management system, more
-    specifically a \ac{ORDBMS} \cite{PostgreSQLAbout}.
+  \item[Size of the Community] According to the project there are 6 core team
+    members, 38 major contributors and 42 contributors
+    \cite{PostgreSQLContributors}. Adding no longer active persons the number
+    sums up to around 140. The number of total contributors might however be
+    higher, as the project only includes people who have made contributions
+    over a long time.
 
-  \item[Scope of Analysis] The PostgreSQL Core Distribution will be analyzed,
-    which consists of the PostgreSQL database server, several tools and
-    bindings around it \cite{PostgreSQLDownload}.
+  \item[Communication inside the Project] The communication mostly happens over
+    mailing lists, although also \ac{IRC} channels exist. The most important
+    mailing list for development is the pgsql-hackers mailing list
+    \cite{PostgreSQLDevFAQ}.
 
-  \item[License] The PostgreSQL project makes use of the PostgreSQL license,
-    which is a \ac{FOSS} license \cite{PostgreSQLFAQ,PostgreSQLLicense}. It
-    only requires to maintain the copyright and licensing information in the
-    licensed source code and therefore it is quite similar to a BSD license.
+  \item[Conferences and Meet-ups] The most important international conference
+    is the annual PgCon which first happened in 2007 \cite{PostgreSQLEvents}.
+    However there are a lot of local conferences and workshops available.
 
-  \item[History] The project was started in 1986 by Lawrence A. Rowe and
-    Michael R. Stonebraker at the University of California in Berkeley under
-    the name POSTGRES \cite{PostgreSQLHistory}. Not until 1996 it was developed
-    in a university style fashion trying to explore new areas in database
-    management systems. It was then released as \ac{FOSS} by two students of
-    Stonebraker with the new name PostgreSQL the adopted \ac{SQL}. It then
-    received a big development boost and emerged to one of the leading
-    \acp{ORDBMS}.
+  \item[Roles] The developers are split into three groups
+    \cite{PostgreSQLContributors}. The core team decides on the general
+    direction of the PostgreSQL project as well as the release cycle and the
+    releases. Major contributors are people who introduced or maintain big
+    features to the project. The contributors are all other who provide patches
+    to the project.
 
-  \item[Community] The PostgreSQL project has a quite large community available
-    which will be described in the following.
+  \item[Role of the Founders] Michael R. Stonebraker and Lawrence A. Rowe did
+    not follow the project when it was published as \ac{FOSS} in 1996
+    \cite{PostgreSQLHistory}. They are therefore no longer actively involved in
+    the project.
 
-  \begin{description}
+\end{description}
 
-    \item[Size of the Community] According to the project there are 6 core team
-      members, 38 major contributors and 42 contributors
-      \cite{PostgreSQLContributors}. Adding no longer active persons the number
-      sums up to around 140. The number of total contributors might however be
-      higher, as the project only includes people who have made contributions
-      over a long time.
+\subsection{Release Process}
 
-    \item[Communication inside the Project] The communication mostly happens
-      over mailing lists, although also \ac{IRC} channels exist. The most
-      important mailing list for development is the pgsql-hackers mailing list
-      \cite{PostgreSQLDevFAQ}.
+The used release process is highly structured and will be described in the
+following.
 
-    \item[Conferences and Meet-ups] The most important international conference
-      is the annual PgCon which first happened in 2007 \cite{PostgreSQLEvents}.
-      However there are a lot of local conferences and workshops available.
+\begin{description}
 
-    \item[Roles] The developers are split into three groups
-      \cite{PostgreSQLContributors}. The core team decides on the general
-      direction of the PostgreSQL project as well as the release cycle and the
-      releases. Major contributors are people who introduced or maintain big
-      features to the project. The contributors are all other who provide
-      patches to the project.
+  \item[Version Naming] The PostgreSQL project uses a three digit number scheme
+    which consists of a major, minor and micro number
+    \cite{PostgreSQLVersioning}.
 
-    \item[Role of the Founders] Michael R. Stonebraker and Lawrence A. Rowe did
-      not follow the project when it was published as \ac{FOSS} in 1996
-      \cite{PostgreSQLHistory}. They are therefore no longer actively involved
-      in the project.
+  \item[Characterization of Major and Minor Releases] The incrementation of a
+    major or minor number defines a major release including new features and
+    often backwards incompatible changes \cite{PostgreSQLVersioning}. Such a
+    release occurs roughly once a year
+    \cite{PostgreSQLDevelopment,PostgreSQLFAQ}. For each major release there
+    exist a number of minor releases which are defined by incrementing the
+    micro version number. Only bug and security fixes are allowed for those
+    releases. Each major release is supported for five years by the PostgreSQL
+    project. However in some cases the project can decide to drop support for a
+    specific release if bugs cannot be resolved without risking the stability.
 
-  \end{description}
+  \item[Release Schedule] As major releases occur every year, the project uses
+    the same release schedule every year along with some minor improvements
+    from the last years \cite{PostgreSQLDevelopment}. The release schedule gets
+    planned and decided during the PgCon conference. It basically starts each
+    June with a commit review in which possible patches might be included in
+    the next major release. Such reviews, also known as Commit Fest happen four
+    times each two months apart. In the month between an alpha release is
+    published. After the last Commit Fest, more alpha releases can follow, if
+    not beta releases are published. If no more critical errors are found
+    several release candidates will be published which will lead to the next
+    major release.
 
-  \item[Release Process] The used release process is highly structured and will
-    be described in the following.
+  \item[Important Steps in the Schedule] The Commit Fest are the only
+    possibility to add new features to the project and are therefore a vital
+    part of the development process
+    \cite{PostgreSQLDevelopment,PostgreSQLCommitFest}. 
 
-  \begin{description}
+\end{description}
 
-    \item[Version Naming] The PostgreSQL project uses a three digit number
-      scheme which consists of a major, minor and micro number
-      \cite{PostgreSQLVersioning}.
+\subsection{Development}
 
-    \item[Characterization of Major and Minor Releases] The incrementation of a
-      major or minor number defines a major release including new features and
-      often backwards incompatible changes \cite{PostgreSQLVersioning}. Such a
-      release occurs roughly once a year
-      \cite{PostgreSQLDevelopment,PostgreSQLFAQ}. For each major release there
-      exist a number of minor releases which are defined by incrementing the
-      micro version number. Only bug and security fixes are allowed for those
-      releases. Each major release is supported for five years by the
-      PostgreSQL project. However in some cases the project can decide to drop
-      support for a specific release if bugs cannot be resolved without risking
-      the stability.
+The development of the PostgreSQL project is closely entangled with the release
+process and will be described in the following.
 
-    \item[Release Schedule] As major releases occur every year, the project
-      uses the same release schedule every year along with some minor
-      improvements from the last years \cite{PostgreSQLDevelopment}. The
-      release schedule gets planned and decided during the PgCon conference. It
-      basically starts each June with a commit review in which possible patches
-      might be included in the next major release. Such reviews, also known as
-      Commit Fest happen four times each two months apart. In the month between
-      an alpha release is published. After the last Commit Fest, more alpha
-      releases can follow, if not beta releases are published. If no more
-      critical errors are found several release candidates will be published
-      which will lead to the next major release.
+\begin{description}
 
-    \item[Important Steps in the Schedule] The Commit Fest are the only
-      possibility to add new features to the project and are therefore a vital
-      part of the development process
-      \cite{PostgreSQLDevelopment,PostgreSQLCommitFest}. 
+  \item[Development Lead] The PostgreSQL project is mostly driven by the core
+    team \cite{PostgreSQLDevFAQ,PostgreSQLFAQ,PostgreSQLContributors}. Quite
+    all decisions are made by them as well as most new features and code
+    contributions.
 
-  \end{description}
+  \item[Development Workflow] Small patches are often submitted directly to the
+    repository if they are done by a major contributor or a core team member
+    \cite{PostgreSQLDevFAQ}. All other patches however have to be reviewed and
+    therefore be sent to the pgsql-hackers mailing list. New features are
+    proposed in the Commit Fests.
 
-  \item[Development] The development of the PostgreSQL project is closely
-    entangled with the release process and will be described in the following.
+  \item[Feature Inclusion Process] The already mentioned Commit Fest is a
+    periodic break in which no new development is done, however already
+    existing patches are reviewed and get feedback \cite{PostgreSQLCommitFest}.
+    Not only the core team does those reviews but also other developers. A
+    single Commit Fest usually runs for about one month explaining the gap of
+    one month between each Commit Fest. One such event is lead by a Commit Fest
+    Manager who is responsible that all submitted patches will be reviewed.
+    Often, a review results in a discussion on the mailing list and follows an
+    acceptance, a return with feedback or a rejection. A patch can have several
+    states, depending on whether it is in progress or if it is finished
+    \cite{PostgreSQLCommitFestRunning}. If a patch is in progress, the
+    following states might apply.
 
-  \begin{description}
+    \begin{description}
 
-    \item[Development Lead] The PostgreSQL project is mostly driven by the core
-      team \cite{PostgreSQLDevFAQ,PostgreSQLFAQ,PostgreSQLContributors}. Quite
-      all decisions are made by them as well as most new features and code
-      contributions.
+      \item[Needs Review] A patch is not reviewed and waiting for a review.
 
-    \item[Development Workflow] Small patches are often submitted directly to
-      the repository if they are done by a major contributor or a core team
-      member \cite{PostgreSQLDevFAQ}. All other patches however have to be
-      reviewed and therefore be sent to the pgsql-hackers mailing list. New
-      features are proposed in the Commit Fests.
+      \item[Waiting on Author] A new version of the patch is expected by the
+        author.
 
-    \item[Feature Inclusion Process] The already mentioned Commit Fest is a
-      periodic break in which no new development is done, however already
-      existing patches are reviewed and get feedback
-      \cite{PostgreSQLCommitFest}. Not only the core team does those reviews
-      but also other developers. A single Commit Fest usually runs for about
-      one month explaining the gap of one month between each Commit Fest. One
-      such event is lead by a Commit Fest Manager who is responsible that all
-      submitted patches will be reviewed. Often, a review results in a
-      discussion on the mailing list and follows an acceptance, a return with
-      feedback or a rejection. A patch can have several states, depending on
-      whether it is in progress or if it is finished
-      \cite{PostgreSQLCommitFestRunning}. If a patch is in progress, the
-      following states might apply.
+      \item[Discussing Review Results] The review was done, however it is
+        discussed on the mailing list.
 
-      \begin{description}
+      \item[Ready for Committer] The review was done and no issues were
+        found. It is now waiting for a final review.
 
-        \item[Needs Review] A patch is not reviewed and waiting for a review.
+    \end{description}
 
-        \item[Waiting on Author] A new version of the patch is expected by the
-          author.
+    The in progress states of a patch are the following.
 
-        \item[Discussing Review Results] The review was done, however it is
-          discussed on the mailing list.
+    \begin{description}
 
-        \item[Ready for Committer] The review was done and no issues were
-          found. It is now waiting for a final review.
+      \item[Returned With Feedback] The patch was reviewed and feedback was
+        given. A new version of the patch is expected for the next Commit Fest.
 
-      \end{description}
+      \item[Rejected] The patch was rejected and won't make it into the next
+        major release.
 
-      The in progress states of a patch are the following.
+      \item[Committed] The patch was applied and no remaining issues are
+        assured.
 
-      \begin{description}
-
-        \item[Returned With Feedback] The patch was reviewed and feedback was
-          given. A new version of the patch is expected for the next Commit Fest.
-
-        \item[Rejected] The patch was rejected and won't make it into the next
-          major release.
-
-        \item[Committed] The patch was applied and no remaining issues are
-          assured.
-
-      \end{description}
-
-  \end{description}
+    \end{description}
 
 \end{description}
 
@@ -348,175 +355,181 @@ Oracle's acquisition \cite{MySQLAbout,MySQLBehind}. It is intended to be a
 of the original MySQL developers moved to the MariaDB project making it
 interesting to analyze both projects together.
 
+\subsection{Project Category}
+
+MySQL and MariaDB are database management systems, more specifically
+\acp{ORDBMS} \cite{MySQLAbout}.
+
+\subsection{Scope of Analysis}
+
+The MySQL Server package and MariaDB will be analyzed. Both provide a
+compatible database server together with several tools for running it.
+
+\subsection{License}
+
+MySQL is dual-licensed under the \ac{GPL} and a proprietary license. MariaDB is
+single licensed under the \ac{GPL} \cite{MySQLLicense}.
+
+\subsection{History}
+
+The MySQL project was started in 1994 by Michael Widenius and David Axmark by
+lanching the company MySQL AB \cite{MySQLHistory}. Originally it was a clone of
+the at that time quite popular mSQL project. In 2000 MySQL was released as
+\ac{FOSS} under a dual licensing model. Sun Microsystems bought MySQL AB in
+2008 which lead to the abandonment of the MySQL founders Micheal Widenius and
+David Axmark \cite{MySQLSun}. In 2010 Oracle Corporation bought Sun
+Microsystems and announced changes to the current development processes
+\cite{MySQLOracle}. As the future of MySQL in terms of \ac{FOSS} was quite
+unclear at that time Michael Widenius forked MySQL in order to provide a
+community developed, \ac{FOSS} database \cite{MySQLBehind}. The first version
+of MariaDB was released in 2010 as MariaDB 5.1 which is compatible to MySQL 5.1
+\cite{MySQLMariaDB5.1}. Since then the MariaDB project tries to stay compatible
+with MySQL but also to provide better performance and more features.
+
+\subsection{Community}
+
+As most of the key-authors of MySQL moved to different projects, such as
+MariaDB and as there is not much insight available about the current happenings
+inside Oracle, the MariaDB community will be analyzed including facts about the
+pre Oracle era of MySQL.
+
 \begin{description}
 
-  \item[Project Category] MySQL and MariaDB are database management systems, more
-    specifically \acp{ORDBMS} \cite{MySQLAbout}.
+  \item[Size of the Community] The specific size of the community is not
+    known, however it is fracturing after the two acquisitions by Sun
+    Microsystems and Oracle Corporation. The newly founded Monty Program Ab
+    company however lists at least 20 people working on MariaDB
+    \cite{MySQLBehind}.
 
-  \item[Scope of Analysis] The MySQL Server package and MariaDB will be
-    analyzed. Both provide a compatible database server together with several
-    tools for running it.
+  \item[Communication inside the Project] The communication mostly happens
+    over mailing lists, although also \ac{IRC} channels exist. The most
+    important mailing list for development are the maria-developers and
+    maria-captains mailing lists \cite{MySQLDevelopers}.
 
-  \item[License] MySQL is dual-licensed under the \ac{GPL} and a proprietary
-    license. MariaDB is single licensed under the \ac{GPL} \cite{MySQLLicense}.
+  \item[Conferences and Meet-ups] The MariaDB project has not yet set up a
+    conference, however the MySQL project mostly meet at the yearly MySQL
+    Users Conference \& Expo which first happened in 2003
+    \cite{MySQLConference}.
 
-  \item[History] The MySQL project was started in 1994 by Michael Widenius and
-    David Axmark by lanching the company MySQL AB \cite{MySQLHistory}.
-    Originally it was a clone of the at that time quite popular mSQL project.
-    In 2000 MySQL was released as \ac{FOSS} under a dual licensing model. Sun
-    Microsystems bought MySQL AB in 2008 which lead to the abandonment of the
-    MySQL founders Micheal Widenius and David Axmark \cite{MySQLSun}. In 2010
-    Oracle Corporation bought Sun Microsystems and announced changes to the
-    current development processes \cite{MySQLOracle}. As the future of MySQL in
-    terms of \ac{FOSS} was quite unclear at that time Michael Widenius forked
-    MySQL in order to provide a community developed, \ac{FOSS} database
-    \cite{MySQLBehind}. The first version of MariaDB was released in 2010 as
-    MariaDB 5.1 which is compatible to MySQL 5.1 \cite{MySQLMariaDB5.1}. Since
-    then the MariaDB project tries to stay compatible with MySQL but also to
-    provide better performance and more features.
+  \item[Roles] The developers are split into two groups. A developer is a
+    person who produces enhancements and new features for MariaDB
+    \cite{MySQLContributingCode,MySQLContributing,MySQLCaptain}. However he
+    has no right to commit his work which has to be reviewed. The captains
+    are developers who are working for a long time for the project and have
+    made substantial improvements. To become a captain one has to make a
+    formal request on which the other captains will vote \cite{MySQLCaptain}.
+    Captains give the direction of the project, do the code reviews and take
+    care of the project. Finally there exists a Release Coordinator which
+    normally is a captain \cite{MySQLReleaseCoordinator}. By definition he
+    gains no additional rights and only leads the communication and release
+    management of the project.
 
-  \item[Community] As most of the key-authors of MySQL moved to different
-    projects, such as MariaDB and as there is not much insight available about
-    the current happenings inside Oracle, the MariaDB community will be
-    analyzed including facts about the pre Oracle era of MySQL.
+  \item[Role of the Founders] Micheal Widenius took a vital role in the fork
+    and new project MariaDB \cite{MySQLBehind,MySQLAbout}. If nevertheless
+    MariaDB is mostly driven by MariaDB captains (which he belongs too) he
+    has an important voice in the community and still gives general
+    directions. David Axmark however left Sun in 2008 and is not really
+    actively involved in either the MySQL nor MariaDB project however follows
+    their development.
 
-  \begin{description}
+\end{description}
 
-    \item[Size of the Community] The specific size of the community is not
-      known, however it is fracturing after the two acquisitions by Sun
-      Microsystems and Oracle Corporation. The newly founded Monty Program Ab
-      company however lists at least 20 people working on MariaDB
-      \cite{MySQLBehind}.
+\subsection{Release Process}
 
-    \item[Communication inside the Project] The communication mostly happens
-      over mailing lists, although also \ac{IRC} channels exist. The most
-      important mailing list for development are the maria-developers and
-      maria-captains mailing lists \cite{MySQLDevelopers}.
+The used release process is structured and will be described in the following.
 
-    \item[Conferences and Meet-ups] The MariaDB project has not yet set up a
-      conference, however the MySQL project mostly meet at the yearly MySQL
-      Users Conference \& Expo which first happened in 2003
-      \cite{MySQLConference}.
+\begin{description}
 
-    \item[Roles] The developers are split into two groups. A developer is a
-      person who produces enhancements and new features for MariaDB
-      \cite{MySQLContributingCode,MySQLContributing,MySQLCaptain}. However he
-      has no right to commit his work which has to be reviewed. The captains
-      are developers who are working for a long time for the project and have
-      made substantial improvements. To become a captain one has to make a
-      formal request on which the other captains will vote \cite{MySQLCaptain}.
-      Captains give the direction of the project, do the code reviews and take
-      care of the project. Finally there exists a Release Coordinator which
-      normally is a captain \cite{MySQLReleaseCoordinator}. By definition he
-      gains no additional rights and only leads the communication and release
-      management of the project.
+  \item[Version Naming] The MySQL/MariaDB project uses a three digit number
+    scheme which consists of a major, minor and micro number
+    \cite{MySQLVersion}.
 
-    \item[Role of the Founders] Micheal Widenius took a vital role in the fork
-      and new project MariaDB \cite{MySQLBehind,MySQLAbout}. If nevertheless
-      MariaDB is mostly driven by MariaDB captains (which he belongs too) he
-      has an important voice in the community and still gives general
-      directions. David Axmark however left Sun in 2008 and is not really
-      actively involved in either the MySQL nor MariaDB project however follows
-      their development.
+  \item[Characterization of Major and Minor Releases] The incrementation of a
+    major number defines big and often incompatible changes to their
+    predecessors \cite{MySQLVersion}. In the current releases it marks the
+    file format in which the database is stored. A major release is defined
+    by an incrementation of the minor number and allows new features to be
+    added to the release. In most cases the releases are backwards
+    compatible, but if not, there are always upgrade paths available
+    \cite{MySQLMariaDB5.1}. Finally, the micro number defines minor releases
+    in which only bug and security fixes may apply.
 
-  \end{description}
+  \item[Release Schedule] The MariaDB project does not have a fixed release
+    schedule and is quite similar to the MySQL release schedule
+    \cite{MySQLReleaseCriteria,MySQLRoadmap,MySQLPlans}. It has criteria in
+    place when specific releases can happen. After the last stable major
+    release, all new features for the next stable major release will be
+    collected. Every feature a MariaDB developer agrees to implement in the
+    timeframe to the next major release will be considered as a new feature.
+    After most features are nearly finished one or several alpha releases
+    follow. The criteria for beta releases are that the proposed features are
+    finished and no serious bugs are open. The gamma or release candidate
+    releases are believed to be ready for general usage, however testing is
+    still required. Finally the stable release should have no more open bugs
+    or critical errors and is ready for general usage.
 
-  \item[Release Process] The used release process is structured and will be
-    described in the following.
+  \item[Important Steps in the Schedule] The feature proposal period, alpha
+    and beta releases are of course the most important steps in this schedule
+    as they restrict new features or code changes more and more
+    \cite{MySQLReleaseCriteria}. For example, after a beta release the whole
+    API must not be changed anymore.
 
-  \begin{description}
+\end{description}
 
-    \item[Version Naming] The MySQL/MariaDB project uses a three digit number
-      scheme which consists of a major, minor and micro number
-      \cite{MySQLVersion}.
+\subsection{Development}
 
-    \item[Characterization of Major and Minor Releases] The incrementation of a
-      major number defines big and often incompatible changes to their
-      predecessors \cite{MySQLVersion}. In the current releases it marks the
-      file format in which the database is stored. A major release is defined
-      by an incrementation of the minor number and allows new features to be
-      added to the release. In most cases the releases are backwards
-      compatible, but if not, there are always upgrade paths available
-      \cite{MySQLMariaDB5.1}. Finally, the micro number defines minor releases
-      in which only bug and security fixes may apply.
+The development of the MySQL/MariaDB project is loosely entangled with the
+release process and will be described in the following.
 
-    \item[Release Schedule] The MariaDB project does not have a fixed release
-      schedule and is quite similar to the MySQL release schedule
-      \cite{MySQLReleaseCriteria,MySQLRoadmap,MySQLPlans}. It has criteria in
-      place when specific releases can happen. After the last stable major
-      release, all new features for the next stable major release will be
-      collected. Every feature a MariaDB developer agrees to implement in the
-      timeframe to the next major release will be considered as a new feature.
-      After most features are nearly finished one or several alpha releases
-      follow. The criteria for beta releases are that the proposed features are
-      finished and no serious bugs are open. The gamma or release candidate
-      releases are believed to be ready for general usage, however testing is
-      still required. Finally the stable release should have no more open bugs
-      or critical errors and is ready for general usage.
+\begin{description}
 
-    \item[Important Steps in the Schedule] The feature proposal period, alpha
-      and beta releases are of course the most important steps in this schedule
-      as they restrict new features or code changes more and more
-      \cite{MySQLReleaseCriteria}. For example, after a beta release the whole
-      API must not be changed anymore.
+  \item[Development Lead] The development of the MariaDB project is mostly
+    driven by the MariaDB captains \cite{MySQLContributing,MySQLDevelopers}.
+    The founder of MariaDB and MySQL Micheal Widenius plays an important role
+    and even if not stated by the project has an important voice about the
+    direction.
 
-  \end{description}
+  \item[Development Workflow] Small patches are often submitted directly to
+    the repository if they are done by a captain. All other patches by
+    developers will be reviewed and applied if they suit the project well
+    \cite{MySQLRoadmap,MySQLPlans}. Bigger features will be accepted after
+    each major release.
 
-  \item[Development] The development of the MySQL/MariaDB project is loosely
-    entangled with the release process and will be described in the following.
+  \item[Feature Inclusion Process] After a major release a developer can
+    propose new features \cite{MySQLPlans}. A feature will be accepted if a
+    developer accepts that feature and is willing to implement it
+    \cite{MySQLContributingCode,MySQLContributing}. It then will move to the
+    so called worklog page of MariaDB where other developers see the current
+    status of a feature. A feature can have multiple states, such as the
+    following.
 
-  \begin{description}
+    \begin{description}
 
-    \item[Development Lead] The development of the MariaDB project is mostly
-      driven by the MariaDB captains \cite{MySQLContributing,MySQLDevelopers}.
-      The founder of MariaDB and MySQL Micheal Widenius plays an important role
-      and even if not stated by the project has an important voice about the
-      direction.
+      \item[Assigned] The feature was assigned to a developer who is in
+        charge to provide the feature for the next release.
 
-    \item[Development Workflow] Small patches are often submitted directly to
-      the repository if they are done by a captain. All other patches by
-      developers will be reviewed and applied if they suit the project well
-      \cite{MySQLRoadmap,MySQLPlans}. Bigger features will be accepted after
-      each major release.
+      \item[Cancelled] The feature was cancelled for this release but might
+        be proposed for the next.
 
-    \item[Feature Inclusion Process] After a major release a developer can
-      propose new features \cite{MySQLPlans}. A feature will be accepted if a
-      developer accepts that feature and is willing to implement it
-      \cite{MySQLContributingCode,MySQLContributing}. It then will move to the
-      so called worklog page of MariaDB where other developers see the current
-      status of a feature. A feature can have multiple states, such as the
-      following.
+      \item[Code-Review] The feature will be reviewed by other MariaDB
+        developers and captains.
 
-      \begin{description}
+      \item[Complete] The feature is ready and will be part of the next
+        release.
 
-        \item[Assigned] The feature was assigned to a developer who is in
-          charge to provide the feature for the next release.
+      \item[In-Documentation] The feature is completed code-wise but still
+        has to be documented.
 
-        \item[Cancelled] The feature was cancelled for this release but might
-          be proposed for the next.
+      \item[In-Progress] A developer is currently implementing this feature.
 
-        \item[Code-Review] The feature will be reviewed by other MariaDB
-          developers and captains.
+      \item[On-Hold] The feature will not be developed further until the
+        status can be changed back to in progress. This could happen if a
+        technical problem arises or the feature is put up for a discussion.
 
-        \item[Complete] The feature is ready and will be part of the next
-          release.
+      \item[Un-Assigned] The feature is still unassigned and no developer has
+        claimed this feature yet.
 
-        \item[In-Documentation] The feature is completed code-wise but still
-          has to be documented.
-
-        \item[In-Progress] A developer is currently implementing this feature.
-
-        \item[On-Hold] The feature will not be developed further until the
-          status can be changed back to in progress. This could happen if a
-          technical problem arises or the feature is put up for a discussion.
-
-        \item[Un-Assigned] The feature is still unassigned and no developer has
-          claimed this feature yet.
-
-      \end{description}
-
-
-  \end{description}
+    \end{description}
 
 \end{description}
 
@@ -536,142 +549,151 @@ advancement and it is also known to incorporate new products and software very
 quickly. The project is mostly sponsored by Red Hat, however due to it's
 structure it can be seen as independent from a companies influence.
 
+\subsection{Project Category}
+
+The Fedora operating system is, as the name already states, an operating system
+\cite{FedoraAbout}.
+
+\subsection{Scope of Analysis}
+
+The operating system provided by the Fedora project will be analyzed, which
+consists of a large collection of \ac{FOSS} needed to run and work on a
+computer.
+
+\subsection{License}
+
+As the projects goal is to provide a product which only consists of \ac{FOSS}
+only Free and Open Source licenses are allowed \cite{FedoraLicensing}. The
+project provides a list of acceptable licenses. For own software creations the
+\ac{GPL} is mostly used.
+
+\subsection{History}
+
+The original Fedora project was created in 2002 by Warren Togami in order to
+enhance the quality and number of packages available for the at that time
+existing Red Hat Linux distribution
+\cite{FedoraAbout,FedoraTogami,FedoraHistoricalSchedules}. In 2003 the
+development of Red Hat Linux stopped and was merged with the Fedora project.
+Since then the Fedora project provides a community distribution while Red Hat
+Enterprise Linux is an officially supported Linux distribution which derives
+from Fedora versions. Until 2006 the operating system was known as Fedore Core.
+Later the project changed the name to Fedora. The name Fedora originates from
+the Red Hat logo which shows a person with a fedora hat.
+
+\subsection{Community}
+
+The Fedora project has a quite large community available which will be
+described in the following.
+
 \begin{description}
 
-  \item[Project Category] The Fedora operating system is, as the name already
-    states, an operating system \cite{FedoraAbout}.
+  \item[Size of the Community] The exact size of the community is unknown,
+    however the project consists of a quite large community
+    \cite{FedoraStatistics}. For example the total number of active accounts
+    exceeds 30,000 people. This number however does not describe the actual
+    size accurately as it includes many users of the operating system.
 
-  \item[Scope of Analysis] The operating system provided by the Fedora project
-    will be analyzed, which consists of a large collection of \ac{FOSS} needed
-    to run and work on a computer.
+  \item[Communication inside the Project] Most of the communication is done
+    through mailing lists \cite{FedoraAbout,FedoraJoin,FedoraSIG}. Each of
+    the mailing list is quite focused on a certain sub-topic, however the
+    most important general development related mailing list is the devel
+    mailing list. Additional communication happens through several \ac{IRC}
+    channels, forums, blogs or the weekly newsletter
+    \cite{FedoraFWN,FedoraCommunicating}.
 
-  \item[License] As the projects goal is to provide a product which only
-    consists of \ac{FOSS} only Free and Open Source licenses are allowed
-    \cite{FedoraLicensing}. The project provides a list of acceptable licenses.
-    For own software creations the \ac{GPL} is mostly used.
+  \item[Conferences and Meet-ups] Since 2005 the Fedora project organizes the
+    Fedora Users and Developers Conference (FUDCon) which is held annually in
+    various places around the world \cite{FedoraFUDCon}. Usually the
+    conference takes place in several regions in several continents.
 
-  \item[History] The original Fedora project was created in 2002 by Warren
-    Togami in order to enhance the quality and number of packages available for
-    the at that time existing Red Hat Linux distribution
-    \cite{FedoraAbout,FedoraTogami,FedoraHistoricalSchedules}. In 2003 the
-    development of Red Hat Linux stopped and was merged with the Fedora
-    project. Since then the Fedora project provides a community distribution
-    while Red Hat Enterprise Linux is an officially supported Linux
-    distribution which derives from Fedora versions. Until 2006 the operating
-    system was known as Fedore Core. Later the project changed the name to
-    Fedora. The name Fedora originates from the Red Hat logo which shows a
-    person with a fedora hat.
+  \item[Roles] The Fedora project uses a quite flat structure with several
+    teams and \acp{SIG} \cite{FedoraJoin,FedoraCommunicating,FedoraSIG}. Each
+    team or \ac{SIG} is in charge for a specific sub project or area in the
+    project. Each team is lead by one or several people and the usual way to
+    be a part of a specific team is to provide several contributions until
+    one can apply. Examples for such teams and \acp{SIG} are Release
+    Engineering, Desktop or Usability. The technical leadership is handled by
+    the \ac{FESCo} which is a community elected team and handles new
+    features, \acp{SIG} or technical matters \cite{FedoraFESCo}. The general
+    direction and guiding decisions however are handled of the Fedora project
+    board which consists of five community elected persons and four appointed
+    by Red Hat \cite{FedoraBoard}.
 
-  \item[Community] The Fedora project has a quite large community available
-    which will be described in the following.
+  \item[Role of the Founders] Warrent Togami is still involved in the Fedora
+    project, however he works more on Fedora related projects, such as
+    SpamAssassin or K12Linux which is a distribution built on top of Fedora
+    \cite{FedoraTogami}.
 
-  \begin{description}
+\end{description}
 
-    \item[Size of the Community] The exact size of the community is unknown,
-      however the project consists of a quite large community
-      \cite{FedoraStatistics}. For example the total number of active accounts
-      exceeds 30,000 people. This number however does not describe the actual
-      size accurately as it includes many users of the operating system.
+\subsection{Release Process}
 
-    \item[Communication inside the Project] Most of the communication is done
-      through mailing lists \cite{FedoraAbout,FedoraJoin,FedoraSIG}. Each of
-      the mailing list is quite focused on a certain sub-topic, however the
-      most important general development related mailing list is the devel
-      mailing list. Additional communication happens through several \ac{IRC}
-      channels, forums, blogs or the weekly newsletter
-      \cite{FedoraFWN,FedoraCommunicating}.
+The used release process is highly structured and will be described in the
+following.
 
-    \item[Conferences and Meet-ups] Since 2005 the Fedora project organizes the
-      Fedora Users and Developers Conference (FUDCon) which is held annually in
-      various places around the world \cite{FedoraFUDCon}. Usually the
-      conference takes place in several regions in several continents.
+\begin{description}
 
-    \item[Roles] The Fedora project uses a quite flat structure with several
-      teams and \acp{SIG} \cite{FedoraJoin,FedoraCommunicating,FedoraSIG}. Each
-      team or \ac{SIG} is in charge for a specific sub project or area in the
-      project. Each team is lead by one or several people and the usual way to
-      be a part of a specific team is to provide several contributions until
-      one can apply. Examples for such teams and \acp{SIG} are Release
-      Engineering, Desktop or Usability. The technical leadership is handled by
-      the \ac{FESCo} which is a community elected team and handles new
-      features, \acp{SIG} or technical matters \cite{FedoraFESCo}. The general
-      direction and guiding decisions however are handled of the Fedora project
-      board which consists of five community elected persons and four appointed
-      by Red Hat \cite{FedoraBoard}.
+  \item[Version Naming] The Fedora project uses a single number versioning
+    scheme \cite{FedoraHistoricalSchedules,FedoraLifeCycle}. This single
+    number defines major releases.
 
-    \item[Role of the Founders] Warrent Togami is still involved in the Fedora
-      project, however he works more on Fedora related projects, such as
-      SpamAssassin or K12Linux which is a distribution built on top of Fedora
-      \cite{FedoraTogami}.
+  \item[Characterization of Major and Minor Releases] There are no minor
+    releases as updates to the operating system come via single updates of
+    the affected packages \cite{FedoraHistoricalSchedules,FedoraLifeCycle}.
+    Therefore each incrementation of the version number defines a new major
+    release.
 
-  \end{description}
+  \item[Release Schedule] The Fedora project uses a fixed release cycle with
+    a new major release every six months
+    \cite{FedoraLifeCycle,FedoraReleaseEngineering}. Each major release is
+    then maintained until one month after another two releases or 13 months.
+    The release schedule is proposed by the Release Engineering team and
+    approved by the \ac{FESCo}. In some cases, the schedule can be slightly
+    adjusted if critical bugs appear and can't be solved in the original time
+    frame. After a major release the planning and development can start. One
+    week before the alpha release, no new feature will be accepted. The alpha
+    release will be followed by a beta and final release candidate release.
+    Depending on whether each of the previous releases was postponed or not
+    the final release will be published approximately six months after the
+    previous major release.
 
-  \item[Release Process] The used release process is highly structured and will
-    be described in the following.
+  \item[Important Steps in the Schedule] The most important steps are the
+    feature acceptance, feature freeze and feature complete milestones in the
+    release schedule \cite{FedoraLifeCycle}. In each of the named steps the
+    \ac{FESCo} will decide if a feature will be accepted or be in the next
+    release depending on it's completeness.
 
-  \begin{description}
+\end{description}
 
-    \item[Version Naming] The Fedora project uses a single number versioning
-      scheme \cite{FedoraHistoricalSchedules,FedoraLifeCycle}. This single
-      number defines major releases.
+\subsection{Development}
 
-    \item[Characterization of Major and Minor Releases] There are no minor
-      releases as updates to the operating system come via single updates of
-      the affected packages \cite{FedoraHistoricalSchedules,FedoraLifeCycle}.
-      Therefore each incrementation of the version number defines a new major
-      release.
+The development of the Fedora project is quite entangled with the release
+process and will be described in the following.
 
-    \item[Release Schedule] The Fedora project uses a fixed release cycle with
-      a new major release every six months
-      \cite{FedoraLifeCycle,FedoraReleaseEngineering}. Each major release is
-      then maintained until one month after another two releases or 13 months.
-      The release schedule is proposed by the Release Engineering team and
-      approved by the \ac{FESCo}. In some cases, the schedule can be slightly
-      adjusted if critical bugs appear and can't be solved in the original time
-      frame. After a major release the planning and development can start. One
-      week before the alpha release, no new feature will be accepted. The alpha
-      release will be followed by a beta and final release candidate release.
-      Depending on whether each of the previous releases was postponed or not
-      the final release will be published approximately six months after the
-      previous major release.
+\begin{description}
 
-    \item[Important Steps in the Schedule] The most important steps are the
-      feature acceptance, feature freeze and feature complete milestones in the
-      release schedule \cite{FedoraLifeCycle}. In each of the named steps the
-      \ac{FESCo} will decide if a feature will be accepted or be in the next
-      release depending on it's completeness.
+  \item[Development Lead] The development of the Fedora project is mostly
+    driven by the \ac{FESCo} which decides on new features and the technical
+    direction of the project \cite{FedoraFESCo}.
 
-  \end{description}
+  \item[Development Workflow] The development process of the Fedora project
+    is a quite open one \cite{FedoraReleaseEngineering,FedoraSIG}. As already
+    stated above, there are many \acp{SIG} available which steer the
+    development of a certain area in the project. Depending on the \ac{SIG}
+    the development workflow can vary, however the general direction is
+    always given by the \ac{FESCo}.
 
-  \item[Development] The development of the Fedora project is quite entangled
-    with the release process and will be described in the following.
-
-  \begin{description}
-
-    \item[Development Lead] The development of the Fedora project is mostly
-      driven by the \ac{FESCo} which decides on new features and the technical
-      direction of the project \cite{FedoraFESCo}.
-
-    \item[Development Workflow] The development process of the Fedora project
-      is a quite open one \cite{FedoraReleaseEngineering,FedoraSIG}. As already
-      stated above, there are many \acp{SIG} available which steer the
-      development of a certain area in the project. Depending on the \ac{SIG}
-      the development workflow can vary, however the general direction is
-      always given by the \ac{FESCo}.
-
-    \item[Feature Inclusion Process] To propose a feature for the next major
-      release a formal feature proposal has to be made
-      \cite{FedoraFeatures,FedoraFESCo}. This includes a description of the
-      problem, an owner, the current status and several other points. Any
-      Fedora community member can propose them and the \ac{FESCo} decides on
-      the acceptance of the feature. Additionally a feature can be dropped if
-      it is not completed at the feature freeze or before the beta release or
-      if the owner does not update the feature status. A feature can be either
-      incomplete when the proposal is not ready, ready when it is disposed for
-      review, ready for \ac{FESCo} when it can be proposed to the committee and
-      finally accepted if the voting by the \ac{FESCo} was successful.
-
-  \end{description}
+  \item[Feature Inclusion Process] To propose a feature for the next major
+    release a formal feature proposal has to be made
+    \cite{FedoraFeatures,FedoraFESCo}. This includes a description of the
+    problem, an owner, the current status and several other points. Any
+    Fedora community member can propose them and the \ac{FESCo} decides on
+    the acceptance of the feature. Additionally a feature can be dropped if
+    it is not completed at the feature freeze or before the beta release or
+    if the owner does not update the feature status. A feature can be either
+    incomplete when the proposal is not ready, ready when it is disposed for
+    review, ready for \ac{FESCo} when it can be proposed to the committee and
+    finally accepted if the voting by the \ac{FESCo} was successful.
 
 \end{description}
 
@@ -690,135 +712,144 @@ meaning of \ac{FOSS}, to provide a full featured operating system with a hight
 standard and to have a big evolving community. The Debian project is often
 known as a very stable operating system and therefore is often used on servers.
 
+\subsection{Project Category}
+
+The Debian operating system is, as the name already states, an operating
+system.
+
+\subsection{Scope of Analysis}
+
+The Debian \ac{GNU}/Linux operating system provided by the Debian project will
+be analyzed, which consists of a large collection of \ac{FOSS} needed to run
+and work on a computer.
+
+\subsection{License}
+
+The project's goal is to provide an operating system consisting entirely of
+\ac{FOSS} \cite{DebianLicense,DebianFAQ}. However, it is possible to install
+non-free software too. According to the \ac{DFSG} the project itself however
+only accepts free software licenses, but the \ac{GPL} is mostly used for own
+creations.
+
+\subsection{History}
+
+The Debian project was created by Ian Murdock in 1993, in order to provide a
+distribution which was developed in an open style and in the spirit of a
+\ac{FOSS} development process \cite{DebianAbout,DebianHistory,Sadowski2008}. At
+that time, the concept of a distribution was quite new and Debian can be
+counted as one of the early distributions, although it was not the first. The
+name is a fusion between Ian and the first name of his wife, Debra. The Debian
+project established several policies and contracts to ensure the future freedom
+of the project. Debian still is the most significant distribution that is not
+backed by a commercial entity.
+
+\subsection{Community}
+
+The Debian project has a large community available which will be described in
+the following.
+
 \begin{description}
 
-  \item[Project Category] The Debian operating system is, as the name already
-    states, an operating system.
+  \item[Size of the Community] The community size is quite large and ranges
+    between 800 and 1000 active developers \cite{Perrier2011,DebianOrg}.
 
-  \item[Scope of Analysis] The Debian \ac{GNU}/Linux operating system provided
-    by the Debian project will be analyzed, which consists of a large
-    collection of \ac{FOSS} needed to run and work on a computer.
+  \item[Communication inside the Project] Most of the communication is
+    handled over several mailing lists
+    \cite{DebianMailingLists,DebianFAQ,DebianNewMembers}. For quite every
+    aspect or subproject there is a mailing list available. The most
+    important for development is the debian-devel mailing list. Additionally
+    there are many \ac{IRC} channels, forums and blogs available.
 
-  \item[License] The project's goal is to provide an operating system
-    consisting entirely of \ac{FOSS} \cite{DebianLicense,DebianFAQ}. However,
-    it is possible to install non-free software too. According to the \ac{DFSG}
-    the project itself however only accepts free software licenses, but the
-    \ac{GPL} is mostly used for own creations.
+  \item[Conferences and Meet-ups] The most important conference in the Debian
+    project is the annual DebConf which took first place in 2000
+    \cite{DebianDebConf}. It has taken place in various regions and
+    continents worldwide so far.
 
-  \item[History] The Debian project was created by Ian Murdock in 1993, in
-    order to provide a distribution which was developed in an open style and in
-    the spirit of a \ac{FOSS} development process
-    \cite{DebianAbout,DebianHistory,Sadowski2008}. At that time, the concept of
-    a distribution was quite new and Debian can be counted as one of the early
-    distributions, although it was not the first. The name is a fusion between
-    Ian and the first name of his wife, Debra. The Debian project established
-    several policies and contracts to ensure the future freedom of the project.
-    Debian still is the most significant distribution that is not backed by a
-    commercial entity.
+  \item[Roles] The Debian project uses a quite hierarchic structure with
+    several teams \cite{DebianOrg,Sadowski2008}. A Debian Contributor is any
+    person who contributes to the project, but has no additional rights
+    \cite{DebianFAQ}. Debian Maintainer have restricted access capabilities
+    \cite{DebianMaintainer}. To become a Debian Maintainer one has to go
+    through a formal process requesting the role. At least one Debian
+    Developer must approve that person. The Debian Developers finally have
+    full access rights and often maintain parts of the project
+    \cite{DebianDev}. Then there is a project leader who gets elected by the
+    Debian community every year \cite{DebianOrg,DebianVoting}. Beneath the
+    project leader there is a technical committee which drives the project's
+    technical decisions. Additionally there are many teams in charge for
+    parts of the project, such as Release Engineering, Ports or the
+    distribution of the project.
 
-  \item[Community] The Debian project has a large community available which
-    will be described in the following.
+  \item[Role of the Founders] Ian Murdock led the project from it's beginning
+    until 1996 as the project leader when he passed this function to Bruce
+    Perens \cite{DebianFAQ,DebianHistory}. Although he still works in the
+    \ac{FOSS} field he is no longer involved in the Debian project.
 
-  \begin{description}
+\end{description}
 
-    \item[Size of the Community] The community size is quite large and ranges
-      between 800 and 1000 active developers \cite{Perrier2011,DebianOrg}.
+\subsection{Release Process}
 
-    \item[Communication inside the Project] Most of the communication is
-      handled over several mailing lists
-      \cite{DebianMailingLists,DebianFAQ,DebianNewMembers}. For quite every
-      aspect or subproject there is a mailing list available. The most
-      important for development is the debian-devel mailing list. Additionally
-      there are many \ac{IRC} channels, forums and blogs available.
+The used release process is highly structured and will be described in the
+following.
 
-    \item[Conferences and Meet-ups] The most important conference in the Debian
-      project is the annual DebConf which took first place in 2000
-      \cite{DebianDebConf}. It has taken place in various regions and
-      continents worldwide so far.
+\begin{description}
 
-    \item[Roles] The Debian project uses a quite hierarchic structure with
-      several teams \cite{DebianOrg,Sadowski2008}. A Debian Contributor is any
-      person who contributes to the project, but has no additional rights
-      \cite{DebianFAQ}. Debian Maintainer have restricted access capabilities
-      \cite{DebianMaintainer}. To become a Debian Maintainer one has to go
-      through a formal process requesting the role. At least one Debian
-      Developer must approve that person. The Debian Developers finally have
-      full access rights and often maintain parts of the project
-      \cite{DebianDev}. Then there is a project leader who gets elected by the
-      Debian community every year \cite{DebianOrg,DebianVoting}. Beneath the
-      project leader there is a technical committee which drives the project's
-      technical decisions. Additionally there are many teams in charge for
-      parts of the project, such as Release Engineering, Ports or the
-      distribution of the project.
+  \item[Version Naming] The Debian project uses a three digit number scheme
+    which consists of a major, minor and micro number \cite{DebianReleases}.
 
-    \item[Role of the Founders] Ian Murdock led the project from it's beginning
-      until 1996 as the project leader when he passed this function to Bruce
-      Perens \cite{DebianFAQ,DebianHistory}. Although he still works in the
-      \ac{FOSS} field he is no longer involved in the Debian project.
+  \item[Characterization of Major and Minor Releases] Debian has always at
+    least three active releases available: stable, testing and unstable
+    \cite{DebianReleases,DebianReleaseManagement}. Each of the three is a
+    major release and indicated by a different major version number. The
+    minor number was used until Debial 3.1 as a major release indicator,
+    however this is not the case anymore. The micro version number indicates
+    bug fixes to the major release.
 
-  \end{description}
+  \item[Release Schedule] With three active release branches, the actual
+    releases will change if a new stable version will be introduced
+    \cite{McGovern2011,DebianReleaseManagement,DebianReleaseGoals}. In that
+    case the old stable will be named as oldstable and maintained for one
+    more year. The testing branch will become the new stable and the unstable
+    the new testing. The Debian project does not have a fixed release
+    schedule and releases when the release team and core team thought it
+    would be ready. At that time a freeze was called in and a release would
+    follow shortly thereafter. However there is some effort to have regular
+    releases and predictable freeze schedules. For the next release the
+    Debian project will try to adopt to a time based freeze and release cycle
+    \cite{McGovern2011}.
 
-  \item[Release Process] The used release process is highly structured and will
-    be described in the following.
+  \item[Important Steps in the Schedule] As the new release schedule is not
+    quite clear yet, there is no characterization of the important steps
+    available. However the final freeze and the announcement of Release Goals
+    by the release team are certainly important steps in the schedule.
 
-  \begin{description}
+\end{description}
 
-    \item[Version Naming] The Debian project uses a three digit number scheme
-      which consists of a major, minor and micro number \cite{DebianReleases}.
+\subsection{Development}
 
-    \item[Characterization of Major and Minor Releases] Debian has always at
-      least three active releases available: stable, testing and unstable
-      \cite{DebianReleases,DebianReleaseManagement}. Each of the three is a
-      major release and indicated by a different major version number. The
-      minor number was used until Debial 3.1 as a major release indicator,
-      however this is not the case anymore. The micro version number indicates
-      bug fixes to the major release.
+The development of the Debian project leads directly to future releases and
+will be described in the following.
 
-    \item[Release Schedule] With three active release branches, the actual
-      releases will change if a new stable version will be introduced
-      \cite{McGovern2011,DebianReleaseManagement,DebianReleaseGoals}. In that
-      case the old stable will be named as oldstable and maintained for one
-      more year. The testing branch will become the new stable and the unstable
-      the new testing. The Debian project does not have a fixed release
-      schedule and releases when the release team and core team thought it
-      would be ready. At that time a freeze was called in and a release would
-      follow shortly thereafter. However there is some effort to have regular
-      releases and predictable freeze schedules. For the next release the
-      Debian project will try to adopt to a time based freeze and release cycle
-      \cite{McGovern2011}.
+\begin{description}
 
-    \item[Important Steps in the Schedule] As the new release schedule is not
-      quite clear yet, there is no characterization of the important steps
-      available. However the final freeze and the announcement of Release Goals
-      by the release team are certainly important steps in the schedule.
+  \item[Development Lead] The development is mostly driven by the project
+    leader and the technical committee who set the goals for future releases
+    \cite{DebianOrg}. Additionally the team leaders can set their own goals.
 
-  \end{description}
+  \item[Development Workflow] As the stable branch is closed for new features
+    most new features go directly into the unstable branch
+    \cite{DebianFAQ,DebianDev,DebianReleaseManagement}. If those changes were
+    tested for enough time eventually they will be merged with the testing
+    branch. Parts of the Debian project will be either maintained by single
+    Debian developers or co-maintained by others. Depending on that and the
+    set goals by the project leader Debian developers adapt to that.
 
-  \item[Development] The development of the Debian project leads directly to
-    future releases and will be described in the following.
-
-  \begin{description}
-
-    \item[Development Lead] The development is mostly driven by the project
-      leader and the technical committee who set the goals for future releases
-      \cite{DebianOrg}. Additionally the team leaders can set their own goals.
-
-    \item[Development Workflow] As the stable branch is closed for new features
-      most new features go directly into the unstable branch
-      \cite{DebianFAQ,DebianDev,DebianReleaseManagement}. If those changes were
-      tested for enough time eventually they will be merged with the testing
-      branch. Parts of the Debian project will be either maintained by single
-      Debian developers or co-maintained by others. Depending on that and the
-      set goals by the project leader Debian developers adapt to that.
-
-    \item[Feature Inclusion Process] The Debian project uses so called Release
-      Goals which are proposed by Debian community members and chosen by the
-      release team \cite{DebianReleaseGoals,McGovern2011}. The release team
-      will decide on each goal and set it for a specific release or postpone
-      it. At some point during the development the release team will announce
-      the chosen Release Goals.
-
-  \end{description}
+  \item[Feature Inclusion Process] The Debian project uses so called Release
+    Goals which are proposed by Debian community members and chosen by the
+    release team \cite{DebianReleaseGoals,McGovern2011}. The release team
+    will decide on each goal and set it for a specific release or postpone
+    it. At some point during the development the release team will announce
+    the chosen Release Goals.
 
 \end{description}
 
