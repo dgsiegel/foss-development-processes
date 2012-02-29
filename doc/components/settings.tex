@@ -27,6 +27,17 @@
 % use integers instead of a,b,c,... for same key cites
 \DeclareFieldFormat{extraalpha}{\##1}
 
+\defbibheading{bibliography}[\bibname]{
+  \manualmark
+  \markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}
+  \chapter{#1}
+}
+
+\defbibheading{subbibliography}[\bibname]{
+  \automark[chapter]{chapter}
+  \section{#1}
+}
+
 % }}}
 
 % pdf {{{
