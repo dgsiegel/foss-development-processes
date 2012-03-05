@@ -1,13 +1,282 @@
 \chapter{Comparison of Development Processes} % {{{
 \label{cha:Comparison of Development Processes}
 
+As the analyzed projects were described in the previous chapter, this chapter
+will compare the development processes and project details with each other.
+
 \section{Project Origin} % {{{
 \label{sec:Project Origin}
+
+All analyzed projects share a quite different history. Some were developed with
+an university background like PostgreSQL or Python while other projects were
+born in the \ac{FOSS} context. The GNOME or Debian project would be an example
+for that. Projects like Plone or Fedora were an improvement and additional
+layer to an existing project.
+
+It is interesting to note, that many project founders tried to solve a personal
+problem with the project they were about to start. KDE, Drupal, Fedora and PHP
+might be notable here. However also commercial or philosophical background can
+initiate a project, such as MySQL with MySQL AB or GNOME show.
+
+\begin{table}[htb]
+  \centering
+  \begin{tabularx}{\textwidth}{lX}
+    \toprule
+    \tableheadline{Project} & \tableheadline{License} \\
+    \midrule
+    Debian        & Various, mainly \ac{GPL} \\
+    Drupal        & \ac{GPL} \\
+    Fedora        & Various, mainly \ac{GPL} \\
+    GNOME         & \ac{GPL}, \ac{LGPL} \\
+    KDE           & \ac{GPL}, \ac{LGPL} \\
+    MySQL/MariaDB & \ac{GPL} \\
+    PHP           & PHP License \\
+    Plone         & \ac{GPL} \\
+    PostgreSQL    & PostgreSQL license \\
+    Python        & Python Software Foundation License \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Used licenses in analyzed projects}
+\end{table}
+
+Even if the number of developers increased over time, all projects were started
+by a small group of people which often consisted of at most two persons. Often,
+a single person was more involved in the project creation, even if other people
+were involved too. Michael Widenius of MySQL/MariaDB would be a fitting match
+to notice. After inception however the number of involved people grew rapidly.
+This holds for all analyzed projects and is especially the case when the
+project was finally released as \ac{FOSS}. Examples like PostgreSQL or Python
+show the rapid increase of involved people, be it just developers or other
+involved people, when finally released as \ac{FOSS}. The growth graph however
+is quite similar in all analyzed projects, if one considers time and size
+differences between the projects. Also it is worth noticing that almost every
+analyzed project has one or more rapid developer growth periods. Those periods
+can be matched with a certain major release of the projects. This becomes clear
+when one examines the release and development of Python 2.0, GNOME 3.0, KDE 4.0
+and Plone 4.0. All of those versions are major releases with new features and
+approaches to their project goals. Apparently the development of such big
+releases attracted a lot of new developers. Furthermore the size stayed quite
+the same after the release.
+
+\begin{table}
+  \centering
+  \begin{tabularx}{\textwidth}{llX}
+    \toprule
+    \tableheadline{Project} & \tableheadline{Age} & \tableheadline{Founder} \\
+    \midrule
+    Debian        & 1993 & Ian Murdock \\
+    Drupal        & 2001 & Dries Buytaert \\
+    Fedora        & 2002 & Warren Togami \\
+    GNOME         & 1997 & Miguel de Icaza \& Federico Mena Quintero \\
+    KDE           & 1996 & Matthias Ettrich \\
+    MySQL/MariaDB & 1997 & Michael Widenius \& David Axmark \\
+    PHP           & 1994 & Rasmus Lerdorf \\
+    Plone         & 1999 & Alexander Limi \& Alan Runyan \\
+    PostgreSQL    & 1986 & Lawrence A. Rowe \& Michael R. Stonebraker \\
+    Python        & 1989 & Guido van Rossum \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Project founders and origins}
+\end{table}
 
 % }}}
 
 \section{Community} % {{{
 \label{sec:Community}
+
+The previous project analysis has shown, that the communities of each project
+seem to be quite different. This will be compared in the following sections.
+
+\subsection{Size of the Community} % {{{
+\label{sub:Size of the Community}
+
+As all of the analyzed projects share a quite long history, a lot of people
+were active in the projects. This of course biases the comparison between
+communities, as the actual number of developers is quite always lower than the
+total sum of developers in the project history. Also taking in mind that only
+the central parts of the projects were analyzed, the resulting number can vary
+a lot. For example the GNOME project claims that over 3500 people contributed
+to the project. The fact that only GNOME core was analyzed and not anymore
+active developers were left out reduces the finding to currently about 350
+active developers of GNOME core. The same probably holds true for the Drupal
+project with about 1200 enlisted developers and for the KDE project with about
+1800 active contributors.
+
+Also it is important to distinguish carefully between core developers and other
+contributors. As in some projects only core developers have access to the code
+repository, an analysis of code authors is not always a satisfying approach.
+The Drupal project for example only has about six to ten distinct authors to
+Drupal core. Only recently they adopted to give credit to the original author
+instead of referring to it in the commit message. Another interesting insight
+is the Plone project which claims to have about 300 active core developers, the
+code repository however only shows a number of the dimension from 50 to 70
+active developers at the same time. The PostgreSQL project on the other hand
+gives an exact number of active and retired core developers, only leaving out
+the number of minor contributors.
+
+It is not necessarily the case that the actual number of developers is smaller,
+projects like Fedora or Debian with many different aspects of work and smaller
+tasks like package creation can actually have a number of active developers
+which quite matches the claimed number by the project. However one has to keep
+in mind that the comparison of a core piece of a project with a full operating
+system might be unfair and not very significant. That said the size comparison
+has to be made carefully with the above considerations in mind.
+
+% }}}
+
+\subsection{Communication} % {{{
+\label{sub:Communication}
+
+On a worldwide distributed project the communication inside a project is one of
+the most vital parts. Every project has therefore a wide array of communication
+methods in place. Quite every project uses mailing lists as it's favourite
+communication method. A plausible explanation for this would probably be the
+fact that it is easily scalable, open and archived.
+
+Although every project has lots of different lists for quite every aspect in
+the project, there is always one mailing list which is the most important one.
+This is true for GNOME with the \emph{desktop-devel}, PHP with the
+\emph{internals}, Plone with the \emph{plone-developers}, Python with the
+\emph{python-dev}, PostgreSQL with the \emph{pgsql-hackers}, Fedora with the
+\emph{devel} and Debian with the \emph{debian-devel} mailing list. In some
+projects this single mailing list is split up into two, one more general for
+the project and the second for the core project. This is the case for KDE with
+the \emph{kde-devel} and \emph{kde-core-devel} mailing lists and MariaDB with
+the \emph{maria-developers} and \emph{maria-captains} mailing lists. An
+exception of this might be the Drupal project which uses mailing lists however
+the most important communication channel is a quite mailing list akin forum on
+their project website.
+
+Additionally in every project there are lots of other direct and indirect
+communications such as \ac{IRC} channels, blogs, newsletters and other in
+place.
+
+% }}}
+
+\subsection{Conferences} % {{{
+\label{sub:Conferences}
+
+As most of the developers are living in different cities, countries or
+continents, the communication is almost always done over the internet.
+Therefore conferences and meet-ups provide the possibility to meet in person,
+plan and design future goals more easily and to invigorate the community. Each
+analyzed project has one or more annual conferences in place where developers
+and users can meet. It is interesting to note that it always took some years to
+get to an steady frequency. Also it seems that most projects had some years of
+development behind them before the first conference was held. Along with the
+growth of a project the number of attendees at a conference grew as well.
+Another interesting fact might be that some projects include the conference in
+their release and development schedule, for example the GNOME project in which
+the conference should provide an extra development boost for the upcoming
+release in autumn.
+
+Due to the size of the project and the worldwide distribution of developers,
+each project has also a lot of local meet-ups, hackfests, sprints, smaller
+conferences or other workshops in place. They however focus more on specific
+parts or goals of the project.
+
+% }}}
+
+\subsection{Roles} % {{{
+\label{sub:Roles}
+
+The analysis of the projects has shown, that all projects use a fairly
+hierarchic development structure. Starting from the bottom there is always a
+role for simple developers or contributors. Going the hierarchy upward, one
+gets more rights but also more responsibilities. For example one could manage
+certain parts of the project or provide guidance to new developers. Above the
+maintainers of a certain subsystem is rather always a small group managing the
+project's development. Then, at the top one can find a project leader or a
+group engaging the project leader role. It is also interesting that some
+projects split the same function into two roles while others only use one.
+Keeping this fact and the different project scopes in mind, the used structures
+are middlingly similar, especially if the projects are working in the same
+field.
+
+\begin{figure}[htbp]
+  \centering
+  \subfloat[Drupal]
+    {\includegraphics[width=.35\textwidth]{drupal/roles}} \qquad
+  \subfloat[Plone]
+    {\includegraphics[width=.35\textwidth]{plone/roles}} \\
+
+  \subfloat[Python]
+    {\includegraphics[width=.35\textwidth]{python/roles}} \qquad
+  \subfloat[PHP]
+    {\includegraphics[width=.35\textwidth]{php/roles}} \\
+
+  \subfloat[GNOME]
+    {\includegraphics[width=.35\textwidth]{gnome/roles}} \qquad
+  \subfloat[KDE]
+    {\includegraphics[width=.35\textwidth]{kde/roles}} \\
+
+  \subfloat[PostgreSQL]
+    {\includegraphics[width=.35\textwidth]{postgresql/roles}} \qquad
+  \subfloat[MariaDB]
+    {\includegraphics[width=.35\textwidth]{mariadb/roles}} \\
+
+  \subfloat[Fedora]
+    {\includegraphics[width=.35\textwidth]{fedora/roles}} \qquad
+  \subfloat[Debian]
+    {\includegraphics[width=.35\textwidth]{debian/roles}} \\
+  \caption{Comparison of the development related roles in the projects.}
+\end{figure}
+
+Of course this structure varies over time and size of the project. The Debian
+project for example which has a very long history in comparison to the others
+has a quite filed segmentation with clear duties and responsibilities for each
+role. A younger project like MariaDB has a simpler model, which nonetheless
+has the described groups on top.
+
+A release team seems to be very important as it exists in all projects, either
+as a dedicated team or is represented by the project leader. Furthermore the
+concept of having people who are responsible for certain subsystems seems to be
+established widely as all bigger projects use it.
+
+It is also interesting to note, that in projects where the project founder is
+still active, the structure is formed more into a hierarchy with the founder on
+top. This is true for Drupal, PHP and Python. Debian is a bit of a special case
+here because the original project leader passed on his duty preserving the
+project leader hierarchy. Sometimes the leader gathers other people around him
+trying to be not solely responsible for the project, such one can see in the
+MariaDB project. In projects, the leader is no longer involved or at least does
+not hold any power, project leader teams were established. This holds for KDE,
+Fedora and GNOME.
+
+Even if projects claim to be friendly to newcomers and an open community, the
+structure analyzed here shows, that one always has to start at the bottom of
+the hierarchy, earning trust and providing enhancements to the projects before
+being able to become a leader or holding a carrying business. 
+
+% }}}
+
+\subsection{Project Founders} % {{{
+\label{sub:Project Founders}
+
+The project founders played a vital role in the inception of the project. It
+was already explained that even if there are more project founders, often one
+single person plays the most important role. It was also pointed out that some
+project founders are still active and lead the project, while others have left
+their project.
+
+Therefore the project founders of the analyzed projects can be classified into
+three categories. First, project founders which are still active in the project
+and have a leadership position. This is the case for the Drupal project, as
+well as for Python and PHP. In all of those projects, the development structure
+might look different without the leader. They define goals, releases, new
+features and is often the deciding person. The opposite are projects where the
+original founder no longer is present. Fedora, Debian and PostgreSQL are good
+examples here. All named projects established a leadership group which defines
+the future of the project. Debian still has a project leader, who however gets
+voted by the community. At last there are projects, where the original leader
+is still around and sometimes gives input but has no power. In the KDE and
+GNOME projects the founders are working on related projects or topics and
+sometimes give their opinion, but they can't decide anything. In the Plone and
+MariaDB project the founders are members of the leadership team but have no
+special role in there. At most they can give their opinion and community
+members might give their notion a higher value.
+
+% }}}
 
 % }}}
 
