@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+
+\begin{tikzpicture}[auto]
+  \node[role]
+    (leader) {Core Team};
+  \node[role, below=0.5em of leader]
+    (rt) {Release Team};
+  \node[role, below=0.5em of rt]
+    (module) {Module coordinator};
+  \node[role, below=0.5em of module]
+    (contributor) {Contributor};
+\end{tikzpicture}
+
+\end{document}

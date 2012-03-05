@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+
+\begin{tikzpicture}[auto]
+  \node[role, minimum height=5em]
+    (dummy) {};
+  \node[above=-2.0em of dummy, rectangle, text centered]
+    (captains) {Captain};
+  \node[role, below=-3em of dummy, text width=6.5em]
+    (release) {Release Coordinator};
+  \node[role, below=0.5em of dummy]
+    (developer) {Developer};
+\end{tikzpicture}
+
+\end{document}

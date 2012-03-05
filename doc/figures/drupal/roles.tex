@@ -1,0 +1,28 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+
+\begin{tikzpicture}[auto]
+  \node[role, minimum height=5em]
+    (dummy) {};
+  \node[role, above=-2.5em of dummy, text width=6.5em]
+    (founder) {Founder};
+  \node[below=0.5em of founder, rectangle, text centered]
+    (core) {Core Committer};
+  \node[role, below=0.5em of dummy]
+    (maintainer) {Maintainer};
+  \node[role, below=0.5em of maintainer]
+    (contributor) {Core Contributor};
+\end{tikzpicture}
+
+\end{document}

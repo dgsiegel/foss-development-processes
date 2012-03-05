@@ -1,0 +1,28 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+
+\begin{tikzpicture}[auto]
+  \node[role]
+    (leader) {Project Leader};
+  \node[role, below=0.5em of leader]
+    (committee) {Technical Committee};
+  \node[role, below=0.5em of committee]
+    (developer) {Developers};
+  \node[role, below=0.5em of developer]
+    (maintainer) {Maintainer};
+  \node[role, below=0.5em of maintainer]
+    (contributor) {Contributor};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+
+\begin{tikzpicture}[auto]
+  \node[role]
+    (leader) {BDFL};
+  \node[role, below=0.5em of leader]
+    (expert) {Expert};
+  \node[role, below=0.5em of expert]
+    (core) {Core Developer};
+  \node[role, below=0.5em of core]
+    (developer) {Developer};
+\end{tikzpicture}
+
+\end{document}
