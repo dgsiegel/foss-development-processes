@@ -283,6 +283,148 @@ members might give their notion a higher value.
 \section{Release Process} % {{{
 \label{sec:Release Process}
 
+The release process seems to be the most diverse item in this analysis, as most
+projects have gone through different processes and workflows during their time
+of existence. Nevertheless some of the different stages of the projects seem to
+be quite equivalent to each other.
+
+\subsection{Version Scheme} % {{{
+\label{sub:Version Scheme}
+
+All projects, except Drupal and Fedora, use a three digit version naming
+scheme. It consists of a major, minor and macro number, which characterizes a
+release. The Drupal project uses a two digit versioning scheme, which defines
+major and minor releases. It is quite important to note, that the minor
+releases of a major release only include bug fixes and therefore are more
+following the scheme of a major and macro version number. The Fedora Project
+just uses a single number to represent major releases. Due the structure and
+automatic update process, bug fixes can be included automatically in a running
+system. For comparison the Debian project also pushes bug fixes to the users,
+however it additionally releases those changes as further bug fix releases.
+
+It is true for all projects, that an increment in the major number defines an
+often backwards incompatible release with new features. Such a major release is
+often a ground breaking change and often defines a new era for the project.
+They are also extremely scarce. This is also reflected by the comparatively low
+major number the projects have, for example GNOME 3, KDE 4, Plone 4, Drupal 7
+and so on. Fedora is a bit of an exception here, as every new release
+increments the major number by one.
+
+The minor number almost always defines a feature release which is backwards
+compatible to the previous major release. There are some exceptions where this
+is not the case, for example in the PHP 5.x release cycle which. However those
+changes can be seen as minor when comparing them to the incompatibilities of
+two major releases. Also, if such changes occur, most projects provide an
+upgrade path. Except Drupal and Fedora, all projects use such a number.
+
+In some projects, an increment of the minor version number defines a major
+release. In other words, regardless of whether the major or minor number
+changes the release is always a major release. This holds for GNOME, PHP and
+Debian.
+
+The GNOME project always increments it's minor number by two to define a stable
+release cycle. An odd number as the minor number always defines an in
+development release.
+
+Micro releases are a number of releases for the above mentioned feature
+releases. They are only allowed to include bug and security fixes, no new
+features and no incompatibilities. Except Fedora, all project use such a
+number.
+
+In a nutshell it can be said that all projects use a similar versioning scheme
+with some minor exceptions, which do not have an all to big impact.
+
+% }}}
+
+\subsection{Release Schedule} % {{{
+\label{sub:Release Schedule}
+
+The release schedule leads to new major releases and often includes minor and
+bugfix releases. They are therefore a vital point for each project's future. As
+such most projects have established a rather detailed release schedule which
+they try to follow accurately. Nevertheless there are some differences
+comparing each project's schedule which will be outlined in the following.
+
+The most distinguished difference is of course the decision of a fixed release
+cycle. A fixed release cycle iterates over a given time frame and provides
+expectable release dates. Projects like Plone, GNOME and KDE projects are using
+a fixed release cycle with a duration of 6 months. It means, that each year
+there will be two major releases including a number of minor or bugfix
+releases. Also Fedora uses a similar cycle, as it is more or less bound to the
+GNOME release cycle. The PostgreSQL and PHP projects use a fixed release cycle
+with a duration of one year.
+
+Although projects like Drupal and Python do not use a fixed release cycle for
+major releases, they do however use a fixed release cycle for minor and bugfix
+releases. The Python project publishes minor releases roughly every 18 months
+and bugfix releases roughly every six months. The Drupal project publishes
+bugfix releases monthly.
+
+Only MySQL/MariaDB and Debian do not have a fixed release cycle, however at
+least the Debian project has some effort going on to provide a fixed release
+schedule.
+
+All projects however have some sort of freezes of part of the project, such as
+code, features, translatable strings, documentation and more. Freezes should
+help to confine areas where new bugs or drawbacks could appear. Of course they
+are restricted to new development and developers can still apply fixes for
+bugs. However they will be analyzed deeply before they can be applied. As such
+freezes are a vital part of all analyzed project schedules. Also, they often
+keep in effect for the released major branch. One of the most obvious
+consequences is the fact that bugfix releases only include fixes and no new
+features or user interface changes.
+
+The most interesting fact seems to be when the freezes occur and with which
+restrictions. The GNOME project as well as the Debian project have established
+a freeze shortly before their final release including code, feature, user
+interfaces, \ac{API} and string freezes. The freeze period of the GNOME project
+however has a defined start and end date, as the release schedule is a fixed
+one. The KDE project on the other hand has the different freezes much more
+spread out through the release cycle. It also makes a difference between soft
+and hard freezes. The freezes are set in order and always have a soft freeze
+before a hard freeze. This applies for features, strings and \ac{API} freezes.
+The Plone project is set somewhat in the middle having a feature freeze two
+months before the final release and then applying more and more restrictions
+during the releases of alpha, beta and release candidate versions. The Fedora
+is quite similar to that approach, however has it's feature freeze roughly
+three months before the final release. Following an alpha and beta release more
+restrictions apply.
+
+The Python project only allows new features until the first beta release which
+occurs about two months before the final release. After that point only bug
+fixes can be applied.
+
+The PHP project has changed the layout of it's schedule a lot during the last
+years on the way to a fixed yearly release schedule. Currently the feature
+freeze as in act about eight months before the final release, confining other
+freezes more and more until the first alpha release. Further beta releases
+until the final releases did only get bug fixes from there on.
+
+The not fixed release schedule of MySQL/MariaDB forces the project to establish
+criteria when specific releases can happen. As such a criteria for a feature
+freeze is the publishing of alpha releases. After that no new features are
+allowed and only bug fixes get applied. This continues until the final release
+is considered to be bug free.
+
+Like MySQL/MariaDB the Drupal project does not have a fixed release cycle and
+therefore arranges the development and freezes into different phases. Each
+phase comes with it's freezes, such as code, \ac{API}, feature, user interface
+and string freeze in this order. After all freezes have been declared a number
+of alpha, beta, release candidate and last the final release will be published.
+
+The PostgreSQL has replaced a single feature freeze with a series of commit
+fest which were explained earlier. In fact they are the only analyzed project
+which does not have a single freeze but a series of development milestones
+which limit new features and development time by time.
+
+It is also interesting to note, that every project uses some kind of alpha,
+beta and release candidate versions before publishing the final release. The
+naming is of course different. For example the GNOME project does not provide a
+special naming, except for the odd minor number, while other projects, such as
+Drupal or Debian name their release accordingly.
+
+% }}}
+
 % }}}
 
 \section{Development} % {{{
