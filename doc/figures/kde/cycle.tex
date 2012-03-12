@@ -1,0 +1,71 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \node[align=center,text width=3cm]{Duration 6 months};
+
+  \begin{scope}[line width=4mm,rotate=95]
+
+    \draw[chameleon3] (0:2cm) arc (0:15:2cm);
+    \draw[thin] (7.5:2.2cm) -- (7.5:2.8cm) node[above] {Final Release};
+
+    \draw[skyblue3] (15:2cm) arc (15:90:2cm);
+    \draw[thin] (45:2.2cm) -- (45:2.8cm) node[left, text width=2cm] {Hard API \& Message Freeze};
+
+    \draw[skyblue2] (90:2cm) arc (90:165:2cm);
+    \draw[thin] (127.5:2.2cm) -- (127.5:2.8cm) node[left, text width=3cm] {Soft Message \& API, Hard Feature Freeze};
+
+    \draw[skyblue1] (165:2cm) arc (165:180:2cm);
+    \draw[thin] (172.5:2.2cm) -- (172.5:2.8cm) node[left] {Dependency Freeze};
+
+    \draw[skyblue1!50] (180:2cm) arc (180:195:2cm);
+    \draw[thin] (187.5:2.2cm) -- (187.5:2.8cm) node[right] {Soft Feature Freeze};
+
+    \draw[thin] (225:2.2cm) -- (225:2.8cm) node[right] {Development};
+
+  \end{scope}
+
+  \begin{scope}[line width=1mm,rotate=95]
+
+    \draw[chameleon2] (45:2.15cm) arc (45:60:2.15cm);
+    \draw[chameleon2] (75:2.15cm) arc (75:90:2.15cm);
+
+    \draw[chameleon1] (105:2.15cm) arc (105:120:2.15cm);
+    \draw[chameleon1] (135:2.15cm) arc (135:150:2.15cm);
+
+    \draw[thin] (82.5:2.2cm) -- (97.5:2.8cm) -- (112.5:2.2cm);
+    \draw[thin] (90.5:2.8cm) node[left, text width=2cm] {Development Releases};
+
+  \end{scope}
+
+  \begin{scope}[line width=4mm,rotate=80]
+
+    \newcount\mycount
+    \foreach \angle in {150,300,...,3599}
+    {
+      \mycount=\angle\relax
+      \divide\mycount by 10\relax
+      \draw[aluminium2,thin] (\the\mycount:18mm) -- (\the\mycount:22mm);
+    }
+
+  \end{scope}
+
+  \draw[aluminium4] (95:2.2cm) arc (95:440:2.2cm);
+  \draw[aluminium4] (95:1.8cm) arc (95:440:1.8cm);
+
+  \draw[aluminium4] (95:2.2cm) -- (85:2.02cm) -- (95:1.8cm);
+  \draw[aluminium4] (80:22mm) -- (80:18mm);
+
+\end{tikzpicture}
+
+\end{document}
+

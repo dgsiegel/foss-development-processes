@@ -1,0 +1,62 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \node[align=center,text width=3cm]{Duration 18 months};
+
+  \begin{scope}[line width=4mm,rotate=95]
+
+    \draw[chameleon3] (0:2cm) arc (0:15:2cm);
+    \draw[thin] (7.5:2.2cm) -- (7.5:2.8cm) node[above] {Final Release};
+
+    \draw[skyblue3] (15:2cm) arc (15:60:2cm);
+    \draw[thin] (37.5:2.2cm) -- (37.5:2.8cm) node[left, text width=1.2cm] {Feature Freeze};
+
+    \draw[thin] (240:2.2cm) -- (240:2.8cm) node[right] {Development};
+
+  \end{scope}
+
+  \begin{scope}[line width=1mm,rotate=95]
+
+    \draw[chameleon2] (15:2.15cm) arc (15:45:2.15cm);
+
+    \draw[chameleon1] (45:2.15cm) arc (45:75:2.15cm);
+
+    \draw[chameleon1] (75:2.15cm) arc (75:135:2.15cm);
+
+    \draw[thin] (82.5:2.2cm) -- (98.5:2.8cm) -- (112.5:2.2cm);
+    \draw[thin] (98.5:2.8cm) node[left, text width=2cm] {Development Releases};
+
+  \end{scope}
+
+  \begin{scope}[line width=4mm,rotate=80]
+
+    \newcount\mycount
+    \foreach \angle in {150,300,...,3599}
+    {
+      \mycount=\angle\relax
+      \divide\mycount by 10\relax
+      \draw[aluminium2,thin] (\the\mycount:18mm) -- (\the\mycount:22mm);
+    }
+
+  \end{scope}
+
+  \draw[aluminium4] (95:2.2cm) arc (95:440:2.2cm);
+  \draw[aluminium4] (95:1.8cm) arc (95:440:1.8cm);
+
+  \draw[aluminium4] (95:2.2cm) -- (85:2.02cm) -- (95:1.8cm);
+  \draw[aluminium4] (80:22mm) -- (80:18mm);
+
+\end{tikzpicture}
+
+\end{document}
+
