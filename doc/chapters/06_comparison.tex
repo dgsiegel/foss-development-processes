@@ -460,6 +460,124 @@ Drupal or Debian name their release accordingly.
 \section{Development} % {{{
 \label{sec:Development}
 
+While the release cycle defines the process around new releases, the
+development process of a project defines the actual shape of a project. As such
+it is vital to understand how projects lead, divide and structure their work.
+
+\subsection{Development Lead} % {{{
+\label{sub:Development Lead}
+
+The development of a project is always lead by a single person or a group of
+people. In the analyzed projects there was no clue that the development just
+happened without a form of leadership. The opposite was the case, each project
+showed a hierarchical structure when it came to decisions about the development
+of a project.
+
+Often the development is lead by the founder, if he is still in the project.
+In the Python, Drupal and PHP projects the original founder has a great
+influence when it comes to decide on changes or new features. Projects like
+Fedora, MariaDB, Plone and PostgreSQL have established leadership groups who
+define the direction of the project as well as deciding over new features.
+While the Fedora and Plone project have an arbitrary or elected group they do
+not necessarily provide enhancements themselves. The MariaDB and PostgreSQL
+projects on the other hand are mostly enhanced and lead by the same group.
+
+While the KDE and GNOME projects have established core or release teams they do
+not necessarily have power on areas other than their duties. Also due to their
+modular structure, the concrete development is mostly lead by the maintainers
+of single areas. A minor exception might be GNOME's design team which is
+involved in the shaping of user interfaces. As however cannot dictate other
+GNOME members what to do, the above assumption still holds.
+
+The Debian project is structured very hierarchically and as such the overall
+direction is set by the elected project leader. The technical committee then
+looks after the concrete implementation while the single team leaders are in
+place for certain areas of the project.
+
+% }}}
+
+\subsection{Development Workflow} % {{{
+\label{sub:Development Workflow}
+
+The development workflow of a project defines how changes and enhancements are
+brought into the project. Some of the analyzed projects have established a
+feature inclusion process which will be highlighted in the next section.
+
+In all analyzed projects it is possible to commit small patches and
+enhancements directly to the project's repository or let it commit by a core
+contributor if one has not enough rights. Such changes are not tied to an
+existent feature inclusion process. As such this often only comprises bug fixes
+and other changes of that size. This is often assisted by a bug tracking system
+each of the analyzed project has.
+
+It seems that all changes committed to the repositories are reviewed by other
+members of the project. In case of not gaining acceptance the patch is often
+discussed in the project's mailing lists or other suitable means of
+communication. It is also possible that patches are sent to the mailing list or
+to a bug tracking system and discussed there before being applied. Quite all
+projects have some sort of team leaders or maintainers who can decide about a
+certain patch for a certain subsystem of the project.
+
+% }}}
+
+\subsection{Feature Inclusion Process} % {{{
+\label{sub:Feature Inclusion Process}
+
+The feature inclusion process defines, if established, how and when features or
+big changes come into a project. In the analyzed projects a quite diverse
+passel of processes has been found. It ranges from a very structured and well
+documented process like the Python project has to a more dynamic approach like
+the KDE project uses.
+
+The most structured and well laid-out process is Python's \ac{PEP} process. It
+defines a well documented approach of new features and big changes to the
+project from it's inception until either acceptance or withdrawal. This process
+seems to work well for the Python community as well for development, community
+and leadership processes.
+
+Interestingly other project's started to adopt this process with minor changes.
+The \ac{PLIP} process which is used by the Plone project for example only uses
+it for development enhancements and not for any community issue. As such the
+process is a bit simpler and more focused to solely development than the
+\ac{PEP} process. 
+
+Also the PHP project adopted a version of the \ac{PEP} process which is called
+\ac{RFC} process. As it also only focuses on development it is more similar to
+the \ac{PLIP} process. A minor difference might be the separate voting step
+over each proposal, which is not existent in the other two.
+
+A bit more dynamic approach is the Drupal initiative process where each Drupal
+developer can propose an initiative with a certain goal. At a certain point in
+time the Drupal project founder and leader Dries Buytaert chooses the
+initiatives the project should follow for the next release.
+
+Similar to this, but a bit more structured and not backed by a single person is
+the feature based development process of GNOME and Fedora. In both projects,
+features can be proposed which are then chosen by the GNOME release team and
+the \ac{FESCo}. In both projects the proposal follow a certain format and are a
+bit more structured when compared to Drupal initiatives. Also, in both projects
+the named groups have the possibility to drop or postpone a certain feature if
+it is not ready for the upcoming release.
+
+The Debian project uses goals which can be proposed by community members and
+are chosen by the release team. Antithetic to the previous projects the goal is
+however just a single wording with no structure at all. No concrete steps,
+involved parties, code or other are trailed to the goal.
+
+The KDE and MariaDB projects use an even more dynamic approach where members
+can propose features, but they have to picked up and implemented by developers.
+As such there is no real instance who could prohibit the development of a
+certain feature.
+
+The PostgreSQL project is the only project which has removed such a specific
+inclusion process altogether and replaced it with a series of commit fests. A
+feature can be brought into a fest and evolves over time until it can be
+committed. It can be said, that such a series of feature reviews is a series of
+feature inclusion processes where however the goal is always to get a certain
+enhancement into the project instead of discarding it directly.
+
+% }}}
+
 % }}}
 
 % }}}
