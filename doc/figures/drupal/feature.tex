@@ -1,0 +1,48 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=7em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+ \node[box]
+   (proposal) {Feature Proposal};
+ \node[minimum height=3em, below=0.5cm of proposal]
+   (dummy) {};
+ \node[box, below=0.5cm of dummy]
+   (withdrawn) {Withdrawn};
+
+ \node[box, right=1cm of proposal]
+   (discussion) {Discussion};
+ \node[box, below=0.5cm of discussion]
+   (decision) {Decision};
+ \node[minimum height=3em, below=0.5cm of decision]
+   (rejected) {};
+
+ \node[box, right=1cm of discussion]
+   (implementation) {Implementation};
+ \node[minimum height=3em, below=0.5cm of implementation]
+   (review) {};
+ \node[box, below=0.5cm of review]
+   (accepted) {Accepted};
+
+ \draw[draw, -latex] (proposal.south) -- (withdrawn.north);
+ \draw[draw, -latex] (proposal.east) -- (discussion.west);
+
+ \draw[draw, -latex] (discussion.south) -- (decision.north);
+ \path[draw, -latex] (decision.east) -| ($(decision.east) + (0.5cm,0)$) |- (implementation.west);
+
+ \draw[draw, -latex] (implementation.south) -- (accepted.north);
+
+\end{tikzpicture}
+
+\end{document}
+
