@@ -1,0 +1,49 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=20em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+ \node[box]
+   (research) {Research Question};
+ \node[box, below=2em of research]
+   (category) {Determination of category definition and levels of abstraction};
+ \node[box, below=2em of category]
+   (category2) {Step by step formulation and subsumption of inductive categories};
+ \node[box, below left=2em and -3.75cm of category2, text width=10em]
+   (revision) {Revision of categories};
+ \node[box, right=1.3em of revision, text width=8em]
+   (formative) {Formative check of reliability};
+ \node[box, below left=7em and -3.75cm of category2, text width=10em]
+   (final) {Final working through the content};
+ \node[box, right=1.3em of final, text width=8em]
+   (summative) {Summative check of reliability};
+ \node[box, below=12em of category2]
+   (interpretation) {Interpretation of results};
+
+ \draw[draw, -latex] (research.south) -- (category.north);
+ \draw[draw, -latex] (category.south) -- (category2.north);
+ \draw[draw, -latex] (category2.south) -- (revision.north);
+ \draw[draw, -latex] (revision.south) -- (final.north);
+ \draw[draw, -latex] (final.south) -- (interpretation.north);
+
+ \draw[draw, -latex] (revision.east) -- (formative.west);
+ \draw[draw, -latex] (final.east) -- (summative.west);
+
+ \path[draw, -latex] (formative.east) -| +(right:1em) |- (research.east);
+ \path[draw, -latex] (formative.east) -| +(right:1em) |- (category.east);
+ \path[draw, -latex] (interpretation.west) -| +(left:1em) |- (research.west);
+
+\end{tikzpicture}
+
+\end{document}
+
