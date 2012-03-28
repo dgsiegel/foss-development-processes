@@ -1,0 +1,42 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=20em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+ \node[box]
+   (sampling) {Theoretical Sampling};
+ \node[box, below=2em of sampling]
+   (collection) {Data Collection};
+ \node[box, below=2em of collection]
+   (ordering) {Data Ordering};
+ \node[box, below=2em of ordering]
+   (analysis) {Data Analysis};
+ \node[box, below=2em of analysis]
+   (development) {Theory Development};
+ \node[box, below=2em of development]
+   (saturation) {Theory Saturation};
+ \node[box, below=2em of saturation]
+   (closure) {Research Closure};
+
+ \draw[draw, -latex] (sampling.south) -- (collection.north);
+ \draw[draw, -latex] (collection.south) -- (ordering.north);
+ \draw[draw, -latex] (ordering.south) -- (analysis.north);
+ \draw[draw, -latex] (analysis.south) -- (development.north);
+ \draw[draw, -latex] (development.south) -- (saturation.north);
+ \draw[draw, -latex] (saturation.south) -- +(0,-1em) node[right] {Saturated} -- (closure.north);
+ \path[draw, -latex] (saturation.east) -- +(right:1em) node[right=0.7em, rotate=90] {Not Saturated} |- (sampling.east);
+
+\end{tikzpicture}
+
+\end{document}
+
