@@ -1,0 +1,48 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+
+  \node[box]
+    (architectural) {Architectural Spike};
+  \node[box, above=3em of architectural]
+    (user) {User Stories};
+  \node[box, right=4em of architectural]
+    (planning) {Release Planning};
+  \node[box, below=3em of planning]
+    (spike) {Spike};
+  \node[box, right=4em of planning]
+    (iteration) {Iteration};
+  \node[box, right=4em of iteration]
+    (acceptance) {Acceptance Tests};
+  \node[box, right=4em of acceptance]
+    (release) {Small Releases};
+
+  \draw[->,latex-,line width=0.1em] (0:35.4em) arc (0:360:6em);
+
+  \draw[->,-latex] (architectural) to (planning);
+  \draw[->,-latex] (user) node[below right=2em and 8em] {Requirements} to (planning) ;
+  \draw[->,-latex] (planning) to (iteration);
+  \draw[->,-latex] (iteration) to (acceptance);
+  \draw[->,-latex] (acceptance) to (release);
+
+  \draw[->,-latex,bend left] (user) node[above right=5em and 14em] {Test Scenarios} to (acceptance);
+  \draw[->,latex-,bend left] (spike) to (planning) node[below left=0em and 1em,text width=5em] {Uncertain Estimates};
+  \draw[->,-latex,bend right] (spike) to (planning) node[below right=0em and 1em,text width=5em] {Confident Estimates};
+  \draw[->,-latex,bend right] (iteration) node[above left=3em and 5em] {New User Story} to (planning);
+  \draw[->,-latex,bend left] (acceptance) node[below left=3em and 6em] {Bugs} to (iteration);
+
+\end{tikzpicture}
+
+\end{document}

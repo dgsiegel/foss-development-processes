@@ -1,0 +1,38 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=12em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+
+  \node[box]
+    (requirements) {Requirements};
+  \node[box, below right=2em and -10em of requirements]
+    (analysis) {Analysis};
+  \node[box, below right=2em and -10em of analysis]
+    (design) {Design};
+  \node[box, below right=2em and -10em of design]
+    (implementation) {Implementation};
+  \node[box, below right=2em and -10em of implementation]
+    (verification) {Verification};
+  \node[box, below right=2em and -10em of verification]
+    (operations) {Operations};
+
+  \draw[-latex, bend left] (requirements.east) to (analysis.15);
+  \draw[-latex, bend left] (analysis.east) to (design.15);
+  \draw[-latex, bend left] (design.east) to (implementation.15);
+  \draw[-latex, bend left] (implementation.east) to (verification.15);
+  \draw[-latex, bend left] (verification.east) to (operations.15);
+
+\end{tikzpicture}
+
+\end{document}

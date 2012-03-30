@@ -1,0 +1,36 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+
+  \node[box]
+    (sprints) {Sprints};
+  \node[box, left=4em of sprints]
+    (planning) {Planning \& System Architecture};
+  \node[box, right=4em of sprints]
+    (closure) {Closure};
+
+  \draw[->,latex-,line width=0.1em] (5:6em) arc (5:85:6em) node[right=2em] {Wrap};
+  \draw[->,latex-,line width=0.1em] (95:6em) node[left=2.5em] {Develop} arc (95:175:6em);
+  \draw[->,latex-,line width=0.1em] (185:6em) arc (185:265:6em) node[left=2em] {Adjust};
+  \draw[->,latex-,line width=0.1em] (275:6em) node[right=2.5em] {Review} arc (275:355:6em);
+
+  \draw[->,latex-] (planning.west) -- +(-2em,0);
+  \draw[->,-latex] (planning.east) to (sprints.west);
+  \draw[->,-latex] (sprints.east) to (closure.west);
+  \draw[->,-latex] (closure.east) -- +(2em,0);
+
+\end{tikzpicture}
+
+\end{document}
