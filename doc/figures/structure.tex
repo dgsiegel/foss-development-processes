@@ -1,0 +1,32 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+\usetikzlibrary{arrows}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+  \draw[thin] (72:3.95) -- (72:4.5) node[right] {Passive Users};
+
+  \node[fill=chameleon1,draw,star,star points=30,star point ratio=0.85,inner sep=80] {};
+  \draw[fill=skyblue1] (0,0) circle (3);
+  \draw[fill=skyblue2] (0,0) circle (2);
+  \draw[fill=skyblue3] (0,0) circle (1);
+
+  \draw[thin] (40:3) -- (40:4.5) node[right] {Active Users};
+  \draw[thin] (0:2) -- (0:4.5) node[right] {Co-Developers};
+  \draw[thin] (-40:1) -- (-40:4.5) node[right] {Core Developers};
+
+  \draw[thin,<-,>=*] (140:0.5) -- (140:4.5) node[left] {Initiator};
+  \draw[thin,<-,>=*] (230:0.5) -- (230:4.5) node[left,text width=5em] {Release\\Coordinator};
+
+\end{tikzpicture}
+
+\end{document}
