@@ -1,0 +1,51 @@
+\documentclass{standalone}
+
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{../styles/tangocolors}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\begin{document}
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, text width=7em, minimum height=3em, text centered]
+
+\begin{tikzpicture}
+
+  \node[draw,circle] (initiation) {Initiation};
+
+  \node[draw,circle,left=1.55 of initiation,text width=110] (cr) {};
+  \node[box,above left=-0.3 and 2.5 of initiation] (contribution) {Contribution};
+  \node[box,below left=-0.3 and 2.5 of initiation] (review) {Review};
+
+  \node[draw,circle,right=1.55 of initiation,text width=110] (dp) {};
+  \node[box,above right=-0.3 and 2.5 of initiation] (development) {Development};
+  \node[box,below right=-0.3 and 2.5 of initiation] (parallel) {Parallel};
+
+  \node[box,above=1.5 of initiation] (testing) {Pre-Commit Testing};
+  \node[box,below=1.5 of initiation] (production) {Production};
+
+  \draw[->,-latex,bend left] (initiation) to (cr);
+  \draw[->,-latex,bend left] (cr) to (testing);
+  \draw[->,-latex,bend left] (testing) to (dp);
+  \draw[->,-latex,bend left] (dp) to (production);
+  \draw[->,-latex,bend left] (production) to (initiation);
+
+  \draw[->,-latex,bend left,dashed] (production) to (cr);
+
+  \draw[->,-latex,bend left,dashed] (contribution) to (review);
+  \draw[->,-latex,bend left,dashed] (review) to (contribution);
+
+  \draw[->,-latex,bend left,dashed] (development) to (parallel);
+  \draw[->,-latex,bend left,dashed] (parallel) to (development);
+
+  \draw[->,-latex,bend left,dashed] (testing) to (cr);
+
+  \draw[thin] (cr) -- (210:6) node[left] {Community};
+  \draw[thin] (dp) -- (330:6) node[right] {Community};
+
+\end{tikzpicture}
+
+\end{document}
