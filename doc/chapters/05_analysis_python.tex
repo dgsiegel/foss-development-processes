@@ -63,21 +63,24 @@ the development of Python \cite{PythonCoreDeveloper}.
   \caption{Monthly activity of the most active Python Core Developers}
 \end{figure}
 
-\begin{description}
-  \item[Developer] One is able to gain the \emph{Developer} role when he has
-    consistently shown contributions to Python. There is however no set rule of
-    how many patches or resolved issues are needed. It is possible to request
-    the Developer role by asking any other person, who already has the
-    Developer role. They then will decide if the requester is ready to gain the
-    additional privileges. The enquired person will sequently act as a mentor
-    for the requester.
-  \item[Core Developer] The way to become a Core Developer is quite similar to
-    the Developer role above. One must have consistently contributed patches,
-    which meet a certain quality standard. Then normally a Core Developer will
-    offer the chance to become a Core Developer. This person will also act as a
-    mentor for the new Core Developer. Also, they will watch if the quality of
-    the contributed patches was met and the development process understood.
-    However it is also possible to request the Core Developer role.
+\paragraph{Developer}
+
+One is able to gain the \emph{Developer} role when he has consistently shown
+contributions to Python. There is however no set rule of how many patches or
+resolved issues are needed. It is possible to request the Developer role by
+asking any other person, who already has the Developer role. They then will
+decide if the requester is ready to gain the additional privileges. The
+enquired person will sequently act as a mentor for the requester.
+
+\paragraph{Core Developer}
+
+The way to become a Core Developer is quite similar to the Developer role
+above. One must have consistently contributed patches, which meet a certain
+quality standard. Then normally a Core Developer will offer the chance to
+become a Core Developer. This person will also act as a mentor for the new Core
+Developer. Also, they will watch if the quality of the contributed patches was
+met and the development process understood. However it is also possible to
+request the Core Developer role.
 
 \begin{figure}[htbp]
   \centering
@@ -85,12 +88,13 @@ the development of Python \cite{PythonCoreDeveloper}.
   \caption{Yearly overview of commits to CPython}
 \end{figure}
 
-  \item[Expert] Each Core Developer has the possibility to become an expert in
-    a certain area of the Python project. An expert is the so called maintainer
-    of his field of interest and therefore responsible for changes and new
-    features to those areas. All issues, help requests and decisions will be
-    forwarded to the expert. Experts may also be asked to decide on features or
-    bugs.
+\paragraph{Expert}
+
+Each Core Developer has the possibility to become an expert in a certain area
+of the Python project. An expert is the so called maintainer of his field of
+interest and therefore responsible for changes and new features to those areas.
+All issues, help requests and decisions will be forwarded to the expert.
+Experts may also be asked to decide on features or bugs.
 
 \begin{figure}[hbtp]
   \centering
@@ -98,12 +102,12 @@ the development of Python \cite{PythonCoreDeveloper}.
   \caption{Time based view on commits of Core Contributors}
 \end{figure}
 
-  \item[Benevolent Dictator For Life (BDFL)] Guido van Rossum is the only
-    person who holds this title. As the leader of the Python project, he has
-    the privilege to outvote and overrule any decision made by an Expert or
-    Core Developer. However his decisions should always be in favour of the
-    project, as the word \emph{benevolent} states.
-\end{description}
+\paragraph{Benevolent Dictator For Life (BDFL)}
+
+Guido van Rossum is the only person who holds this title. As the leader of the
+Python project, he has the privilege to outvote and overrule any decision made
+by an Expert or Core Developer. However his decisions should always be in
+favour of the project, as the word \emph{benevolent} states.
 
 % }}}
 
@@ -232,44 +236,56 @@ status. From there, the \ac{PEP} workflow begins.
   \caption{Possible paths of the status of \acp{PEP}}
 \end{figure}
 
-\begin{description}
+\paragraph{Draft}
 
-  \item[Draft] This is the default state of any new \ac{PEP} on submission, as
-    described above.
+This is the default state of any new \ac{PEP} on submission, as described
+above.
 
-  \item[Deferred] A \ac{PEP} Editor can always, instead of assigning the Draft
-    status, defer a \ac{PEP}. Reasons for a deferral could be duplication,
-    being poorly written, lack of motivation by the author or not being in line
-    with the Python philosophy.
+\paragraph{Deferred}
 
-  \item[Accepted] A \ac{PEP} will be able to get this status assigned, if all
-    \ac{PEP} criteria are matched. This includes a precise formulation of the
-    \ac{PEP}, not breaking backwards compatibility and finally be accepted by
-    the \ac{BDFL}. However the criteria are not set in stone and basically a
-    \ac{PEP} just have to be accepted by the \ac{BDFL} to get accepted.
+A \ac{PEP} Editor can always, instead of assigning the Draft status, defer a
+\ac{PEP}. Reasons for a deferral could be duplication, being poorly written,
+lack of motivation by the author or not being in line with the Python
+philosophy.
 
-  \item[Rejected] At this stage a \ac{PEP} can still be rejected. Mostly this
-    status gets assigned, if it turns out that the original idea did not fit
-    the Python project that well. But basically it is just a option to drop a
-    \ac{PEP} even, after it was either accepted or not deferred.
+\paragraph{Accepted}
 
-  \item[Withdrawn] A \ac{PEP} can also always be withdrawn by the author of a
-    \ac{PEP}. This could help if an author does not want to work on a \ac{PEP}
-    anymore, for example because there is a better solution available.
+A \ac{PEP} will be able to get this status assigned, if all \ac{PEP} criteria
+are matched. This includes a precise formulation of the \ac{PEP}, not breaking
+backwards compatibility and finally be accepted by the \ac{BDFL}. However the
+criteria are not set in stone and basically a \ac{PEP} just have to be accepted
+by the \ac{BDFL} to get accepted.
 
-  \item[Final] Once a \ac{PEP} has been accepted and has a reference implementation
-    available, it can get the status Final by the \ac{BDFL}.
+\paragraph{Rejected}
 
-  \item[Replaced] Mostly for Informational \acp{PEP}, subsequent versions can
-    replace a \ac{PEP}. In this case the original \ac{PEP} would be marked as
-    Replaced and superseded by the new \ac{PEP}.
+At this stage a \ac{PEP} can still be rejected. Mostly this status gets
+assigned, if it turns out that the original idea did not fit the Python project
+that well. But basically it is just a option to drop a \ac{PEP} even, after it
+was either accepted or not deferred.
 
-  \item[Active] Informational and Process \ac{PEP} can also be marked as Active, if
-    they never will be completed. For example \ac{PEP} 1 \cite{Warsaw2000}, which
-    describes the process of \acp{PEP} has it's status set to Active, as it is
-    continually improved and adapted to new workflows.
+\paragraph{Withdrawn}
 
-\end{description}
+A \ac{PEP} can also always be withdrawn by the author of a \ac{PEP}. This could
+help if an author does not want to work on a \ac{PEP} anymore, for example
+because there is a better solution available.
+
+\paragraph{Final}
+
+Once a \ac{PEP} has been accepted and has a reference implementation available,
+it can get the status Final by the \ac{BDFL}.
+
+\paragraph{Replaced}
+
+Mostly for Informational \acp{PEP}, subsequent versions can replace a \ac{PEP}.
+In this case the original \ac{PEP} would be marked as Replaced and superseded
+by the new \ac{PEP}.
+
+\paragraph{Active}
+
+Informational and Process \ac{PEP} can also be marked as Active, if they never
+will be completed. For example \ac{PEP} 1 \cite{Warsaw2000}, which describes
+the process of \acp{PEP} has it's status set to Active, as it is continually
+improved and adapted to new workflows.
 
 \begin{figure}[htbp]
   \centering
