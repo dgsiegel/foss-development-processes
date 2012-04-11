@@ -7,7 +7,7 @@ proposed. This first part of this chapter makes heavy use of the grounded
 theory research method presented earlier. The second part of this chapter will
 then use the proposed catalogue to analyze further projects using a qualitative
 analysis. Obviously this is a perfect use case for the already presented
-research method for qualitative content analysis by Mayring.
+research method for qualitative content analysis by \textcite{Mayring2000}.
 
 \input{chapters/05_analysis_drupal}
 
@@ -21,131 +21,150 @@ research method for qualitative content analysis by Mayring.
 
 \input{chapters/05_analysis_kde}
 
-\section{Definition and Origin of the Catalogue} % {{{
+\section{Proposition for a Project Analysis Catalogue} % {{{
 
-To characterize the development process of FOSS project, the following
-catalogue was established. By covering all listed points one a project should
-have been analysed thoroughly and lead to a reasonable breakdown of all
-projects.
+To characterize the development processes of \ac{FOSS} projects, the following
+catalogue was established based on the previous gathered data and analysis. By
+covering all listed points one a project should have been analysed thoroughly
+and lead to a reasonable breakdown of all projects.
 
-\begin{description}
+\subsection{Description of the Project}
 
-  \item[Description of the Project] A general description about the project
-    should be provided to inform the reader about the goals and current state
-    of a project.
+A general description about the project should be provided to inform about the
+goals and current state of a project. They are essential to put a project under
+the right light and make it comparable with similar projects.
 
-  \item[Project Category] In order to provide methods to compare projects, the
-    project category can help to contrast projects of the same and other
-    categories. Examples are programming languages or content management
-    systems.
+\subsection{Project Category}
 
-  \item[Scope of Analysis] As FOSS projects often are hard to analyze due to
-    their size and unclear definition of modules, the scope will be limited to
-    a well known subset of the whole project.
+In order to provide methods to compare projects, the project category can help
+to contrast projects of the same and other categories. As such it doesn't
+provide too much information about the project itself, but is useful for later
+comparisons with other projects.
 
-  \item[License] Some projects use their own license and some use the well
-    known General Public License. It is interesting to find out whether this
-    makes any difference in the development process of a module.
+\subsection{Scope of Analysis}
 
-  \item[History] As only projects with a quite long history are analyzed it
-    makes sense to glance at the project's history.
+As \ac{FOSS} projects often are hard to analyze due to their size and unclear
+definition of modules, the scope will be limited to a well known subset of the
+whole project. This helps to provide a thorough analysis without leaving things
+unattended.
 
-  \begin{description}
+\subsection{License}
 
-    \item[Founders] In some projects, the original founders are still present
-      and have a influential voice, in others the original authors are no
-      longer involved. To analyzed this further, the authors have to be
-      introduced and their role will be analyzed in the community part.
+Without being licensed under a \ac{FOSS} license, a project cannot be counted
+as a \ac{FOSS} project. Listing all used licenses can ensure this fact. However
+it is also interesting to see whether development models and communities differ
+if they are using a different \ac{FOSS} license.
 
-    \item[Project Age] Projects always need time to evolve and to find their
-      best development process. As this needs time, the project age can give
-      some information in what development process state this project is and
-      how it will evolve in the future.
+\subsection{History}
 
-  \end{description}
+A project's history shaped the community and the structure of a project to the
+state it can be found today. As such the analysis of the history can bring up
+interesting findings.
 
-  \item[Community] The people behind the project are the driving force. Without
-    them, a project would not exist. Therefore it is important to analyze the
-    diverse community of a project.
+\paragraph{Founders}
 
-  \begin{description}
+In some projects, the original founders are still present and have a
+influential voice, in others the original authors are no longer involved. To
+analyse this further, the authors have to be introduced and their role will be
+analysed in the community part.
 
-    \item[Size of the Community] An important measure is the approximate size
-      of a community. Several structural changes inside the project can depend
-      on this size.
+\paragraph{Project Age}
 
-    \item[Communication inside the Project] The communication is a vital thing
-      in an open project. It is interesting to compare the different methods of
-      communication in several projects depending on their development
-      structure and size.
+Projects always need time to evolve and to find their best development process.
+As this needs time, the project age can give some information in what
+development process state this project is and how it will evolve in the future.
 
-    \item[Conferences and Meet-ups] Meetings of developers are an important
-      element of the development process in FOSS projects. Also it shows, that
-      there is enough interest available to provide the money needed for
-      preparing such events.
+\subsection{Community}
 
-    \item[Roles] The development process is often defined and lead by important
-      roles in the project. Also, depending on what role a person has in the
-      project, his influence varies. 
+The people behind the project are the driving force. Without them, a project
+would not exist. Therefore it is important to analyze the diverse community of
+a project.
 
-    \item[Role of the Founders] In some projects the founders are still
-      actively involved and in some not. Depending on that, the founders often
-      have a very important role in the project development process.
+\paragraph{Size of the Community}
 
-  \end{description}
+An important measure is the approximate size of a community. Several structural
+decisions and changes inside the project can depend on this size.
 
-  \item[Release Process] In the FOSS world an often heard statement is that a
-    new version will be released when it is ready. In fact however quite all
-    projects have a certain release schedule or process they follow.
+\paragraph{Communication inside the Project}
 
-  \begin{description}
+The communication is a vital thing in an open project. It is interesting to
+compare the different methods of communication in several projects depending on
+their development structure and size.
 
-    \item[Version Naming] Each project provides a specific version naming
-      scheme to which they adopt and which characterizes major, minor or bug
-      fixing releases. This information is vital to understand the project's
-      release schedule.
+\paragraph{Conferences and Meet-ups}
 
-    \item[Characterization of Major and Minor Releases] Most projects provide
-      some kind of major releases with new features which is often incompatible
-      with previous releases, minor releases which mostly are backwards
-      compatible and provide new features and finally bug fixing only releases.
-      This however differs from project to project.
+Meetings of developers are an important element of the development process in
+\ac{FOSS} projects. It also shows, that there is enough interest available to
+provide the money needed for preparing such events.
 
-    \item[Release Schedule] Even if there are no fixed release cycles, most
-      projects have nevertheless a release schedule in action. The release
-      schedule defines deadlines and important steps in the process of creating
-      a new release.
+\paragraph{Roles}
 
-    \item[Important Steps in the Schedule] These often define freezes or
-      specific points in time when all members of the project are restricted to
-      for example not provide new code in order to increase the stability of
-      the new release.
+The development process is often defined and lead by important roles in the
+project. Also, depending on what role a person has in the project, his
+influence varies.
 
-  \end{description}
+\paragraph{Role of the Founders}
 
-  \item[Development] The actual development is closely interweaved with the
-    release process and defines how and when the development of a project takes
-    place.
+In some projects the founders are still actively involved and in some not.
+Depending on that, the founders often have a very important role in the project
+development process.
 
-  \begin{description}
+\subsection{Release Process}
 
-    \item[Development Lead] In fact, most FOSS projects are lead by groups of
-      people who define new features and lead the development process.
-      Additionally there are hardly any projects which have a completely
-      unstructured development process and have no development leaders in
-      place.
+The release process is the action which leads to new releases. As this is a
+very essential part of the development processes it will be analysed with the
+following classification.
 
-    \item[Development Workflow] The actual development process as often defined
-      by the project leaders provides ways and methods to propose and develop
-      new features for the upcoming release.
+\paragraph{Version Naming}
 
-    \item[Feature Inclusion Process] This inclusion process is used by some
-      projects which defines process how and when new features and come into
-      the project.
+Each project provides a specific version naming scheme to which they adopt and
+which characterizes major, minor or bug fixing releases. This information is
+vital to understand the project's release schedule.
 
-  \end{description}
+\paragraph{Characterization of Major and Minor Releases}
 
-\end{description}
+Most projects provide some kind of major and minor releases where major
+releases do come with new features often backwards incompatible changes. Minor
+releases on the other hand often only contain fixes. It is now interesting to
+see where and how the line between the two is drawn.
+
+\paragraph{Release Schedule}
+
+The release schedule defines the concrete plan up to a new release and is often
+either time or causal dependent. As they define deadlines or important steps in
+the process of creating new releases it is most interesting to compare
+different schedules.
+
+\paragraph{Important Steps in the Schedule}
+
+These often define freezes or specific points in time when all members of the
+project are restricted to for example not provide new code in order to increase
+the stability of the new release.
+
+\subsection{Development}
+
+The actual development is closely interweaved with the release process and
+defines how and when the development of a project takes place.
+
+\paragraph{Development Lead}
+
+It is hardly imaginable that there exist projects which have a completely
+unstructured development process and have no development leaders in place. This
+point covers, if existent, groups of people who define new features and lead
+the development process.
+
+\paragraph{Development Workflow}
+
+The actual development process as often defined by the project leaders provides
+ways and methods to propose and develop new features for the upcoming release.
+It also covers the daily development and how new code finds it's way into the
+project's repositories.
+
+\paragraph{Feature Inclusion Process}
+
+In some way features find their way into a project. Whether projects do have
+established a concrete process for how and when new features come into a
+project or not will be capped in this point.
 
 % }}}
 
