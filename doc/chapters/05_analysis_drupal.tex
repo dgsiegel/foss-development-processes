@@ -46,7 +46,19 @@ The communication possibilities sprawl from forums on \url{drupal.org}, mailing
 lists and discussion groups on groups.drupal.org. Additionally there exist a
 wide range of \ac{IRC} channels for different aspects of the Drupal project.
 
-\begin{table}
+Next to the last-mentioned classification of users and developers, people can
+-- provided that they are working on Drupal Core -- classified into one of the
+following categories \cite{DrupalCoreDevelopers}.
+
+\paragraph{Founder and Lead Developer}
+
+Dries Buytaert, the founder of the Drupal project, holds the role of the
+project leader and therefore decides about the direction in which the project
+is heading to. Furthermore he is the one, who most often takes a decision and
+also often makes the last decision. Though in some cases he also gives away
+this control to a trusted person.
+
+\begin{table}[h!t]
   \centering
   \begin{tabularx}{\textwidth}{XXl}
     \toprule
@@ -73,26 +85,6 @@ wide range of \ac{IRC} channels for different aspects of the Drupal project.
   \end{tabularx}
   \caption{Previous and planned DrupalCon events \cite{DrupalWalling}.}
 \end{table}
-
-Next to the last-mentioned classification of users and developers, people can
--- provided that they are working on Drupal Core -- classified into one of the
-following categories \cite{DrupalCoreDevelopers}.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{drupal/commits_by_year}
-  \caption{Yearly overview of commits to Drupal Core. The peak in 2009 and 2010
-  is most likely related to the development of Drupal 7 which was released in
-  early 2011.}
-\end{figure}
-
-\paragraph{Founder and Lead Developer}
-
-Dries Buytaert, the founder of the Drupal project, holds the role of the
-project leader and therefore decides about the direction in which the project
-is heading to. Furthermore he is the one, who most often takes a decision and
-also often makes the last decision. Though in some cases he also gives away
-this control to a trusted person.
 
 \paragraph{Core Committer}
 
@@ -128,6 +120,14 @@ All developers who bring in code or documentation for Drupal Core are known as
 Core Contributors. All modification proposals are looked through another Core
 Committer in a review process and then either accepted or dropped.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{drupal/commits_by_year}
+  \caption{Yearly overview of commits to Drupal Core. The peak in 2009 and 2010
+  is most likely related to the development of Drupal 7 which was released in
+  early 2011.}
+\end{figure}
+
 % }}}
 
 \subsection{Release Process} % {{{
@@ -150,6 +150,12 @@ following.
   \caption{Major releases of Drupal.}
 \end{figure}
 
+\paragraph{Code Thaw}
+
+After each major release a new branch will be created in the Drupal Core
+repository. In this phase all new features and modifications can be discussed
+and added. No restrictions apply.
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{drupal/punchcard}
@@ -157,12 +163,6 @@ following.
   tendency to evenings during the week and Sundays which could be interpreted
   with a more community driven project.}
 \end{figure}
-
-\paragraph{Code Thaw}
-
-After each major release a new branch will be created in the Drupal Core
-repository. In this phase all new features and modifications can be discussed
-and added. No restrictions apply.
 
 \paragraph{Code Slush}
 
