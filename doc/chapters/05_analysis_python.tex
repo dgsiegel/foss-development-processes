@@ -14,19 +14,19 @@ the subject of this analysis will be CPython.
 
 \subsection{History} % {{{
 
-The creator of Python, Guido van Rossum, conceived and implemented Python in
+The creator of Python, Guido van Rossum, conceived and implemented Python
 around 1989 at the CWI Institute in the Netherlands \cite{Venners2003}. Python
 was a successor to the ABC programming language, which itself saw contributions
 from van Rossum in the eighties. The name alludes to the british television
 series \emph{Monty Python's Flying Circus} Van Rossum was watching while
 creating the programming language. He still is Python's principal author and
-project leader and therefore deciding the direction of the project.
+project leader and therefore the project's main decision maker.
 
 Currently, there are two versions of Python available, both incompatible to
-each other. Python 2.0 was first released in 2000 and since then evolved to the
-currently available Python 2.7 version. Python 3.0 however, was a major,
+each other. Python~2.0 was first released in 2000 and since then evolved to the
+currently available Python~2.7 version. Python~3.0 however, was a major,
 backwards incompatible release, which was released in 2008. It is the successor
-of the 2.x series and will replace it completely in near future.
+of the 2.x series and will replace it completely in the near future.
 
 Also, since the 2.x series, the Python project created a transparent and
 community backed development process with van Rossum as it's leader.
@@ -43,27 +43,27 @@ community backed development process with van Rossum as it's leader.
 
 \subsection{Community} % {{{
 
-The Python project has a large user and developer community. Many of these people are
-working on the CPython interpreter and the standard library, however there are
-also a lot of other Python related projects going on, such as advanced libraries.
+The Python project has a large user and developer community. Many are working
+on the CPython interpreter and the standard library, however there are also a
+lot of other current Python related projects, such as advanced libraries.
 
 The Python community is very eager to attend and offer opportunities to meet in
-person. Therefore, one can find a large amount of conferences and workshops
+person. Therefore, one can frequently attend conferences and workshops
 worldwide \cite{PythonConferences}. The first conference was \emph{PyCon} in
-North America in 2003. However there are now many other conferences around the
-world, such as \emph{PyCon DE}, \emph{EuroPython} and \emph{SciPy}.
+North America in 2003. However there are now many other conferences, such as
+\emph{PyCon DE}, \emph{EuroPython} or \emph{SciPy}.
 
-The communication inside the Python project is mostly done through several
+The communication inside the Python project takes mostly place through several
 mailing lists \cite{PythonCommunication}. Each mailing list stands for a
-certain topic, for example the \emph{python-dev} mailing list is the main
-communication channel for Python development. The python-ideas mailing list on
-the other hand is for future ideas and goals of the Python project. There are
-of course also other communication methods available, such as several \ac{IRC}
-channels and the blogs of the developers.
+certain topic, for example the \emph{python-dev} mailing list which is the main
+communication channel for Python development. The \emph{python-ideas} mailing
+list on the other hand is for future ideas and goals of the Python project.
+There are of course also other communication methods available, such as several
+\ac{IRC} channels and developer's blogs.
 
 Next to the already mentioned users and developers of Python people will be
-classified into several categories, depending on how much they are involved in
-the development of Python \cite{PythonCoreDeveloper}.
+classified into several categories, depending on how strongly they are involved
+in the development of Python \cite{PythonCoreDeveloper}.
 
 \begin{figure}[htbp]
   \centering
@@ -74,7 +74,7 @@ the development of Python \cite{PythonCoreDeveloper}.
 
 \paragraph{Developer}
 
-One is able to gain the \emph{Developer} role when he has consistently shown
+One is able to gain the \emph{Developer} role when they have consistently shown
 contributions to Python. There is however no set rule of how many patches or
 resolved issues are needed. It is possible to request the Developer role by
 asking any other person, who already has the Developer role. They then will
@@ -85,11 +85,11 @@ enquired person will sequently act as a mentor for the requester.
 
 The way to become a Core Developer is quite similar to the Developer role
 above. One must have consistently contributed patches, which meet a certain
-quality standard. Then normally a Core Developer will offer the chance to
-become a Core Developer. This person will also act as a mentor for the new Core
-Developer. Also, they will watch if the quality of the contributed patches was
-met and the development process understood. However it is also possible to
-request the Core Developer role.
+quality standard. Then normally a Core Developer will be offered the chance to
+become a Core Developer. The reference person will also act as a mentor for the
+new Core Developer. Also, the core developer group will watch if the quality of
+the contributed patches was met and the development process understood. However
+it is also possible to request the Core Developer role.
 
 \paragraph{Expert}
 
@@ -128,12 +128,12 @@ For releases, Python uses a version naming with three numbers. The numbers
 stand for major, minor and micro versions
 \cite{PythonDevelopmentCycle,Warsaw2001}. New major releases are extremely
 scarce. They are planned for a long time in advance, often with incompatible
-changes. An example for such a major release would be Python 3.0. Minor
-releases are feature releases with no incompatibilities between it's
-predecessors. Roughly, they get released every 18 months. Micro releases are
-bugfix releases and get released every 6 months, although they can be released
-in shorter time periods too. Besides, each release is proceeded by several
-Alpha, Beta and Release Candidate Releases which are testing releases.
+changes. An example for such a major release is be Python~3.0. Minor releases
+are feature releases with no incompatibilities between it's predecessors.
+Roughly, they get published every 18 months. Micro releases are bugfix releases
+and get promulgated every 6 months, although they can be released in shorter
+time periods too. Besides, each release is proceeded by several Alpha, Beta and
+Release Candidate Releases which are testing releases.
 
 \begin{figure}[htbp]
   \centering
@@ -146,23 +146,23 @@ Alpha, Beta and Release Candidate Releases which are testing releases.
 
 \subsection{Development} % {{{
 
-Since Python 2.0, the Python community changed their development process
-towards a more open and transparent approach. For each patch, the python
+Since Python~2.0, the Python community changed their development process
+towards a more open and transparent approach. For each patch, the Python
 community can vote for or against it. They can vote +1, +0, -0, -1, whereas +1
 and -1 mean acceptance or rejection and +0 and -0 mean an indifferent decision
 with a slight positive or negative slant \cite{Warsaw2002}. The voting itself
-happens on either the python-dev mailing list or will get announced on the
-python-announce mailing list. This voting however is completely deliberative
-and Guido van Rossum can still approve a reject a patch even if the voting
-disagrees with his decision.
+takes place on either the \emph{python-dev} mailing list or will get announced
+on the \emph{python-announce} mailing list. This voting however is completely
+deliberative and Guido van Rossum can still approve or reject a patch even if
+the voting disagrees with his decision.
 
-The development process is highly dependent on so called \ac{PEP}
-\cite{Warsaw2000}. Loosely modelled on the Internet RFC process, they are
+The development process is highly dependent on the so called \ac{PEP}
+\cite{Warsaw2000}. Loosely modelled on the Internet \ac{RFC} process, they are
 design documents which describe either a proposed feature, a process or just
 provide information. They are continually discussed in the community and
 revised until the community reaches a consensus. \acp{PEP} can then either be
 approved or rejected. They are the primary way to propose new features and on
-approval are finished with the commit of a patch.
+approval are finalized with the commit of a patch.
 
 \begin{figure}[htbp]
   \centering
@@ -178,28 +178,27 @@ The Python project defines three types of \acp{PEP}.
     feature proposal for the Python language. They always consist of a design
     document and a reference implementation.
 
-  \item[Informational PEP] Unlike the Standards Track \ac{PEP}, this type for
+  \item[Informational PEP] Unlike the Standards Track PEP, this type of
     \ac{PEP} does not propose a new feature. It provides general guidelines or
     information about a certain issue of Python. However it does not
     necessarily reach consensus inside the Python community and so one is free
-    to ignore Informational \acp{PEP}.
+    to ignore Informational PEPs.
 
   \item[Process PEP] This kind of \ac{PEP} is quite like the Standards Track
-    \ac{PEP}, except that it applies to other areas than the Python language
-    and describes processes around Python. For example any guidelines, decision
-    making processes, development workflow and so on are mostly a Process
-    \ac{PEP}. Additionally any \acp{PEP} which describe other \ac{PEP}, for
-    example how a \ac{PEP} should look like, will be seen as a Process \ac{PEP}
-    too.
+    PEP, except that it applies to other areas than the Python language and
+    describes processes around Python. For example any guidelines, decision
+    making processes, development workflow and others are mostly Process PEPs.
+    Additionally any \acp{PEP} which describe other \acp{PEP}, for example how
+    a \ac{PEP} should look like, will be defined as a Process PEPs.
 
 \end{description}
 
 The \ac{PEP} process begins with a feature proposal for Python. While all
 bigger proposals require a \ac{PEP}, the Python project suggests to submit
-small change directly as a patch submission. A \ac{PEP} always has one or
+small changes directly as a patch submission. A \ac{PEP} always has one or
 several authors, who have the responsibility for it. They will begin by
 submitting the \ac{PEP} to the Python project. More precisely it should be
-presented to the python-ideas mailing list and subsequently sent to the
+presented to the \emph{python-ideas} mailing list and subsequently sent to the
 \ac{PEP} editors. The \ac{PEP} editors will assign a number and a category as
 mentioned above. Additionally, new \acp{PEP} always start with the \emph{Draft}
 status. From there, the \ac{PEP} workflow begins.
@@ -259,21 +258,21 @@ philosophy.
 A \ac{PEP} will be able to get this status assigned, if all \ac{PEP} criteria
 are matched. This includes a precise formulation of the \ac{PEP}, not breaking
 backwards compatibility and finally be accepted by the \ac{BDFL}. However the
-criteria are not set in stone and basically a \ac{PEP} just have to be accepted
-by the \ac{BDFL} to get accepted.
+criteria are not fully binding and a \ac{PEP} just has to be accepted by the
+\ac{BDFL}.
 
 \paragraph{Rejected}
 
 At this stage a \ac{PEP} can still be rejected. Mostly this status gets
-assigned, if it turns out that the original idea did not fit the Python project
-that well. But basically it is just a option to drop a \ac{PEP} even, after it
-was either accepted or not deferred.
+assigned, if it turns out that the original idea did not fit the Python
+project. The reject stage is just an option to drop a \ac{PEP}, after it was
+accepted or not deferred.
 
 \paragraph{Withdrawn}
 
-A \ac{PEP} can also always be withdrawn by the author of a \ac{PEP}. This could
-help if an author does not want to work on a \ac{PEP} anymore, for example
-because there is a better solution available.
+A \ac{PEP} can also always be withdrawn by the author. This could help if an
+author does not want to work on a \ac{PEP} anymore, for example because there
+is a better solution available.
 
 \paragraph{Final}
 
@@ -282,15 +281,15 @@ it can get the status Final by the \ac{BDFL}.
 
 \paragraph{Replaced}
 
-Mostly for Informational \acp{PEP}, subsequent versions can replace a \ac{PEP}.
-In this case the original \ac{PEP} would be marked as Replaced and superseded
-by the new \ac{PEP}.
+Mostly for Informational PEPs, subsequent versions can replace a \ac{PEP}. In
+this case the original \ac{PEP} would be marked as Replaced and superseded by
+the new \ac{PEP}.
 
 \paragraph{Active}
 
-Informational and Process \ac{PEP} can also be marked as Active, if they never
-will be completed. For example \ac{PEP} 1 \cite{Warsaw2000}, which describes
-the process of \acp{PEP} has it's status set to Active, as it is continually
+Informational and Process PEPs can also be marked as Active, if they will never
+be completed. For example \ac{PEP} 1 \cite{Warsaw2000}, which describes the
+process of \acp{PEP} has it's status set to Active, as it is continually
 improved and adapted to new workflows.
 
 \begin{figure}[htbp]

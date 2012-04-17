@@ -5,15 +5,15 @@
 GNOME is a desktop environment for UNIX based systems. It is composed by a
 collection of tools and programs including a desktop shell in order to provide
 all the essential utilities a user might need when working with a computer.
-Officially, GNOME is part of the GNU project and licensed under the \ac{GPL}
-and the \ac{LGPL}. The name GNOME was initially an acronym for \emph{GNU
-Network Object Model Environment}, however that acronym was dropped. The GNOME
-project targets for ease of use and user friendliness and therefore aims for
-coherent and good user interfaces \cite{GNOMEHIG}, accessibility,
+Officially, GNOME is part of the \ac{GNU} project and licensed under the
+\ac{GPL} and the \ac{LGPL}. The name GNOME was initially an acronym for
+\emph{GNU Network Object Model Environment}, however that acronym was dropped.
+The GNOME project targets ease of use and user friendliness and therefore aims
+for coherent and good user interfaces \cite{GNOMEHIG}, accessibility,
 internationalization, regular releases and good support for users and
 developers. GNOME is a modular project, meaning that it consists of several so
 called modules, which can be either applications, libraries or utilities. Since
-the release of GNOME 3, the modules were reorganized into a GNOME core suite
+the release of GNOME~3, the modules were reorganized into a GNOME core suite
 and a GNOME apps suite. GNOME core provides everything to run a basic desktop
 system and will therefore be analyzed in this context.
 
@@ -29,17 +29,17 @@ system and will therefore be analyzed in this context.
 
 GNOME was first announced and started in 1997 by Miguel de Icaza and Federico
 Mena Quintero as a counterpart to KDE
-\cite{German2003,GNOMEAbout,GNOMEAnnouncement}. Both were attending university
-at that time when they set their aim to produce a desktop environment using
-only free software technologies. KDE relied on the Qt widget toolkit, which at
-that time was licensed under a proprietary software license. Instead of using
-Qt, the GTK+ toolkit originally developed for the GIMP graphics editor was
-used. The GNOME project quickly grew into a large project which nowadays is the
-most popular desktop environment for UNIX type operating systems. The desktop
-as well as the developer technologies can be found on workstations and large
-enterprises but also on mobile devices. With the recent GNOME 3 release the
-project did a major overhaul with a significant redesign of the desktop
-environment and an entirely new user interface \cite{GNOMEPress}.
+\cite{German2003,GNOMEAbout,GNOMEAnnouncement}. Both were university students
+at the time when they set their aim to produce a desktop environment using only
+free software technologies. KDE relied on the Qt widget toolkit, which at the
+time was licensed under a proprietary software license. Instead of using Qt,
+they used the GTK+ toolkit originally developed for the GIMP graphics editor.
+The GNOME project quickly grew into a large project which nowadays is the most
+popular desktop environment for UNIX type operating systems. The desktop as
+well as the developer technologies can be found on workstations and large
+enterprises but also on mobile devices. With the recent GNOME~3 release a major
+overhaul with a significant redesign of the desktop environment and an entirely
+new user interface took place \cite{GNOMEPress}.
 
 % }}}
 
@@ -51,16 +51,16 @@ also a big community around the project, which for example uses GNOME
 technologies such as GStreamer or GTK+ \cite{GNOMEAbout,GNOMETeams}.
 
 Most of the communication inside the project is handled over mailing lists and
-\ac{IRC} channels. Quite every GNOME module has a dedicated mailing list or
+\ac{IRC} channels. Almost every GNOME module has a dedicated mailing list or
 \ac{IRC} channel. Global decisions are mostly handled over the
 \emph{desktop-devel} mailing list. Additionally blogs are widely spread in the
-GNOME community and contributors often write blog posts about achieved things,
-wishes and starting discussions.
+GNOME community and contributors often write blog posts about achievements,
+wishes or start discussions.
 
 Next to several hackfests each year, the community holds a yearly conference
 under the name \emph{GUADEC}. It stands for GNOME User and Developer European
 Conference, and while the conference only took place in Europe so far it is
-nevertheless considered an international conference \cite{GNOMEGUADEC}.
+nevertheless considered worldwide \cite{GNOMEGUADEC}.
 
 \begin{table}
   \centering
@@ -95,12 +95,12 @@ flat structure \cite{GNOMETeams,German2003,GNOMEDesignTeam,GNOMEReleaseTeam}.
 
 Any person who contributed a reasonable amount of improvements to the GNOME
 project or to a single module can become a committer. A committer has full read
-and write access to all GNOME repositories. Though each commit will be reviewed
-and approved by the maintainer of the module. To get such an account, one has
-to make a formal request to the Accounts Team along with one or several
-vouchers who can confirm your contributions to the GNOME project. Every module
-maintainer or translation team leader can act as a voucher. Furthermore will
-the voucher be responsible for the actions of the requesting person on the
+and write access to all GNOME repositories. Each commit will however be
+reviewed and approved by the maintainer of the module. To get such an account,
+one has to make a formal request to the Accounts Team along with one or several
+vouchers who can confirm ones contributions to the GNOME project. Every module
+maintainer or translation team leader can act as a voucher. Furthermore the
+voucher will be responsible for the actions of the requesting person on the
 repositories.
 
 \paragraph{Maintainer}
@@ -126,13 +126,13 @@ This team is responsible for a wide range of tasks concerning the development
 process of the GNOME project. Their tasks include for example creating a
 development schedule, making and publishing releases, approving or rejecting
 freeze break requests and defining the module list for GNOME releases. The team
-size is not fixed and can vary over time. Membership is only done through an
-invitation and often only when one person leaves the team. The leaving person
-may recommend a new team member on which the team will decide.
+size is not fixed and can vary over time. Membership is only by invitation and
+often only when one person leaves the team to free up one space. The leaving
+person may recommend a new team member which the team will decide upon.
 
 \paragraph{Design Team}
 
-Since GNOME 3 the Design Team holds a much more important role in the GNOME
+Since GNOME~3 the Design Team holds a much more important role in the GNOME
 project as they primarily define the design of the GNOME user experience. This
 is done by designing the user interface and workflow of GNOME modules.
 Additionally they play an important part in the feature based development
@@ -165,24 +165,24 @@ The GNOME project uses a version naming scheme with three numbers however
 distinguishes only between major and minor releases
 \cite{GNOMEDevelopmentSchedule,GNOMESchedule}. The numbers are however
 nevertheless called major, minor and micro numbers. An incrementation of the
-first number only happens when the project does a ground-breaking change, such
-as using GTK+2 for GNOME 2.x or the new user experience with the GNOME shell
-and GTK+3 for GNOME 3.x. For the minor version number the GNOME project uses
+first number only occurs when the project does a ground-breaking change, such
+as using GTK+2 for GNOME~2.x or the new user experience with the GNOME shell
+and GTK+3 for GNOME~3.x. For the minor version number the GNOME project uses
 odd numbers indicating an unstable series and even numbers for stable releases.
-For example the unstable 3.1.x series will become into the stable 3.2.x release
+For example the unstable 3.1.x series will become the stable 3.2.x release
 series.
 
-The release schedule is fixed and every six months a new major release will
-appear. To achieve this, a release schedule is published by the release team
-every six months \cite{GNOMEDevelopmentSchedule}. Over the years it stayed
-mostly the same, while a few minor changes might occur to comprise conferences
-or holidays. The release schedule includes future stable minor releases, the
-two schedules overlap.
+The release schedule is fixed with a new major release appearing every six
+months. To achieve this, the release team publishes a release schedule in the
+same frequency \cite{GNOMEDevelopmentSchedule}. Over the years it stayed mostly
+the same, while few minor changes may occur to comprise conferences or
+holidays. The release schedule includes future stable minor releases, the two
+schedules overlap.
 
-Each stable release series consists of at least three releases which will be
-named with x.y.0 to x.y.2. Of course, a module maintainer can decide to provide
-more stable releases \cite{GNOMEReleaseTeam}. The unstable series consists of
-eight releases which are distributed over six months. The schedule furthermore
+Each stable release series consists of at least three releases which are named
+with x.y.0 to x.y.2. Of course, a module maintainer can decide to provide more
+stable releases \cite{GNOMEReleaseTeam}. The unstable series consists of eight
+releases which are distributed over six months. The schedule furthermore
 includes proposal and freeze periods which will be described in the following
 \cite{GNOMEDevelopmentSchedule,GNOMESchedule}.
 
@@ -208,15 +208,15 @@ developers can propose features for the next major release and discuss them
 with the community. Approximately a month later, when the first unstable
 release gets published, the proposal period ends. Around two weeks later the
 release team meets and decides about proposed features with the community input
-up to this point.
+given up to this point.
 
 \paragraph{The Freeze}
 
-With the release of the first beta release the first freeze is in action. No
-user interface changes, new features, developer API changes are allowed without
-approval from the release team. This excludes of course bug fixes. Additionally
-new translatable strings must be announced to the translation and documentation
-team.
+With the release of the first beta the first freeze takes action. No user
+interface changes, new features or developer \ac{API} changes are allowed
+without approval from the release team. This excludes of course bug fixes.
+Additionally new translatable strings must be announced to the translation and
+documentation team.
 
 \paragraph{String Freeze}
 
@@ -242,30 +242,29 @@ ends but all other freezes remain in action for the stable series.
 
 \subsection{Development} % {{{
 
-Before the release of GNOME 3, the release team would decide together with the
-community about the inclusion of new modules. The development of each module
-was planned an executed by the maintainers. Since GNOME 3, the development
+Before the release of GNOME~3, the release team together with the community
+decide about the inclusion of new modules. The development of each module was
+planned and executed by the maintainers. Since GNOME~3, the development
 workflow changed into a more design driven development approach. This means
-that all new features concerning user interface or applications have to go
+that all new features concerning user interfaces or applications have to go
 through the design team \cite{GNOMEDesignTeam}. This leads to a consistent
-process which delivers a uniform user interface. However the design team has no
-sort of decision making authority and a maintainer can ignore the design
-proposal by the design team.
+process with a uniform user interface. However the design team has no decision
+making authority and a maintainer can ignore the design team's proposal.
 
 Next to the design driven approach the module inclusion changed to a feature
 inclusion approach \cite{GNOMEFeatures3.4,GNOMERoadMap}. Every GNOME
-contributor can create a feature proposal in which he describes a feature he
+contributor can create a feature proposal in which one describes a feature they
 would like to see in the next stable GNOME release. A feature proposal is
 composed by a description of the problem which will be solved, one or more
-authors, a list of involved parties and the current status of the proposal. All
+authors, a list of involved parties and the current state of the proposal. All
 of these fields are required and a feature will not be accepted until all are
-filled out. After each major release and until about a month later, one can
+completed. After each major release and until about a month later, one can
 propose a feature for inclusion. The community has time to discuss the features
 and improve them for roughly one and a half months. After that time the release
 team will meet and depending on the feedback of the community decide about the
 inclusion of each feature. If a feature gets accepted the author of the feature
-will be the leader of it and responsible for the completion. With the release
-of the first beta release and the establishment of the Feature, UI and
+will be it's leader and responsible for the completion. With the release of the
+first beta release and the establishment of the Feature, \ac{UI} and
 \ac{API}/\ac{ABI} Freeze the feature has to be finished and working. If not, it
 may be postponed to the next major release.
 

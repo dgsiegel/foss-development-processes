@@ -22,7 +22,7 @@ In 1994, Rasmus Lerdorf created the first version of PHP for his own website,
 naming the program Personal Home Page Tools \cite{PHPHistory}. He published the
 bundle one year later, after rewriting the original version. That also included
 the first name change to FI (Forms Interpreter) and then to Personal Home Page
-Construction Kit the same year. At that time, PHP could be considered as a
+Construction Kit the same year. At that time, PHP could be considered as an
 advanced programming interface.
 
 \begin{figure}[htbp]
@@ -36,25 +36,26 @@ advanced programming interface.
 However, it received another makeover in 1996, combining the two previous names
 to PHP/FI. This time, PHP truly began to evolve to a full featured programming
 language. It included several modules for database or browser interaction. This
-version was also known as PHP/FI 2.0. Following a popularity boom in 1997 and
+version was also known as PHP/FI~2.0. Following a popularity boom in 1997 and
 1998 it reached it's limitations due to the design of the project and by being
 almost solely developed by Lerdorf.
 
 In 1997 Andi Gutmans and Zeev Suraski rewrote the PHP interpreter and
-approached Lerdorf discussing the problems PHP had at that time. Together, they
-rewrote and redesigned the language and also changed the name to PHP Hypertext
-Processor. Version 3.0 of PHP was then released in 1998 and replaced PHP/FI 2.0
-completely. On of the most important features of the new approach was to
+approached Lerdorf discussing the problems PHP had. Together, they rewrote and
+redesigned the language and also changed the name to PHP Hypertext Processor.
+Version 3.0 of PHP was then released in 1998 and replaced PHP/FI~2.0
+completely. One of the most important features of the new approach was to
 provide an interface for modules, which can be used directly from the
 programming language.
 
 The design of the language was improved further in 1998 improving performance
 and the modularity of modules and code. The new engine was called Zend Engine
-and provided the core of PHP 4.0, which was released in 2000.
+and provided the core of PHP~4.0, which was released in 2000.
 
-Four years later, PHP 5 was released featuring the successor Zend Engine 2.0.
+Four years later, PHP~5 was released featuring the successor Zend Engine~2.0.
 This release was incompatible to the previous 4.0 version and a large
-initiative was planned to promote the transition from PHP 4 to PHP 5.
+initiative was planned and executed to promote the transition from PHP~4 to
+PHP~5.
 
 % }}}
 
@@ -72,15 +73,15 @@ many opportunities to meet other PHP contributors. A lot of local PHP User
 Groups exist and provide weekly or monthly meetings and meet-ups such as
 workshops.
 
-Most of the communication inside the PHP project is done through mailing lists
-\cite{Magnusson2010}. It has mailing lists for most aspects of the project,
-however the most important is the \emph{internals} mailing list. Most of the
-development process, future ideas and new contributions are handled over that
-list. Of course, there are also several \ac{IRC} channels and blogs of PHP
-developers available.
+Most of the communication inside the PHP project takes place through mailing
+lists \cite{Magnusson2010}. There exist mailing lists for almost all aspects of
+the project, however the most important is the \emph{internals} mailing list.
+Most of the development process, future ideas and new contributions are handled
+over that list. Of course, several \ac{IRC} channels and blogs of PHP
+developers are also used.
 
 Officially, there is no categorizing of developers and everyone is treated
-equally. However the project uses a concept named karma, which basically means
+equally. However the project uses a concept named karma, which means
 that one increases his karma by contributing to the project with code,
 discussions and new ideas \cite{Magnusson2010}. Furthermore, several people are
 responsible for different parts of the code or modules and can be classified
@@ -95,12 +96,11 @@ using those criteria \cite{PHPCredits}.
 
 \paragraph{Developer}
 
-One is able to call himself a PHP Developer, once he gets a PHP Subversion
-account. According to the PHP community, an account needs to be earned, which
-basically means that one has to provide several patches and contributions to
-the PHP project first. Once one has shown enough commitment, he can apply for
-an account. The account however will be only granted if a reference person
-approves.
+One is called a PHP Developer, once they get a PHP Subversion account.
+According to the PHP community, an account needs to be earned, which means that
+one has to provide several patches and contributions to the PHP project first.
+Once one has shown enough commitment, they can apply for an account. The
+account however will only be granted if a reference person approves.
 
 \paragraph{Module Author}
 
@@ -143,9 +143,9 @@ with three numbers for releases: major, minor and micro. Major releases get
 published quite seldom, can break backwards compatibility and are planned a
 long time in advance. Minor releases can have new features and bug fixes,
 however backwards compatibility must be kept. Micro release are bugfix only
-releases where backwards and API compatibility must be kept. Each major release
-is followed by a number of minor releases, which themselves are followed by a
-number of micro releases.
+releases where backwards and \ac{API} compatibility must be kept. Each major
+release is followed by a number of minor releases, which themselves are
+followed by a number of micro releases.
 
 \begin{figure}[htbp]
   \centering
@@ -153,8 +153,8 @@ number of micro releases.
   \caption{Major releases of PHP.}
 \end{figure}
 
-Starting with PHP 5.4 a major or minor release will get published each year. Each
-yearly release is then followed by a number of micro releases for 2 years,
+Starting with PHP~5.4 a major or minor release will get published each year.
+Each yearly release is then followed by a number of micro releases for 2 years,
 which contains bug fixes only. After that period, only micro releases with
 security relevant fixes will get published.
 
@@ -171,11 +171,11 @@ security relevant fixes will get published.
 Most of the development process is handled over the PHP mailing lists
 \cite{PHPRelease,Magnusson2010,PHPVoting}. Not every patch however needs to be
 discussed and approved first, minor features or changes often get directly
-committed to the repository. Though every change gets through a peer review
-process, where other developers review the made changes. Every change gets
+committed to the repository. Every change needs to pass a peer review process,
+where other developers review the made changes. As well every change gets
 reviewed by other developers, who in case the need arises, discuss the change
-on the developers mailing list. They then often result in a more comprehensive
-change or in new features.
+on the developers mailing list. Generally the result is often a more
+comprehensive change or new features.
 
 \begin{figure}[htbp]
   \centering
@@ -190,8 +190,8 @@ new ideas, features and proposals through so called \ac{RFC} \cite{PHPRFC}.
 Those are documents which describe the new feature and it's rationale. A
 \ac{RFC} document is always owned by at least one person, who is responsible
 for it. The \ac{RFC} process begins with the author's submission of the
-\ac{RFC} to the PHP wiki and an announcement to the internals mailing list.
-Depending on the importance and affected sections of the PHP project, the
+\ac{RFC} to the PHP wiki and an announcement to the \emph{internals} mailing
+list. Depending on the importance and affected sections of the PHP project, the
 following discussion period is set to a minimum of one to two weeks. It can be
 longer however, but not shorter \cite{PHPVoting}.
 
@@ -200,14 +200,14 @@ or extend the discussion period as needed \cite{PHPVoting}. The vote is
 announced on the mailing list and followed by a voting period which should be
 at least one week, but can be extended if required.
 
-Depending on the importance of a \ac{RFC}, it needs either 2/3 of all votes or
+Depending on the importance of a \ac{RFC}, it takes either 2/3 of all votes or
 \unit[50]{\%} plus one to get accepted. The importance is defined by whether it
 actually changes the syntax or behaviour of the PHP language and is therefore
 irreversible or not. A failed proposal can be resurrected at least six months
-after the last vote or if the author makes considerably large changes to the
-\ac{RFC}. There is no definition by the PHP project, what considerably large
-changes constitute, however the opinion is that it should be changed in a
-matter, that it significantly can change a vote's outcome.
+after the last vote or if the author makes considerable changes to the
+\ac{RFC}. There is no definition by the PHP project, what considerable changes
+mean, however the opinion is that it should be changed in a matter, that it
+significantly can change a vote's outcome.
 
 \begin{figure}[htbp]
   \centering
@@ -250,32 +250,32 @@ developers of PHP appendant projects can participate in the
 voting process. Those however have to be chosen by PHP developers
 \cite{PHPWhoVote}.
 
-During the whole development process, a \ac{RFC} has a status assigned, which can be
-one of the following \cite{PHPRFC}.
+During the whole development process, a \ac{RFC} gets a status assigned, which
+can be one of the following \cite{PHPRFC}.
 
 \paragraph{Draft}
 
 Once a \ac{RFC} gets submitted to the PHP wiki, it gets this status assigned.
 The Draft status means, that the \ac{RFC} is not ready yet for a discussion,
-however it can be improved by other people as well and a preliminary discussion
+however it can be improved also by other people and a preliminary discussion
 can be started.
 
 \paragraph{Discussion}
 
-Once the author of a \ac{RFC} announces it for discussion, it gets this status
-assigned. As previously described, the discussion phase starts with this
+Once the author of a \ac{RFC} announces it for discussion, it gets assigned to
+this status. As previously described, the discussion phase starts with this
 status.
 
 \paragraph{Voting}
 
-After the discussion phase the voting phase begins. While developers can vote
-for or against the \ac{RFC}, the Voting status gets assigned including a link
-to the voting site.
+After the discussion phase the voting begins. While developers can vote for or
+against the \ac{RFC}, the voting status gets assigned including a link to the
+voting site.
 
 \paragraph{Accepted}
 
 Once a voting was successful, the \ac{RFC} is accepted and will be implemented
-or taken in action in near future.
+or in the near future.
 
 \paragraph{Declined}
 
@@ -284,13 +284,13 @@ and several changes to it, the author can resubmit it.
 
 \paragraph{Implemented}
 
-If the voting was successful, the \ac{RFC} will get implemented or taken in
+If the voting was successful, the \ac{RFC} will get implemented or taken into
 action if it describes a community process.
 
 \paragraph{Withdrawn}
 
-The author can withdraw the \ac{RFC} without calling for a vote if he thinks
-the \ac{RFC} is irrelevant or won't pass a vote.
+The author can withdraw the \ac{RFC} without calling for a vote if they think
+the \ac{RFC} is irrelevant or won't pass the voting.
 
 \begin{figure}[htbp]
   \centering
