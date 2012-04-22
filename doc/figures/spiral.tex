@@ -19,19 +19,19 @@
   \node[box, above left=0.5em and 0.5em of center]
     (determine) {};
     \node[above=-3em of determine, text width=16em]
-      {Determine objectives, alternatives, constraints};
+      {Determine Objectives, Alternatives, Constraints};
   \node[box, right=2em of determine]
     (risks) {};
     \node[above=-3em of risks, text width=15em]
-      {Evaluate alternatives, identify, resolve risks};
+      {Evaluate Alternatives, Identify, Resolve Risks};
   \node[box, below=2em of risks]
     (develop) {};
-    \node[below=-2em of develop, text width=16em]
-      {Develop, verify next-level product};
+    \node[below=-2em of develop]
+      {Develop, Verify Next-Level Product};
   \node[box, left=2em of develop]
     (plan) {};
     \node[below=-2em of plan, text width=16em]
-      {Plan next phase};
+      {Plan Next Phase};
  
   \begin{scope}[rotate=132]
     \draw[domain=12:28.88,variable=\t,samples=600,scale=8,->,-latex,line width=0.1em]
@@ -41,8 +41,8 @@
   \draw[->,-latex] (-2em,-2em) -- (-12em,-12em) node[below] {Improvement};
 
   \draw[->,-latex] (2em,2em) -- (13em,13em) node[right] {Prototype 3};
-  \node[right] at (4.2em, 4em) {Prototype 1};
-  \node[right] at (8.2em, 8em) {Prototype 2};
+  \node[right] at (4.5em, 4em) {Prototype 1};
+  \node[right] at (8.5em, 8em) {Prototype 2};
 
   \draw[->,-latex] (2em,-2em) -- (14em,-14em) node[right] {Design};
   \node[right] at (4.2em, -4em) {Concept};
