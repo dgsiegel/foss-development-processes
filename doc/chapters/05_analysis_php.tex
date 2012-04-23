@@ -62,6 +62,14 @@ PHP~5.
 
 \subsection{Community} % {{{
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/commits_by_year}
+  \caption[Commits by Year, PHP]
+  {Yearly overview of commits to PHP. The peaks could match with the
+    development and releases of PHP~4.3 and PHP~5.}
+\end{figure}
+
 The PHP project consists of a large user and developer community
 \cite{Magnusson2010}. Additionally to the PHP interpreter, there are many
 people working on PHP extensions and components, which get distributed
@@ -88,14 +96,6 @@ discussions and new ideas \cite{Magnusson2010}. Furthermore, several people are
 responsible for different parts of the code or modules and can be classified
 using those criteria \cite{PHPCredits}.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{php/commits_by_year}
-  \caption[Commits by Year, PHP]
-  {Yearly overview of commits to PHP. The peaks could match with the
-    development and releases of PHP~4.3 and PHP~5.}
-\end{figure}
-
 \paragraph{Developer}
 
 One is called a PHP developer, once they get a PHP Subversion account.
@@ -103,6 +103,15 @@ According to the PHP community, an account needs to be earned, which means that
 one has to provide several patches and contributions to the PHP project first.
 Once one has shown enough commitment, they can apply for an account. The
 account however will only be granted if a reference person approves.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{php/punchcard}
+  \caption[Time Based View on Commits, PHP]
+  {Time based view on commits of contributors. A lot of the commits appear to
+    be happened during work days and times with some volunteer commits in the
+    evenings and Sundays.}
+\end{figure}
 
 \paragraph{Module Author}
 
@@ -124,18 +133,15 @@ Currently only Rasmus Lerdorf, Andi Gutmans and Zeev Suraski hold this role.
 They are the only who can actively change the programming language syntax and
 concepts.
 
-\begin{figure}[hbtp]
-  \centering
-  \includegraphics[width=\textwidth]{php/punchcard}
-  \caption[Time Based View on Commits, PHP]
-  {Time based view on commits of contributors. A lot of the commits appear to
-    be happened during work days and times with some volunteer commits in the
-    evenings and Sundays.}
-\end{figure}
-
 % }}}
 
 \subsection{Release Process} % {{{
+
+\begin{figure}[bhtp]
+  \centering
+  \includegraphics[width=\textwidth]{php/releases}
+  \caption[Major Releases of PHP]{Major releases of PHP.}
+\end{figure}
 
 In 2010, the PHP project set up a new release plan with detailed information
 about how the release process should work \cite{PHPRelease}. Before,
@@ -150,22 +156,16 @@ bug fix only releases where backwards and \ac{API} compatibility must be kept.
 Each major release is followed by a number of minor releases, which themselves
 are followed by a number of micro releases.
 
-\begin{figure}[htbp]
+\begin{figure}[thbp]
   \centering
-  \includegraphics[width=\textwidth]{php/releases}
-  \caption[Major Releases of PHP]{Major releases of PHP.}
+  \includegraphics[width=0.8\textwidth]{php/release_plan}
+  \caption[Preliminary PHP Release Cycle]{Preliminary PHP release cycle.}
 \end{figure}
 
 Starting with PHP~5.4 a major or minor release will get published each year.
 Each yearly release is then followed by a number of micro releases for 2 years,
 which contains bug fixes only. After that period, only micro releases with
 security relevant fixes will get published.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{php/release_plan}
-  \caption[Preliminary PHP Release Cycle]{Preliminary PHP release cycle.}
-\end{figure}
 
 % }}}
 
@@ -213,7 +213,13 @@ after the last vote or if the author makes considerable changes to the
 mean, however the opinion is that it should be changed in a matter, that it
 significantly can change a vote's outcome.
 
-\begin{figure}[htbp]
+All PHP developers are allowed to vote and if needed, representatives from
+the PHP community, such as participants of PHP related discussions or
+developers of PHP appendant projects can participate in the
+voting process. Those however have to be chosen by PHP developers
+\cite{PHPWhoVote}.
+
+\begin{figure}[hbtp]
   \centering
   \begin{tikzpicture}[auto]
    \node[rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
@@ -249,11 +255,13 @@ significantly can change a vote's outcome.
   {Possible paths of the status of \acl{RFC} documents.}
 \end{figure}
 
-All PHP developers are allowed to vote and if needed, representatives from
-the PHP community, such as participants of PHP related discussions or
-developers of PHP appendant projects can participate in the
-voting process. Those however have to be chosen by PHP developers
-\cite{PHPWhoVote}.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/authors_by_month}
+  \caption[Authors by Month, PHP]
+  {Amount of distinct authors of PHP over time. The number seems to be stable
+    between 20 and 30 authors.}
+\end{figure}
 
 During the whole development process, a \ac{RFC} gets a status assigned, which
 can be one of the following \cite{PHPRFC}.
@@ -296,14 +304,6 @@ action if it describes a community process.
 
 The author can withdraw the \ac{RFC} without calling for a vote if they think
 the \ac{RFC} is irrelevant or won't pass the voting.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{php/authors_by_month}
-  \caption[Authors by Month, PHP]
-  {Amount of distinct authors of PHP over time. The number seems to be stable
-    between 20 and 30 authors.}
-\end{figure}
 
 % }}}
 

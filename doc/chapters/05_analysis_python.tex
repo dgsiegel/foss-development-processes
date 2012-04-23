@@ -122,12 +122,6 @@ favour of the project, as the word \emph{benevolent} states.
 
 \subsection{Release Process} % {{{
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{python/releases}
-  \caption[Major Releases of Python]{Major releases of Python.}
-\end{figure}
-
 For releases, Python uses a version naming with three numbers. The numbers
 stand for major, minor and micro versions
 \cite{PythonDevelopmentCycle,Warsaw2001}. New major releases are extremely
@@ -138,6 +132,12 @@ Roughly, they get published every 18 months. Micro releases are bug fix releases
 and get promulgated every 6 months, although they can be released in shorter
 time periods too. Besides, each release is proceeded by several alpha, beta and
 release candidate releases which are testing releases.
+
+\begin{figure}[bhtp]
+  \centering
+  \includegraphics[width=\textwidth]{python/releases}
+  \caption[Major Releases of Python]{Major releases of Python.}
+\end{figure}
 
 \begin{figure}[htbp]
   \centering
@@ -209,7 +209,53 @@ presented to the \emph{python-ideas} mailing list and subsequently sent to the
 mentioned above. Additionally, new \acp{PEP} always start with the \emph{Draft}
 status. From there, the \ac{PEP} workflow begins.
 
+\paragraph{Draft}
+
+This is the default state of any new \ac{PEP} on submission, as described
+above.
+
 \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{python/authors_by_month}
+  \caption[Authors by Month, Python]
+  {Amount of distinct authors of CPython over time. Python~2 seemed to provide
+    a major reason for developers to join.}
+\end{figure}
+
+\paragraph{Deferred}
+
+A \ac{PEP} Editor can always, instead of assigning the Draft status, defer a
+\ac{PEP}. Reasons for a deferral could be duplication, being poorly written,
+lack of motivation by the author or not being in line with the Python
+philosophy.
+
+\paragraph{Accepted}
+
+A \ac{PEP} will be able to get this status assigned, if all \ac{PEP} criteria
+are matched. This includes a precise formulation of the \ac{PEP}, not breaking
+backwards compatibility and finally be accepted by the \ac{BDFL}. However the
+criteria are not fully binding and a \ac{PEP} just has to be accepted by the
+\ac{BDFL}.
+
+\paragraph{Rejected}
+
+At this stage a \ac{PEP} can still be rejected. Mostly this status gets
+assigned, if it turns out that the original idea did not fit the Python
+project. The reject stage is just an option to drop a \ac{PEP}, after it was
+accepted or not deferred.
+
+\paragraph{Withdrawn}
+
+A \ac{PEP} can also always be withdrawn by the author. This could help if an
+author does not want to work on a \ac{PEP} anymore, for example because there
+is a better solution available.
+
+\paragraph{Final}
+
+Once a \ac{PEP} has been accepted and has a reference implementation available,
+it can get the status Final by the \ac{BDFL}.
+
+\begin{figure}[hbtp]
   \centering
   \begin{tikzpicture}[auto]
    \node[rectangle, rounded corners, draw=black, text width=6.5em, minimum height=2em, text centered]
@@ -247,44 +293,6 @@ status. From there, the \ac{PEP} workflow begins.
   \caption[Status Paths of \aclp{PEP}]{Possible paths of the status of \aclp{PEP}.}
 \end{figure}
 
-\paragraph{Draft}
-
-This is the default state of any new \ac{PEP} on submission, as described
-above.
-
-\paragraph{Deferred}
-
-A \ac{PEP} Editor can always, instead of assigning the Draft status, defer a
-\ac{PEP}. Reasons for a deferral could be duplication, being poorly written,
-lack of motivation by the author or not being in line with the Python
-philosophy.
-
-\paragraph{Accepted}
-
-A \ac{PEP} will be able to get this status assigned, if all \ac{PEP} criteria
-are matched. This includes a precise formulation of the \ac{PEP}, not breaking
-backwards compatibility and finally be accepted by the \ac{BDFL}. However the
-criteria are not fully binding and a \ac{PEP} just has to be accepted by the
-\ac{BDFL}.
-
-\paragraph{Rejected}
-
-At this stage a \ac{PEP} can still be rejected. Mostly this status gets
-assigned, if it turns out that the original idea did not fit the Python
-project. The reject stage is just an option to drop a \ac{PEP}, after it was
-accepted or not deferred.
-
-\paragraph{Withdrawn}
-
-A \ac{PEP} can also always be withdrawn by the author. This could help if an
-author does not want to work on a \ac{PEP} anymore, for example because there
-is a better solution available.
-
-\paragraph{Final}
-
-Once a \ac{PEP} has been accepted and has a reference implementation available,
-it can get the status Final by the \ac{BDFL}.
-
 \paragraph{Replaced}
 
 Mostly for Informational \textsmaller{PEPs}, subsequent versions can replace a
@@ -297,14 +305,6 @@ Informational and Process \textsmaller{PEPs} can also be marked as Active, if th
 be completed. For example \ac{PEP} 1 \cite{Warsaw2000}, which describes the
 process of \acp{PEP} has its status set to Active, as it is continually
 improved and adapted to new workflows.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{python/authors_by_month}
-  \caption[Authors by Month, Python]
-  {Amount of distinct authors of CPython over time. Python~2 seemed to provide
-    a major reason for developers to join.}
-\end{figure}
 
 % }}}
 
