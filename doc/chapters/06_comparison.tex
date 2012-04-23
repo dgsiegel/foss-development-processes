@@ -316,6 +316,28 @@ The GNOME project always increments its minor number by two to define a stable
 release cycle. An odd minor number therefore always defines development
 releases.
 
+\begin{table}[htb]
+  \centering
+  \begin{tabularx}{\textwidth}{Xccc}
+    \toprule
+    \tableheadline{Project} & \tableheadline{Major} & \tableheadline{Minor} & \tableheadline{Micro} \\
+    \midrule
+    Debian          & \checkmark & \checkmark & \checkmark \\
+    Drupal          & \checkmark &            & \checkmark \\
+    Fedora          & \checkmark &            &            \\
+    GNOME           & \checkmark & \checkmark & \checkmark \\
+    KDE             & \checkmark & \checkmark & \checkmark \\
+    MySQL/MariaDB   & \checkmark & \checkmark & \checkmark \\
+    PHP             & \checkmark & \checkmark & \checkmark \\
+    Plone           & \checkmark & \checkmark & \checkmark \\
+    PostgreSQL      & \checkmark & \checkmark & \checkmark \\
+    Python          & \checkmark & \checkmark & \checkmark \\
+    \bottomrule
+  \end{tabularx}
+  \caption[Used Versioning Schemes in the Analyzed Projects]{Used versioning
+    schemes in the analyzed projects.}
+\end{table}
+
 Micro releases are a number of subset releases for the above mentioned feature
 releases. They are only allowed to include bug and security fixes, no new
 features and no incompatibilities. Except Fedora, all projects use such a
@@ -519,31 +541,7 @@ inception until either acceptance or withdrawal. This process seems to work
 well for the Python community as well for development, community and leadership
 processes.
 
-Interestingly other projects started to adopt this process with minor changes.
-For example the \ac{PLIP} process, which is used by the Plone project only uses
-it for development enhancements and not for community issues. As such the
-process is a simpler and more focused to development compared to the \ac{PEP}
-process.
-
-Also the PHP project adopted a version of the \ac{PEP} process which is called
-\ac{RFC}. Since it also focuses on development, it is similar to the \ac{PLIP}
-process. A minor difference is the separate voting step on each proposal, which
-is not existent in the other two.
-
-A slightly more dynamic approach is the Drupal initiative process where each Drupal
-developer can propose an initiative with a certain goal. At a certain point in
-time the Drupal project founder and leader Dries Buytaert chooses the
-initiatives the project should follow for the next release.
-
-Similar to this, but slightly more structured and not backed by a single person
-is the feature based development process of GNOME and Fedora. In both projects,
-features can be proposed which are then chosen by the GNOME release team and
-the \ac{FESCo}. In both projects proposals follow a certain format and are more
-structured when compared to Drupal initiatives. Also, in both projects the
-named groups have the possibility to drop or postpone a certain feature if it
-is not ready for the upcoming release.
-
-\begin{figure}[htbp]
+\begin{figure}[ph]
   \centering
   \subfloat[Drupal]
     {\includegraphics[width=.467\textwidth]{drupal/feature}} \qquad
@@ -584,6 +582,30 @@ is not ready for the upcoming release.
   {Schematic and simplified representation of feature inclusion processes of
     the analyzed projects.}
 \end{figure}
+
+Interestingly other projects started to adopt this process with minor changes.
+For example the \ac{PLIP} process, which is used by the Plone project only uses
+it for development enhancements and not for community issues. As such the
+process is a simpler and more focused to development compared to the \ac{PEP}
+process.
+
+Also the PHP project adopted a version of the \ac{PEP} process which is called
+\ac{RFC}. Since it also focuses on development, it is similar to the \ac{PLIP}
+process. A minor difference is the separate voting step on each proposal, which
+is not existent in the other two.
+
+A slightly more dynamic approach is the Drupal initiative process where each Drupal
+developer can propose an initiative with a certain goal. At a certain point in
+time the Drupal project founder and leader Dries Buytaert chooses the
+initiatives the project should follow for the next release.
+
+Similar to this, but slightly more structured and not backed by a single person
+is the feature based development process of GNOME and Fedora. In both projects,
+features can be proposed which are then chosen by the GNOME release team and
+the \ac{FESCo}. In both projects proposals follow a certain format and are more
+structured when compared to Drupal initiatives. Also, in both projects the
+named groups have the possibility to drop or postpone a certain feature if it
+is not ready for the upcoming release.
 
 The Debian project uses goals which can be proposed by community members and
 are chosen by the release team. This is antithetic to the previous projects,
