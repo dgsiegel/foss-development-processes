@@ -8,13 +8,13 @@ will compare the development processes and project details with each other.
 
 All analyzed projects share a quite different history. Some were developed with
 an university background like PostgreSQL or Python while other projects were
-born in the \ac{FOSS} context. The GNOME or Debian project would be an example
-for that. Projects like Plone or Fedora were an improvement and additional
-layer to an existing project.
+born in the \ac{FOSS} context. The GNOME or Debian projects are an example for
+that. Projects like Plone or Fedora were an improvement and additional layer to
+an existing project.
 
 It is interesting to note, that many project founders tried to solve a personal
 problem with the project they were about to start. KDE, Drupal, Fedora and PHP
-might be notable here. However also commercial or philosophical background can
+are notable here. However also commercial or philosophical background can
 initiate a project, such as MySQL with MySQL AB or GNOME show.
 
 \begin{table}[htb]
@@ -39,23 +39,23 @@ initiate a project, such as MySQL with MySQL AB or GNOME show.
 \end{table}
 
 Even if the number of developers increased over time, all projects were started
-by a small group of people which often consisted of at most two persons. Often,
+by a small group of people which often consisted of at most two people. Often,
 a single person was more involved in the project creation, even if other people
-were involved too. Michael Widenius of MySQL/MariaDB would be a fitting match
-to notice. After inception however the number of involved people grew rapidly.
-This holds for all analyzed projects and is especially the case when the
-project was finally released as \ac{FOSS}. Examples like PostgreSQL or Python
-show the rapid increase of involved people, be it just developers or other
-involved people, when finally released as \ac{FOSS}. The growth graph however
-is quite similar in all analyzed projects, if one considers time and size
-differences between the projects. Also it is worth noticing that almost every
-analyzed project has one or more rapid developer growth periods. Those periods
-can be matched with a certain major release of the projects. This becomes clear
-when one examines the release and development of Python 2.0, GNOME 3.0, KDE 4.0
-and Plone 4.0. All of those versions are major releases with new features and
-approaches to their project goals. Apparently the development of such big
-releases attracted a lot of new developers. Furthermore the size stayed quite
-the same after the release.
+were involved too. Michael Widenius of MySQL/MariaDB fits this case. After
+inception however the number of people involved grows rapidly. This statement
+holds for all analyzed projects and is especially the case when the project was
+finally released as \ac{FOSS}. Examples like PostgreSQL or Python show the
+rapid increase of people involved, be it just developers or other , when
+finally released as \ac{FOSS}. The growth graph however is quite similar in all
+analyzed projects, if one considers time and size differences between the
+projects. Also it is worth noticing that almost every analyzed project has one
+or more rapid developer growth periods. Those periods can be matched with a
+certain major release of the projects. This becomes clear when one examines the
+release and development of Python~2.0, GNOME~3.0, KDE~4.0 and Plone~4.0. All of
+those versions are major releases with new features and approaches to their
+project goals. It seems that the development of such big releases attracts a
+lot of new developers. Furthermore the increased size stayed almost the same
+after the release.
 
 \begin{table}
   \centering
@@ -89,102 +89,101 @@ seem to be quite different. This will be compared in the following sections.
 
 As all of the analyzed projects share a quite long history, a lot of people
 were active in the projects. This of course biases the comparison between
-communities, as the actual number of developers is quite always lower than the
+communities, as the actual number of developers is almost always lower than the
 total sum of developers in the project history. Also taking in mind that only
 the central parts of the projects were analyzed, the resulting number can vary
 a lot. For example the GNOME project claims that over 3500 people contributed
-to the project. The fact that only GNOME core was analyzed and not anymore
-active developers were left out reduces the finding to currently about 350
-active developers of GNOME core. The same probably holds true for the Drupal
-project with about 1200 enlisted developers and for the KDE project with about
+to the project. The fact that only GNOME core was analyzed and no longer active
+developers were left out reduces the finding to currently about 350 active
+developers of GNOME core. The same probably holds true for the Drupal project
+with about 1200 enlisted developers and for the KDE project with about
 1800 active contributors.
 
-Also it is important to distinguish carefully between core developers and other
-contributors. As in some projects only core developers have access to the code
-repository, an analysis of code authors is not always a satisfying approach.
-The Drupal project for example only has about six to ten distinct authors to
-Drupal core. Only recently they adopted to give credit to the original author
-instead of referring to it in the commit message. Another interesting insight
-is the Plone project which claims to have about 300 active core developers, the
-code repository however only shows a number of the dimension from 50 to 70
-active developers at the same time. The PostgreSQL project on the other hand
-gives an exact number of active and retired core developers, only leaving out
-the number of minor contributors.
+Also it is important to carefully distinguish between core developers and other
+contributors. Since in some projects only core developers have access to the
+code repository, an analysis of code authors is not always a satisfying
+approach. The Drupal project for example only has about six to ten distinct
+authors to Drupal core. Only recently they adopted to give credit to the
+original author instead of referring to them in the commit message. Another
+interesting insight is the Plone project which claims to have about 300 active
+core developers, the code repository however only shows a number between
+50 to 70 active developers at the same time. The PostgreSQL project on the
+other hand gives an exact number of active and retired core developers, only
+leaving out the number of minor contributors.
 
-It is not necessarily the case that the actual number of developers is smaller,
-projects like Fedora or Debian with many different aspects of work and smaller
-tasks like package creation can actually have a number of active developers
-which quite matches the claimed number by the project. However one has to keep
-in mind that the comparison of a core piece of a project with a full operating
-system might be unfair and not very significant. That said the size comparison
-has to be made carefully with the above considerations in mind.
+It is not always the case that the actual number of developers is smaller.
+Projects like Fedora or Debian with a broad scope and smaller tasks like
+package creation can actually have a number of active developers which matches
+the claimed number. However one has to keep in mind that the comparison of a
+core piece of a project with a full operating system isn't valid and has low
+relevance. That said the size comparison must be analyzed carefully with the
+above considerations in mind.
 
 % }}}
 
 \subsection{Communication} % {{{
 
-On a worldwide distributed project the communication inside a project is one of
-the most vital parts. Every project has therefore a wide array of communication
-methods in place. Quite every project uses mailing lists as it's favourite
-communication method. A plausible explanation for this would probably be the
-fact that it is easily scalable, open and archived.
+On a worldwide distributed project the communication within a project is one of
+the most vital parts. Every project has a wide array of communication methods
+in place. Quite every project uses mailing lists as its favourite communication
+method. A plausible explanation for this is probably the fact that it is easily
+scalable, open and archived.
 
-Although every project has lots of different lists for quite every aspect in
-the project, there is always one mailing list which is the most important one.
-This is true for GNOME with the \emph{desktop-devel}, PHP with the
+Although every project has lots of different lists for quite every aspect
+within the project, there is always one mailing list which is the most
+important. This is true for GNOME with the \emph{desktop-devel}, PHP with the
 \emph{internals}, Plone with the \emph{plone-developers}, Python with the
 \emph{python-dev}, PostgreSQL with the \emph{pgsql-hackers}, Fedora with the
 \emph{devel} and Debian with the \emph{debian-devel} mailing list. In some
-projects this single mailing list is split up into two, one more general for
+projects this single mailing list is split into two, one more general list for
 the project and the second for the core project. This is the case for KDE with
 the \emph{kde-devel} and \emph{kde-core-devel} mailing lists and MariaDB with
 the \emph{maria-developers} and \emph{maria-captains} mailing lists. An
-exception of this might be the Drupal project which uses mailing lists however
-the most important communication channel is a quite mailing list akin forum on
-their project website.
+exception is the Drupal project which uses mailing lists however the most
+important communication channel is a mailing list akin forum on their project
+website.
 
 Additionally in every project there are lots of other direct and indirect
-communications such as \ac{IRC} channels, blogs, newsletters and other in
-place.
+communications such as \ac{IRC} channels, blogs, newsletters and others.
 
 % }}}
 
 \subsection{Conferences} % {{{
 
 As most of the developers are living in different cities, countries or
-continents, the communication is almost always done over the internet.
+continents, the communication is almost always handled through the internet.
 Therefore conferences and meet-ups provide the possibility to meet in person,
 plan and design future goals more easily and to invigorate the community. Each
-analyzed project has one or more annual conferences in place where developers
-and users can meet. It is interesting to note that it always took some years to
-get to an steady frequency. Also it seems that most projects had some years of
-development behind them before the first conference was held. Along with the
-growth of a project the number of attendees at a conference grew as well.
-Another interesting fact might be that some projects include the conference in
-their release and development schedule, for example the GNOME project in which
-the conference should provide an extra development boost for the upcoming
+analyzed project organizes one or more annual conferences in place where
+developers and users can meet. It is interesting to note that it only after
+years communities started to organize them on a regular basis. It also seems
+that most projects existed since years before the first conference was held.
+Along with the growth of a project the number of attendees at a conference grew
+as well. Another interesting fact is that some projects include the conference
+in their release and development schedule, for example the GNOME project in
+which the conference provides an extra development boost for the upcoming
 release in autumn.
 
 Due to the size of the project and the worldwide distribution of developers,
-each project has also a lot of local meet-ups, hackfests, sprints, smaller
-conferences or other workshops in place. They however focus more on specific
-parts or goals of the project.
+each project organizes in addition frequent local meet-ups, hackfests, sprints,
+smaller conferences or other workshops. These however focus more on
+specific parts or goals of the project.
 
 % }}}
 
 \subsection{Roles} % {{{
 
 The analysis of the projects has shown, that all projects use a fairly
-hierarchic development structure. Starting from the bottom there is always a
-role for simple developers or contributors. Going the hierarchy upward, one
-gets more rights but also more responsibilities. For example one could manage
-certain parts of the project or provide guidance to new developers. Above the
-maintainers of a certain subsystem is rather always a small group managing the
-project's development. Then, at the top one can find a project leader or a
-group engaging the project leader role. It is also interesting that some
-projects split the same function into two roles while others only use one.
-Keeping this fact and the different project scopes in mind, the used structures
-are middlingly similar, especially if the projects are working in the same
+hierarchical development structure. Starting from the bottom of the hierarchy
+there is always room for simple developers or contributors. Moving one step up,
+developers or contributors get more rights but also more responsibilities. For
+example one manages certain parts of the project or provides guidance to new
+developers. Above these maintainers of a certain subsystem is always a rather
+small group managing the project's development. Then, at the top there is a
+project leader or a group filling the project leader role. It is also
+interesting that some projects split the same function into two roles. Keeping
+this fact and the different project scopes in mind, the used structures are
+middlingly similar, especially if the projects are working within the same
 field.
 
 \begin{figure}[htbp]
@@ -217,39 +216,38 @@ field.
   {Comparison of development related roles in the projects.}
 \end{figure}
 
-Of course this structure varies over time and size of the project. The Debian
-project for example which has a very long history in comparison to the others
-has a quite filed segmentation with clear duties and responsibilities for each
-role. A younger project like MariaDB has a simpler model, which nonetheless
-has the described groups on top.
+Of course this structure varies over time and size of the project. For example
+the Debian project which has a very long history in comparison to others has a
+filed segmentation with clear duties and responsibilities for each role. A
+younger project like MariaDB has a simpler model, which nonetheless has the
+described groups on top.
 
-A release team seems to be very important as it exists in all projects, either
-as a dedicated team or is represented by the project leader. Furthermore the
-concept of having people who are responsible for certain subsystems seems to be
-established widely as all bigger projects use it.
+A release team is a critical part of a project, either as a dedicated team or
+represented by the project leader. Furthermore the concept of having people who
+are responsible for certain subsystems seems to be widely established across
+all bigger projects.
 
 It is also interesting to note, that in projects where the project founder is
-still active, the structure is formed more into a hierarchy with the founder on
-top. This is true for Drupal, PHP and Python. Debian is a bit of a special case
-here because the original project leader passed on his duty preserving the
-project leader hierarchy. Sometimes the leader gathers other people around him
-trying to be not solely responsible for the project, such one can see in the
-MariaDB project. In projects, the leader is no longer involved or at least does
-not hold any power, project leader teams were established. This holds for KDE,
-Fedora and GNOME.
+still active, the structure is more hierarchical with the founder on the top.
+This is true for Drupal, PHP and Python. Debian is a special case because the
+original project leader passed on his duty, but preserved the project leader
+hierarchy. Sometimes the leader gathers other people around him trying to be
+not solely responsible for the project, such as in the MariaDB project. In
+projects where the leader is no longer involved or does not hold any power,
+project leader teams were established. This is true for KDE, Fedora and GNOME.
 
 Even if projects claim to be friendly to newcomers and an open community, the
-structure analyzed here shows, that one always has to start at the bottom of
+structures analyzed here show, that one always has to start at the bottom of
 the hierarchy, earning trust and providing enhancements to the projects before
-being able to become a leader or holding a carrying business. 
+being promoted on holding a carrying business. 
 
 % }}}
 
 \subsection{Project Founders} % {{{
 
-The project founders played a vital role in the inception of the project. It
+The project founders played a vital role during the inception of the project. It
 was already explained that even if there are more project founders, often one
-single person plays the most important role. It was also pointed out that some
+single person plays a leadership role. It was also pointed out that some
 project founders are still active and lead the project, while others have left
 their project.
 
@@ -258,17 +256,17 @@ three categories. First, project founders which are still active in the project
 and have a leadership position. This is the case for the Drupal project, as
 well as for Python and PHP. In all of those projects, the development structure
 might look different without the leader. They define goals, releases, new
-features and is often the deciding person. The opposite are projects where the
+features and are often the decision maker. The opposite are projects where the
 original founder no longer is present. Fedora, Debian and PostgreSQL are good
 examples here. All named projects established a leadership group which defines
-the future of the project. Debian still has a project leader, who however gets
-voted by the community. At last there are projects, where the original leader
-is still around and sometimes gives input but has no power. In the KDE and
-GNOME projects the founders are working on related projects or topics and
-sometimes give their opinion, but they can't decide anything. In the Plone and
-MariaDB project the founders are members of the leadership team but have no
-special role in there. At most they can give their opinion and community
-members might give their notion a higher value.
+the future of the project. Debian still has a project leader, who gets voted by
+the community. At last there are projects, where the original leader is still
+active and sometimes gives input but has no power. In the KDE and GNOME
+projects the founders are working on related projects or topics and sometimes
+give their opinion, but they can't decide anything. In the Plone and MariaDB
+project the founders are members of the leadership team but have no special
+role. At most they can give their opinion and community members might give
+their notion a higher value.
 
 % }}}
 
@@ -286,41 +284,41 @@ be quite equivalent to each other.
 All projects, except Drupal and Fedora, use a three digit version naming
 scheme. It consists of a major, minor and micro number, which characterizes a
 release. The Drupal project uses a two digit versioning scheme, which defines
-major and minor releases. It is quite important to note, that the minor
-releases of a major release only include bug fixes and therefore are more
-following the scheme of a major and micro version number. The Fedora Project
-just uses a single number to represent major releases. Due the structure and
-automatic update process, bug fixes can be included automatically in a running
-system. For comparison the Debian project also pushes bug fixes to the users,
-however it additionally releases those changes as further bug fix releases.
+major and minor releases. It is important to note, that the minor releases of a
+major release only include bug fixes and therefore are following the scheme of
+a major and micro version number. The Fedora Project just uses a single number
+to represent major releases. Due to the structure and automatic update process,
+bug fixes can be included automatically in a running system. For comparison the
+Debian project also pushes bug fixes to the users, however it additionally
+releases those changes as further bug fix releases.
 
-It is true for all projects, that an increment in the major number defines an
-often backwards incompatible release with new features. Such a major release is
-often a ground breaking change and often defines a new era for the project.
-They are also extremely scarce. This is also reflected by the comparatively low
-major number the projects have, for example GNOME 3, KDE 4, Plone 4, Drupal 7
-and so on. Fedora is a bit of an exception here, as every new release
-increments the major number by one.
+It is true for all projects, that an increment in the major number defines
+often a backwards incompatible release with new features. Such a major release
+is often a ground breaking change and often defines a new era for the project.
+A major releases is generally extremely scarce. This is also reflected by the
+comparatively low major number the projects have, for example GNOME~3, KDE~4,
+Plone~4, Drupal~7 and so on. Fedora is an exception here, as every new release
+increments the major number by one, which currently is 16.
 
 The minor number almost always defines a feature release which is backwards
 compatible to the previous major release. There are some exceptions where this
-is not the case, for example in the PHP 5.x release cycle which. However those
+is not the case, for example in the PHP 5.x release cycle. However those
 changes can be seen as minor when comparing them to the incompatibilities of
 two major releases. Also, if such changes occur, most projects provide an
 upgrade path. Except Drupal and Fedora, all projects use such a number.
 
 In some projects, an increment of the minor version number defines a major
 release. In other words, regardless of whether the major or minor number
-changes the release is always a major release. This holds for GNOME, PHP and
+changes the release is always a major release. This is true for GNOME, PHP and
 Debian.
 
-The GNOME project always increments it's minor number by two to define a stable
-release cycle. An odd number as the minor number always defines an in
-development release.
+The GNOME project always increments its minor number by two to define a stable
+release cycle. An odd minor number therefore always defines development
+releases.
 
-Micro releases are a number of releases for the above mentioned feature
+Micro releases are a number of subset releases for the above mentioned feature
 releases. They are only allowed to include bug and security fixes, no new
-features and no incompatibilities. Except Fedora, all project use such a
+features and no incompatibilities. Except Fedora, all projects use such a
 number.
 
 In a nutshell it can be said that all projects use a similar versioning scheme
@@ -333,33 +331,32 @@ with some minor exceptions, which do not have an all to big impact.
 The release schedule leads to new major releases and often includes minor and
 bugfix releases. They are therefore a vital point for each project's future. As
 such most projects have established a rather detailed release schedule which
-they try to follow accurately. Nevertheless there are some differences
+they accurately try to follow. Nevertheless there are some differences while
 comparing each project's schedule which will be outlined in the following.
 
-The most distinguished difference is of course the decision of a fixed release
-cycle. A fixed release cycle iterates over a given time frame and provides
-expectable release dates. Projects like Plone, GNOME and KDE projects are using
-a fixed release cycle with a duration of six months. It means, that each year
-there will be two major releases including a number of minor or bugfix
-releases. Also Fedora uses a similar cycle, as it is more or less bound to the
-GNOME release cycle. The PostgreSQL and PHP projects use a fixed release cycle
-with a duration of one year.
+The most distinguished difference is the decision of a fixed release cycle. A
+fixed release cycle iterates over a given time frame and provides expectable
+release dates. Projects like Plone, GNOME and KDE projects use a fixed release
+cycle with a duration of six months. It means, that each year there will be two
+major releases including a number of minor or bugfix releases. Also Fedora uses
+a similar cycle, as it is more or less bound to the GNOME release cycle. The
+PostgreSQL and PHP projects use a fixed release cycle with a duration of one
+year.
 
 Although projects like Drupal and Python do not use a fixed release cycle for
 major releases, they do however use a fixed release cycle for minor and bugfix
 releases. The Python project publishes minor releases roughly every 18 months
 and bugfix releases roughly every six months. The Drupal project publishes
-bugfix releases monthly.
+bugfix releases on a monthly basis.
 
-Only MySQL/MariaDB and Debian do not have a fixed release cycle, however at
-least the Debian project has some effort going on to provide a fixed release
-schedule.
+Only MySQL/MariaDB and Debian do not have a fixed release cycle. At least the
+Debian project is currently trying to provide a fixed release schedule.
 
-All projects however have some sort of freezes of part of the project, such as
+All projects however have some sort of freezes as part of the schedule, such as
 code, features, translatable strings, documentation and more. Freezes should
 help to confine areas where new bugs or drawbacks could appear. Of course they
-are restricted to new development and developers can still apply fixes for
-bugs. However they will be analyzed deeply before they can be applied. As such
+are restricted to new development and developers can still apply bugfixes.
+However they will be analyzed deeply before they can be applied. As such
 freezes are a vital part of all analyzed project schedules. Also, they often
 keep in effect for the released major branch. One of the most obvious
 consequences is the fact that bugfix releases only include fixes and no new
@@ -396,43 +393,43 @@ features or user interface changes.
     analyzed projects.}
 \end{figure}
 
-The most interesting fact seems to be when the freezes occur and with which
+The most interesting fact are when the freezes occur and with which
 restrictions. The GNOME project as well as the Debian project have established
 a freeze shortly before their final release including code, feature, user
 interfaces, \ac{API} and string freezes. The freeze period of the GNOME project
-however has a defined start and end date, as the release schedule is a fixed
-one. The KDE project on the other hand has the different freezes much more
-spread out through the release cycle. It also makes a difference between soft
-and hard freezes. The freezes are set in order and always have a soft freeze
-before a hard freeze. This applies for features, strings and \ac{API} freezes.
-The Plone project is set somewhat in the middle having a feature freeze two
-months before the final release and then applying more and more restrictions
-during the releases of alpha, beta and release candidate versions. The Fedora
-is quite similar to that approach, however has it's feature freeze roughly
-three months before the final release. Following an alpha and beta release more
+however has a defined start and end date, since the release schedule is a fixed
+one. The KDE project on the other hand distributed the different freezes more
+evenly throughout the release cycle. It also differentiates between soft and
+hard freezes. The freezes are set in order and always have a soft freeze before
+a hard freeze. This applies for features, strings and \ac{API} freezes. The
+Plone project is set somewhat in the middle having a feature freeze two months
+before the final release and then applying more and more restrictions during
+the releases of alpha, beta and release candidate versions. The Fedora project
+is quite similar to that approach, however has its feature freeze roughly three
+months before the final release. Following an alpha and beta release more
 restrictions apply.
 
 The Python project only allows new features until the first beta release which
 occurs about two months before the final release. After that point only bug
 fixes can be applied.
 
-The PHP project has changed the layout of it's schedule a lot during the last
-years on the way to a fixed yearly release schedule. Currently the feature
-freeze is in act about eight months before the final release, confining other
-freezes more and more until the first alpha release. Further beta releases
-until the final releases do only get bug fixes from there on.
+The PHP project has changed the layout of its schedule a lot during the last
+years while trying to elaborate its yearly release schedule. Currently the
+feature freeze is in act about eight months before the final release, confining
+other freezes more and more until the first alpha release. Further beta
+releases from that point until the final releases do only get bug fixes.
 
 The not fixed release schedule of MySQL/MariaDB forces the project to establish
 criteria when specific releases can happen. A such criteria for a feature
 freeze is the publication of alpha releases. After that no new features are
-allowed and only bug fixes get applied. This continues until the final release
+allowed and only bugs get fixed. This continues until the final release
 is considered to be bug free.
 
 Like MySQL/MariaDB the Drupal project does not have a fixed release cycle and
 therefore arranges the development and freezes into different phases. Each
-phase comes with it's freezes, such as code, \ac{API}, feature, user interface
-and string freeze in this order. After all freezes have been declared a number
-of alpha, beta, release candidate and last the final release will be published.
+phase comes with its freezes in the following order code, \ac{API}, feature,
+user interface and string freeze. After all freezes have been declared a number
+of alpha, beta, release candidate and lastly the final release is published.
 
 The PostgreSQL has replaced a single feature freeze with a series of commit
 fest which were explained earlier. In fact it is the only analyzed project
@@ -452,32 +449,31 @@ Drupal or Debian name their release accordingly.
 \section{Development} % {{{
 
 While the release cycle defines the process around new releases, the
-development process of a project defines the actual shape of a project. As such
-it is vital to understand how projects lead, divide and structure their work.
+development process of a project defines the actual shape of it. As such it is
+vital to understand how projects are being lead, structured and divided.
 
 \subsection{Development Lead} % {{{
 
 The development of a project is always lead by a single person or a group of
-people. In the analyzed projects there was no clue that the development just
-happened without a form of leadership. The opposite was the case, each project
-showed a hierarchical structure when it came to decisions about the development
-of a project.
+people. All analyzed projects' development had a form of leadership. Each
+project showed a hierarchical structure when it came to decisions related to
+the development of a project.
 
-Often the development is lead by the founder, if they are still in the project.
-In the Python, Drupal and PHP projects the original founder has a great
-influence when it comes to decide on changes or new features. Projects like
-Fedora, MariaDB, Plone and PostgreSQL have established leadership groups who
-define the direction of the project as well as deciding over new features.
-While the Fedora and Plone project have an arbitrary or elected group they do
-not necessarily provide enhancements themselves. The MariaDB and PostgreSQL
-projects on the other hand are mostly enhanced and lead by the same group.
+Often the development is lead by the founder, if they are still active. In the
+Python, Drupal and PHP projects the original founder has a great influence when
+it comes to decide on changes or new features. Projects like Fedora, MariaDB,
+Plone and PostgreSQL have established leadership groups who define the
+direction of the project as well as decide over new features. While the Fedora
+and Plone project have an arbitrary or elected group they do not necessarily
+provide enhancements themselves. The MariaDB and PostgreSQL projects on the
+other hand are mostly enhanced and lead by the same group.
 
 While the KDE and GNOME projects have established core or release teams they do
 not necessarily have power on areas other than their duties. Also due to their
 modular structure, the concrete development is mostly lead by the maintainers
-of single areas. A minor exception might be GNOME's design team which is
-involved in the shaping of user interfaces. As it however cannot dictate other
-GNOME members what to do, the above assumption still holds.
+of single areas. A minor exception is GNOME's design team which is involved in
+the shaping of user interfaces. Since the team cannot dictate other GNOME
+members what to do, the above assumption still holds.
 
 The Debian project is structured very hierarchically and as such the overall
 direction is set by the elected project leader. The technical committee then
@@ -493,11 +489,11 @@ brought into the project. Some of the analyzed projects have established a
 feature inclusion process which will be highlighted in the next section.
 
 In all analyzed projects it is possible to commit small patches and
-enhancements directly to the project's repository or let it commit by a core
-contributor if one has not enough rights. Such changes are not tied to an
+enhancements directly to the project's repository or let it be committed by a
+core contributor if one has not enough rights. Such changes are not tied to an
 existent feature inclusion process. As such this often only comprises bug fixes
-and other changes of that size. This is often assisted by a bug tracking system
-each of the analyzed project uses.
+and other changes similar in size. This is often assisted by a bug tracking
+system which each of the analyzed project uses.
 
 It seems that all changes committed to the repositories are reviewed by other
 members of the project. In case of not gaining acceptance the patch is often
@@ -514,38 +510,38 @@ certain patch for a certain subsystem of the project.
 The feature inclusion process defines, if established, how and when features or
 big changes come into a project. In the analyzed projects a quite diverse
 passel of processes has been found. It ranges from a very structured and well
-documented process like the Python project has to a more dynamic approach like
-the one in the KDE project.
+documented process like the one in the Python project to a more dynamic
+approach like the one in the KDE project.
 
 The most structured and well laid-out process is Python's \ac{PEP} process. It
-defines a well documented approach of new features and big changes to the
-project from it's inception until either acceptance or withdrawal. This process
-seems to work well for the Python community as well for development, community
-and leadership processes.
+defines a well documented approach of new features and big changes from its
+inception until either acceptance or withdrawal. This process seems to work
+well for the Python community as well for development, community and leadership
+processes.
 
-Interestingly other project's started to adopt this process with minor changes.
-The \ac{PLIP} process which is used by the Plone project for example only uses
-it for development enhancements and not for any community issue. As such the
-process is a bit simpler and more focused to solely development than the
-\ac{PEP} process. 
+Interestingly other projects started to adopt this process with minor changes.
+For example the \ac{PLIP} process, which is used by the Plone project only uses
+it for development enhancements and not for community issues. As such the
+process is a simpler and more focused to development compared to the \ac{PEP}
+process.
 
 Also the PHP project adopted a version of the \ac{PEP} process which is called
-\ac{RFC} process. As it also only focuses on development it is more similar to
-the \ac{PLIP} process. A minor difference might be the separate voting step
-over each proposal, which is not existent in the other two.
+\ac{RFC}. Since it also focuses on development, it is similar to the \ac{PLIP}
+process. A minor difference is the separate voting step on each proposal, which
+is not existent in the other two.
 
-A bit more dynamic approach is the Drupal initiative process where each Drupal
+A slightly more dynamic approach is the Drupal initiative process where each Drupal
 developer can propose an initiative with a certain goal. At a certain point in
 time the Drupal project founder and leader Dries Buytaert chooses the
 initiatives the project should follow for the next release.
 
-Similar to this, but a bit more structured and not backed by a single person is
-the feature based development process of GNOME and Fedora. In both projects,
+Similar to this, but slightly more structured and not backed by a single person
+is the feature based development process of GNOME and Fedora. In both projects,
 features can be proposed which are then chosen by the GNOME release team and
-the \ac{FESCo}. In both projects the proposal follow a certain format and are a
-bit more structured when compared to Drupal initiatives. Also, in both projects
-the named groups have the possibility to drop or postpone a certain feature if
-it is not ready for the upcoming release.
+the \ac{FESCo}. In both projects proposals follow a certain format and are more
+structured when compared to Drupal initiatives. Also, in both projects the
+named groups have the possibility to drop or postpone a certain feature if it
+is not ready for the upcoming release.
 
 \begin{figure}[htbp]
   \centering
@@ -590,21 +586,21 @@ it is not ready for the upcoming release.
 \end{figure}
 
 The Debian project uses goals which can be proposed by community members and
-are chosen by the release team. Antithetic to the previous projects the goal is
-however just a single wording with no structure at all. No concrete steps,
+are chosen by the release team. This is antithetic to the previous projects,
+since goals are just single wordings without any structure. No concrete steps,
 involved parties, code or other are trailed to the goal.
 
 The KDE and MariaDB projects use an even more dynamic approach where members
 can propose features, but they have to be picked up and implemented by
-developers. As such there is no real instance who could prohibit the
+developers. As such there is no real instance which could prohibit the
 development of a certain feature.
 
 The PostgreSQL project is the only project which has removed such a specific
 inclusion process altogether and replaced it with a series of commit fests. A
 feature can be brought into a fest and evolves over time until it can be
-committed. It can be said, that such a series of feature reviews is a series of
-feature inclusion processes where however the goal is always to get a certain
-enhancement into the project instead of discarding it directly.
+committed. Given the analysis such a series of feature reviews is equivalent to
+a series of feature inclusion processes where the goal is always to get a
+certain enhancement into a project instead of discarding it directly.
 
 % }}}
 

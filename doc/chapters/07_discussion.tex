@@ -1,68 +1,66 @@
 \chapter{Discussion} % {{{
 \label{chap:discussion}
 
-With the analysis done and the single findings compared, this chapter offers a
-discussion and comparison with related findings and the presented software
-engineering methods. Finally the main research results are outlined.
+With the analysis performed and the single findings compared, this chapter
+offers a discussion and comparison with related findings and the presented
+software engineering methods. Finally the main research results are outlined.
 
 The probably most obvious common ground in the analysis was the establishment
 of a project analysis catalogue, with which \ac{FOSS} projects could be
-analyzed satisfactorily for the goals of this thesis. While the previous
-chapter of course described the differences between the project, they still
+analyzed systematically and satisfactorily for the goals of this thesis. While
+the previous chapter described the differences between the projects, they still
 share general mutuality of structure and processes. So to say the projects are
-quite similar with equal structures and processes when viewed in a simplified
-manner.
+similar with equal structures and processes when viewed in a simplified manner.
 
 Another important issue to note is that although it was not examined in this
-analysis, all project seem to evolve their structure and processes over time.
+analysis, all projects seem to evolve their structure and processes over time.
 This was shown by \textcite{Scacchi2006}, \textcite{Godfrey2000} but also by
 \textcite{Johnson2001} who claims that all \ac{FOSS} projects start as a closed
 prototype and evolve into an open project over time.
 
 \section{Project Origin} % {{{
 
-As shown before, most projects get started to solve a personal issue or
-problem. This can be also found in related studies, such as shown by
-\textcite{Raymond1998}, \textcite{Lakhani2003}, \cite{Hertel2003} or
-\textcite{Johnson2001}. In some cases the projects arise out of existing
-projects or scientific studies, such as the Python project shows. In other the
-project is developed from a company, in which the primary motivation is
-economic success.
+As shown before, most projects are initiated to solve a personal issue or
+problem. This fact has also been analyzed in related studies, such as
+\textcite{Raymond1998}, \textcite{Lakhani2003}, \textcite{Hertel2003} or
+\textcite{Johnson2001}. In some cases the projects develop from existing
+projects or scientific studies, such as the Python project. In other the
+project is launched by a company with the primary motivation of economic
+success.
 
 The analysis has shown, that despite the age of a project, many still grow at
-least linearly. Other projects seem to maintain stability over time, while
+least linearly. Some projects seem to maintain stability over time, while
 others, such as the PHP project, seem to decline. Similar results have been
 shown by \textcite{Godfrey2000}, \textcite{Roets2007} or \textcite{Ogawa2007}.
-\textcite{Schweik2003} propose a life cycle with three phases: project
-initiation, going open and project growth, stability or decline. This lines up
-very well with the findings of this analysis.
+\textcite{Schweik2003} identified a life cycle with three phases: project
+initiation, going open and project growth, stability or decline. This
+definition lines up very well with the findings of this analysis.
 
 % }}}
 
 \section{Community} % {{{
 
 In contrast to the Bazaar model by \textcite{Raymond1998} the project structure
-in the analyzed projects was always hierarchic, even if there only was a flat
-hierarchic structure. This accords with the findings by
-\textcite{Crowston2005}. Also \textcite{Bezroukov1999,Bezroukov1999a}
-criticizes the Bazaar model as too simplistic and not matching. As noted
-earlier, \textcite{Ghosh2005} proposed several different models ranging from
-hierarchic to completely flat, Bazaar like structures. However, this was not
-the case in the analyzed projects and even if they did differ in terms of
-hierarchy levels, the general hierarchic structure was similar. That of course
-only holds for the analyzed projects and not for all \ac{FOSS} projects.
+in the analyzed projects was always hierarchical, even if there was only a flat
+hierarchical structure. This affirms the findings by \textcite{Crowston2005}.
+Also \textcite{Bezroukov1999,Bezroukov1999a} criticizes the Bazaar model as too
+simplistic and not matching. As noted earlier, \textcite{Ghosh2005} analyzed
+several different models ranging from hierarchical to completely flat, Bazaar
+like structures. The latter was not identified in any of the analyzed projects
+and even if they did differ in terms of hierarchy levels, the general
+hierarchical structure was similar. That of course only is proven for the
+analyzed projects and not for all \ac{FOSS} projects.
 
-This also reflects when one looks into the structure of the project in which
-every project has a leader or leadership group who drive the project. This
-correlates with the findings of \textcite{Johnson2001},
-\textcite{Crowston2005a}, \textcite{Warsta2003} and
+This repeats itself when one analyzes the project structure with a a leader or
+leadership group who drive the project. This correlates with the findings of
+\textcite{Johnson2001}, \textcite{Crowston2005a}, \textcite{Warsta2003} and
 \textcite{Krishnamurthy2002}.
 
-While the analyzed projects do have a hierarchic structure, nevertheless the
-communities are very welcoming and it seems to be quite easy to enter a
+While the analyzed projects do have a hierarchical structure, the communities
+are nevertheless very welcoming and it seems to be relatively easy to enter a
 community and step up the ladder. In this aspect the analyzed models resemble
-the Bazaar model, which claims that it is very easy for new developers
-to join the project and cover important parts of the project.
+the Bazaar model, which claims that it is very easy for new developers to join
+the project and take charge of important parts of the project.
 
 \begin{figure}[htbp]
   \centering
@@ -71,48 +69,48 @@ to join the project and cover important parts of the project.
   {\acl{FOSS} project development structure as proposed by \textcite{Crowston2005}.}
 \end{figure}
 
-Regarding the communication inside the projects, the mailing list is the most
-used communication method in \ac{FOSS} projects as also shown by
-\textcite{Schweik2003}, \textcite{Ogawa2007} and \textcite{Kim2003} This
-finding was considered to be true, as all projects do have mailing lists and
-the most important communication channel seems to be in fact the mailing list.
-Most projects do have several mailing lists in place which one or two are the
+Regarding the communication within the projects, the mailing list is the most
+used communication method in \ac{FOSS} projects as shown by
+\textcite{Schweik2003}, \textcite{Ogawa2007} and \textcite{Kim2003}. This
+finding was considered to be true, as all projects do have mailing lists and in
+fact the most important communication channel seems to be the mailing list.
+Most projects do have several mailing lists in place with one or two being the
 most important ones where the development of a project is planned.
 
 % }}}
 
 \section{Release Process} % {{{
 
-An interesting fact seems to be the move towards fixed release cycles. Most of
-the analyzed projects adapted a fixed cycle and others are in the process of
-the transition. Fixed cycles can also be found in agile software engineering
+An interesting fact is the move towards fixed release cycles. Most of the
+analyzed projects adapted a fixed cycle and others are in the process of
+transition. Fixed cycles can also be found in agile software engineering
 methods, such as \acl{XP} or the Scrum method. While not equal to those
-methods, the analyzed projects seem to see benefits in such an approach. Coming
-with fixed cycles also the release schedule is often already fixated before
-development starts and each project tries to stick to it as close as possible.
-Development releases and freezes seem to be quite similar in all projects. The
-only main difference is the number of development releases and freezes and the
-point in time when freezes occur and what they do cover.
+methods, the analyzed projects seem to benefit from such an approach. The
+release schedule with fixed cycles is often already fixated before development
+starts and each project tries to stick to it as close as possible. Development
+releases and freezes are quite similar in all projects. The only main
+difference is the number of development releases and freezes and the point in
+time when freezes occur and what part of the project they do cover.
 
-As shown by \textcite{Mockus2002} the role of the release manager is a vital
-for every project. That reflects in the analysis where each project has either
-a single person or a team in place to manage releases, freezes and all other
-duties of releases. Also \textcite{Crowston2005} rates the release managers as
-one of the most important people next to the founder or leader. In some cases,
-this role is also the same, especially in young projects.
+As shown by \textcite{Mockus2002} the role of the release manager is vital for
+every project. The analysis reflects this where each project has either a
+single person or a team in place to manage releases, freezes and all other
+related duties. Also \textcite{Crowston2005} rates the release managers as one
+of the most important people next to the founder or leader. In some cases, this
+role is also the same, especially in new projects.
 
 % }}}
 
 \section{Development} % {{{
 
 While it certainly is not used in mature projects, the waterfall model by
-\textcite{Royce1970} can often been seen in new projects or prototypes. It is
-also interesting to note, that the phases described in the waterfall model are
-often found in development processes of \ac{FOSS} projects as
-\textcite{Roets2007} point out. Iterative or evolutionary software engineering
-models however are most often found, especially in mature projects. The spiral
-model by \textcite{Boehm1988} is a good example and gives a good first match
-when compared to the iterative releases and development schedules.
+\textcite{Royce1970} often appears in new projects or prototypes. It is also
+interesting to note, that the phases described in the waterfall model are often
+found in development processes of \ac{FOSS} projects as \textcite{Roets2007}
+point out. Iterative or evolutionary software engineering models however are
+the most common pattern, especially in mature projects. The spiral model by
+\textcite{Boehm1988} is a good example and gives a good first match when
+compared to the iterative releases and development schedules.
 \textcite{Roets2007} however make a strong case for the spiral model not being
 used or found in \ac{FOSS} projects.
 
@@ -126,17 +124,17 @@ used or found in \ac{FOSS} projects.
 Agile methods seem to be much more appropriate when comparing them with
 \ac{FOSS} development processes. The iterative process, the close relationship
 with the user and quick development and prototyping seem to make an argument
-for agile methods. However \textcite{Warsta2003} and \textcite{Koch2004} show
+for agile methods. However \textcite{Koch2004}, \textcite{Warsta2003} proof
 differences between agile methods and \ac{FOSS} development methods. They point
-out an array of differences, most importantly the not available co-location of
-developers, in which the processes differ. Certainly, they agree that the
-processes show similarities. For example the development workflow of the
-PostgreSQL with it's regular commit fests pretty much resembles important steps
-in the Scrum software engineering method, in the Scrum terminology named
-sprints. Also \textcite{Roets2007} agree that no existing software engineering
-model resembles the development methods of \ac{FOSS} projects accurately. They
-admittedly come up with a proposal of a \ac{FOSS} development cycle which quite
-closely matches the found results. This proposal is based on the findings by
+out an array of differences, most importantly the non available co-location of
+developers, in which the processes differ. However they agree that the
+processes show clear similarities. For example the development workflow of the
+PostgreSQL with its regular commit fests resembles important steps in the Scrum
+software engineering method, in the Scrum terminology named sprints. Also
+\textcite{Roets2007} agree that no existing software engineering model
+resembles the development methods of \ac{FOSS} projects accurately. They
+admittedly come up with a proposal of a \ac{FOSS} development cycle which
+closely matches the given results. This proposal is based on the findings by
 \textcite{Jorgensen2001}.
 
 % }}}
