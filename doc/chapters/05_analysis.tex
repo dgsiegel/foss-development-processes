@@ -51,10 +51,10 @@ unattended.
 
 \subsection{License}
 
-Without being licensed under a \ac{FOSS} license, a project cannot be counted
-as a \ac{FOSS} project. Listing all used licenses can ensure this fact. However
-it is also interesting to see whether development models and communities differ
-if they are using a different \ac{FOSS} license.
+A project cannot be counted as a \ac{FOSS} project without being licensed under
+a \ac{FOSS} license. Listing all used licenses can ensure this fact. However it
+is also interesting to see whether development models and communities differ if
+they are using a different \ac{FOSS} license.
 
 \subsection{History}
 
@@ -131,7 +131,7 @@ see where and how the line between the two is drawn.
 
 \paragraph{Release Schedule}
 
-The release schedule defines the concrete plan up to a new release and is often
+The release schedule defines a concrete plan up to a new release and is often
 either time or causal dependent. As they define deadlines or important steps in
 the process of creating new releases it is most interesting to compare
 different schedules.
@@ -174,7 +174,7 @@ features are integrated in a project or not will be capped in this point.
 
 \marginnote{\includegraphics[width=\marginparwidth]{postgresql/logo}}
 
-The PostgreSQL project provides an \ac{ORDBMS} which runs on all major systems
+The PostgreSQL project facilitates an \ac{ORDBMS} which runs on all major systems
 such as Linux, \textsmaller{UNIX}, Microsoft Windows or Mac \textsmaller{OS X}
 \cite{PostgreSQLAbout,PostgreSQLFAQ}. The group behind the project is known as
 PostgreSQL Global Development Group which consists of several volunteers and
@@ -226,9 +226,9 @@ contributions over a long time.
 
 \paragraph{Communication}
 
-The communication mostly takes place over mailing lists, although also \ac{IRC}
-channels exist. The most important mailing list for development is the
-\emph{pgsql-hackers} mailing list \cite{PostgreSQLDevFAQ}.
+The development related communication takes mainly place through mailing lists,
+although also \ac{IRC} channels exist. The most important mailing list for
+development is the \emph{pgsql-hackers} mailing list \cite{PostgreSQLDevFAQ}.
 
 \paragraph{Conferences and Meet-ups}
 
@@ -257,8 +257,8 @@ following.
 
 \paragraph{Version Naming}
 
-The PostgreSQL project uses a three digit number scheme which consists of a
-major, minor and micro number \cite{PostgreSQLVersioning}.
+The PostgreSQL project uses a three digit number scheme for the releases which
+consists of a major, minor and micro number \cite{PostgreSQLVersioning}.
 
 \paragraph{Characterization of Releases}
 
@@ -313,16 +313,15 @@ Fests.
 \paragraph{Feature Inclusion Process}
 
 The already mentioned Commit Fest is a periodic break in which no new
-development is done, however already existing patches are reviewed and receive
-feedback \cite{PostgreSQLCommitFest}. Not only the core team does those reviews
-but also other developers. A single Commit Fest usually runs for about one
-month explaining the gap of one month between each Commit Fest. One such event
-is lead by a Commit Fest manager who is responsible that all submitted patches
-will be reviewed. Often, a review results in a discussion on the mailing list
-and follows an acceptance, a return with feedback or a rejection. A patch can
-have several states, depending on whether it is in progress or finished
-\cite{PostgreSQLCommitFestRunning}. If a patch is in progress, the following
-states might apply.
+development is done. However, already existing patches are reviewed and receive
+feedback by the core team and other developers \cite{PostgreSQLCommitFest}. A
+single Commit Fest usually runs for about one month explaining the gap of one
+month between each Commit Fest. One such event is lead by a Commit Fest manager
+who is responsible that all submitted patches will be reviewed. Often, a review
+results in a discussion on the mailing list and follows an acceptance, a return
+with feedback or a rejection. A patch can have several states, depending on
+whether it is in progress or finished \cite{PostgreSQLCommitFestRunning}. If a
+patch is in progress, the following states might apply.
 
 \begin{description}
 
@@ -420,8 +419,8 @@ MariaDB \cite{MySQLBehind}.
 
 \paragraph{Communication}
 
-The communication mostly takes place over mailing lists, although also \ac{IRC}
-channels exist. The most important mailing list for development are the
+The communication of the developers mostly takes place through mailing lists,
+although also \ac{IRC} channels exist. The most important mailing list are the
 \emph{maria-developers} and \emph{maria-captains} mailing lists
 \cite{MySQLDevelopers}.
 
@@ -525,8 +524,8 @@ status of a feature. A feature can have multiple states, such as the following.
 
 \begin{description}
 
-  \item[Assigned] The feature was assigned to a developer who is in
-    charge to provide the feature for the next release.
+  \item[Assigned] The feature was assigned to a developer who will be in charge
+    to provide the feature for the next release.
 
   \item[Cancelled] The feature was cancelled for this release but might
     be proposed for the next.
@@ -861,12 +860,13 @@ the team leaders can set their own goals.
 
 \paragraph{Development Workflow}
 
-As the stable branch is closed for new features most new features go directly
-into the unstable branch \cite{DebianFAQ,DebianDev,DebianReleaseManagement}. If
-those changes have been tested for long enough they eventually will be merged
-with the testing branch. Parts of the Debian project will either be maintained
-by single Debian developers or co-maintained by others. Depending on that and
-the goals set by the project leader, Debian developers start to work.
+As the stable branch is closed for new features, most new features have to go
+directly into the unstable branch
+\cite{DebianFAQ,DebianDev,DebianReleaseManagement}. If those changes have been
+tested for long enough they eventually will be merged with the testing branch.
+Parts of the Debian project will either be maintained by single Debian
+developers or co-maintained by others. Depending on that and the goals set by
+the project leader, Debian developers start to work.
 
 \paragraph{Feature Inclusion Process}
 
