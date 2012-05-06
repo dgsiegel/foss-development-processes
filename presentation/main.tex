@@ -1,0 +1,380 @@
+\documentclass[11pt]{beamer}
+\usetheme[pageofpages=of,
+          bullet=circle,% Use circles instead of squares for bullets.
+          titleline=true,% Show a line below the frame title.
+          alternativetitlepage=true,% Use the fancy title page.
+          ]{Torino}
+
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{caption}
+\newcommand{\tableheadline}[1]{#1}
+
+\usecolortheme{skyblue}
+
+\graphicspath{{../doc/figures/}}
+\captionsetup{format=hang,font=small}
+
+\author{Daniel Siegel}
+\title{Typical Development Processes of}% Free and Open Source Software Projects}
+\subtitle{Free and Open Source Software Projects}
+\institute{Technische Universität München}
+\date{8. Mai 2012}
+
+\begin{document}
+\begin{frame}[t,plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}[t]{Inhalt}
+  \begin{itemize}
+    \item \dots
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Problemstellung}
+
+\vskip3em
+\begin{beamercolorbox}[sep=1em]{title page header}
+Wie funktionieren FOSS Projekte, welche Strukturen haben diese und welche
+Arbeitsweisen werden verwendet. Dabei werden FOSS Projekte dahingehend
+untersucht, gemeinsame Modelle zu finden und diese in einer Klassifizierung
+darzustellen. Zusätzlich werden diese mit traditionellen
+Softwareentwicklungsmodellen verglichen um Gemeinsamkeiten oder Unterschiede
+aufzuzeigen.
+\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[t]{Kriterien für die Projektauswahl}
+  \begin{itemize}
+    \item Popularität
+    \item Alter
+    \item Kategorie
+    \item Aktivität
+    \begin{itemize}
+      \item Releases
+      \item Downloads
+      \item Commits
+    \end{itemize}
+    \item Community
+    \begin{itemize}
+      \item Kommunikation
+      \item Anzahl der Entwickler
+      \item Konferenzen
+      \item Foundations
+      \item Laufende Projekte
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Liste der analysierten Projekte}
+  \begin{center}
+  \begin{tabularx}{\textwidth}{llX}
+    \toprule
+    \tableheadline{Project} & \tableheadline{Age} & \tableheadline{Category} \\
+    \midrule
+    Debian        & 1993 & Operating System \\
+    Drupal        & 2001 & Content Management System \\
+    Fedora        & 2002 & Operating System \\
+    GNOME         & 1997 & Desktop Environment \\
+    KDE           & 1996 & Desktop Environment \\
+    MySQL/MariaDB & 1997 & Database Management System \\
+    PHP           & 1994 & Interpreted Programming Language \\
+    Plone         & 1999 & Content Management System \\
+    PostgreSQL    & 1986 & Database Management System \\
+    Python        & 1989 & Interpreted Programming Language \\
+    \bottomrule
+  \end{tabularx}
+
+  \end{center}
+\end{frame}
+
+\begin{frame}[t]{Grounded Theory}
+  \begin{columns}
+  \column{.50\textwidth}
+    \begin{itemize}
+      \item Sozialwissenschaftlicher Ansatz zur systematischen Auswertung von qualitativen Daten
+      \item Ziel: Theoriegenerierung
+      \item Glaser und Strauss, 1967
+      \item Differenzen zwischen Glaser und Strauss
+      \begin{itemize}
+          \item Seit den 1970ern
+          \item Wichtigster Unterschied: Codierung nach Kategorien
+      \end{itemize}
+    \end{itemize}
+  \column{.50\textwidth}
+    \includegraphics[height=0.74\textheight]{grounded_theory}
+
+    {\tiny\hfill
+    Strauss and Corbin (1996)
+    }
+  \end{columns}
+\end{frame}
+
+\begin{frame}[t]{Qualitative Inhaltsanalyse nach Mayring}
+  \begin{columns}
+  \column{.50\textwidth}
+    \begin{itemize}
+      \item Ansatz für eine empirische, aber methodisch kontrollierte Analyse
+      \item Ziel: Erstellung einer systematischen und intersubjektiv überprüfbaren Analysemethode
+      \item Mayring, 1983
+      \item Kernstück: Festlegung der Kategorien und ihrer Abstraktion
+    \end{itemize}
+  \column{.50\textwidth}
+    \includegraphics[height=0.74\textheight]{mayring}
+
+    {\tiny\hfill
+    Mayring (1983, 2000)
+    }
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Analyse: Python}
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{python/commits_by_author}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Analyse: KDE}
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{kde/commits_by_year}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Analyse: GNOME}
+  \begin{center}
+    \includegraphics[width=\textwidth]{gnome/punchcard}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Analyse: Drupal}
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{drupal/commits_by_month}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Analyse: PHP}
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{php/authors_by_month}
+  \end{center}
+\end{frame}
+
+\begin{frame}[t]{Project Analysis Catalogue}
+  \begin{columns}
+  \column{.50\textwidth}
+  \begin{enumerate}
+    \item Description of the Project
+    \item Project Category
+    \item Scope of Analysis
+    \item License
+    \item History
+    \begin{enumerate}
+      \item Founders
+      \item Project Age
+    \end{enumerate}
+    \item Community
+    \begin{enumerate}
+      \item Community Size
+      \item Communication
+      \item Conferences and Meet-Ups
+      \item Roles
+      \item Role of the Founders
+    \end{enumerate}
+  \end{enumerate}
+  \column{.50\textwidth}
+  \pause
+  \begin{enumerate}
+    \setcounter{enumi}{6}
+    \item Release Process
+    \begin{enumerate}
+      \item Version Naming
+      \item Characterization of Releases
+      \item Release Schedule
+      \item Important Steps in the Schedule
+    \end{enumerate}
+    \item Development
+    \begin{enumerate}
+      \item Development Lead
+      \item Development Workflow
+      \item Feature Inclusion Process
+    \end{enumerate}
+  \end{enumerate}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Resultate}
+  \begin{itemize}
+    \item Validierung des Projekt-Kataloges
+    \item Clusterbildung
+    \begin{itemize}
+      \item Geschichte
+      \item Struktur
+      \item Versioning Scheme
+      \item Release Schedule
+      \item Development Workflow
+      \item Development Life Cycle
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Geschichte}
+  \begin{columns}
+  \column{.50\textwidth}
+  \begin{itemize}
+    \item Unterschiedliche Herkunft
+    \begin{itemize}
+      \item Forschung
+      \item Persönliche Motive
+      \item Kommerzielle Motive
+      \item Philosophische Motive
+    \end{itemize}
+    \item Trotzdem \emph{Scratching one's itch}
+    \item Kleine Gruppe von Gründern
+    \item Wachstumsschub nach Veröffentlichung
+    \item Weitere Wachstumsschübe vor großen Releases
+  \end{itemize}
+  \column{.50\textwidth}
+    \includegraphics[width=\textwidth]{gnome/commits_by_month}
+
+    {\tiny\hfill
+    GNOME
+    }
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Struktur (1)}
+\begin{figure}[htbp]
+  \centering
+  \subfloat[Drupal]
+    {\includegraphics[width=.17\textwidth]{drupal/roles}} \quad
+  \subfloat[Plone]
+    {\includegraphics[width=.17\textwidth]{plone/roles}} \quad
+  \subfloat[Python]
+    {\includegraphics[width=.17\textwidth]{python/roles}} \quad
+  \subfloat[PHP]
+    {\includegraphics[width=.17\textwidth]{php/roles}} \quad
+  \subfloat[GNOME]
+    {\includegraphics[width=.17\textwidth]{gnome/roles}} \\
+
+  \vfill
+
+  \subfloat[KDE]
+    {\includegraphics[width=.17\textwidth]{kde/roles}} \quad
+  \subfloat[PostgreSQL]
+    {\includegraphics[width=.17\textwidth]{postgresql/roles}} \quad
+  \subfloat[MariaDB]
+    {\includegraphics[width=.17\textwidth]{mariadb/roles}} \quad
+  \subfloat[Fedora]
+    {\includegraphics[width=.17\textwidth]{fedora/roles}} \quad
+  \subfloat[Debian]
+    {\includegraphics[width=.17\textwidth]{debian/roles}} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{Struktur (2)}
+  \begin{center}
+    \includegraphics[height=0.74\textheight]{structure}
+
+    {\tiny\hfill
+    Crowston et al. (2005)
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}{Versioning Scheme}
+  \begin{center}
+  \begin{tabularx}{\textwidth}{Xccc}
+    \toprule
+    \tableheadline{Project} & \tableheadline{Major} & \tableheadline{Minor} & \tableheadline{Micro} \\
+    \midrule
+    Debian          & \checkmark & \checkmark & \checkmark \\
+    Drupal          & \checkmark &            & \checkmark \\
+    Fedora          & \checkmark &            &            \\
+    GNOME           & \checkmark & \checkmark & \checkmark \\
+    KDE             & \checkmark & \checkmark & \checkmark \\
+    MySQL/MariaDB   & \checkmark & \checkmark & \checkmark \\
+    PHP             & \checkmark & \checkmark & \checkmark \\
+    Plone           & \checkmark & \checkmark & \checkmark \\
+    PostgreSQL      & \checkmark & \checkmark & \checkmark \\
+    Python          & \checkmark & \checkmark & \checkmark \\
+    \bottomrule
+  \end{tabularx}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Release Schedule}
+  \vspace{-1.4em}
+\begin{figure}[htbp]
+  \centering
+  \subfloat[PHP]
+    {\includegraphics[width=.46\textwidth]{php/cycle}}
+  \subfloat[GNOME]
+    {\includegraphics[width=.46\textwidth]{gnome/cycle}} \\
+
+  \subfloat[KDE]
+    {\includegraphics[width=.46\textwidth]{kde/cycle}}
+  \subfloat[Fedora]
+    {\includegraphics[width=.46\textwidth]{fedora/cycle}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Development Workflow}
+  \includegraphics[width=\textwidth]{gnome/feature}
+\end{frame}
+
+
+\begin{frame}{Development Life Cycle (1)}
+  \begin{center}
+  \begin{columns}
+  \column{.50\textwidth}
+  \includegraphics[width=\textwidth]{waterfall}
+
+  {\tiny\hfill
+  Royce (1970)
+  }
+
+  \column{.50\textwidth}
+  \includegraphics[width=\textwidth]{spiral}
+
+  {\tiny\hfill
+  Boehm (1988)
+  }
+
+  \end{columns}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Development Life Cycle (2)}
+  \begin{center}
+
+    \includegraphics[width=\textwidth]{scrum}
+
+    {\tiny\hfill
+    Sutherland and Schwaber (1995)
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}{Development Life Cycle (3)}
+  \begin{center}
+    \includegraphics[width=\textwidth]{ossd}
+
+    {\tiny\hfill
+    Roets, Minnaar and Wright (2007)
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+  {\Huge Vielen Dank für die Aufmerksamkeit}
+  \end{center}
+\end{frame}
+
+\end{document}

@@ -16,6 +16,7 @@
 *.run.xml
 *.swp
 *.toc
+*.vrb
 main.pdf
 doc/figures/*/authors_by_month.pdf
 doc/figures/*/commits_by_author.pdf
