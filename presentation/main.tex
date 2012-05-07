@@ -1,6 +1,5 @@
 \documentclass[11pt]{beamer}
-\usetheme[pageofpages=of,
-          bullet=circle,% Use circles instead of squares for bullets.
+\usetheme[bullet=circle,% Use circles instead of squares for bullets.
           titleline=true,% Show a line below the frame title.
           alternativetitlepage=true,% Use the fancy title page.
           ]{Torino}
@@ -37,24 +36,34 @@
 
 \begin{frame}[t]{Inhalt}
   \begin{itemize}
-    \item \dots
+    \item Motivation \& Problemstellung
+    \item Kriterienkatalog \& Projektauswahl
+    \item Methodik
+    \item Projektanalyse
+    \item Evaluation \& Ausblick
   \end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Problemstellung}
+\begin{frame}{Problemstellung}
 
-\vskip3em
 \begin{beamercolorbox}[sep=1em]{title page header}
-Wie funktionieren FOSS Projekte, welche Strukturen haben diese und welche
-Arbeitsweisen werden verwendet. Dabei werden FOSS Projekte dahingehend
-untersucht, gemeinsame Modelle zu finden und diese in einer Klassifizierung
-darzustellen. Zusätzlich werden diese mit traditionellen
-Softwareentwicklungsmodellen verglichen um Gemeinsamkeiten oder Unterschiede
-aufzuzeigen.
+  Wie funktionieren FOSS Projekte, welche Strukturen haben diese und welche
+  Arbeitsweisen werden verwendet. Dabei werden FOSS Projekte dahingehend
+  untersucht, gemeinsame Modelle zu finden und diese in einer Klassifizierung
+  darzustellen. Zusätzlich werden diese mit traditionellen
+  Softwareentwicklungsmodellen verglichen um Gemeinsamkeiten oder Unterschiede
+  aufzuzeigen.
 \end{beamercolorbox}
 \end{frame}
 
-\begin{frame}[t]{Kriterien für die Projektauswahl}
+\begin{frame}{Kriterien für die Projektauswahl}
+  \begin{beamercolorbox}[sep=1em]{title page header}
+    Ziel: Ermöglichung einer guten Selektion der Projekte, in der eine Analyse
+    sinnvolle Ergebnisse liefert.
+  \end{beamercolorbox}
+
+  \begin{columns}[T]
+  \column{\colwidth}
   \begin{itemize}
     \item Popularität
     \item Alter
@@ -65,6 +74,9 @@ aufzuzeigen.
       \item Downloads
       \item Commits
     \end{itemize}
+  \end{itemize}
+  \column{\colwidth}
+  \begin{itemize}
     \item Community
     \begin{itemize}
       \item Kommunikation
@@ -74,6 +86,7 @@ aufzuzeigen.
       \item Laufende Projekte
     \end{itemize}
   \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}[t]{Liste der analysierten Projekte}
@@ -102,13 +115,13 @@ aufzuzeigen.
   \begin{columns}[T]
   \column{\colwidth}
     \begin{itemize}
+      \item Glaser und Strauss, 1967
       \item Sozialwissenschaftlicher Ansatz zur systematischen Auswertung von qualitativen Daten
       \item Ziel: Theoriegenerierung
-      \item Glaser und Strauss, 1967
       \item Differenzen zwischen Glaser und Strauss
       \begin{itemize}
           \item Seit den 1970ern
-          \item Wichtigster Unterschied: Codierung nach Kategorien
+          \item Wichtigster Unterschied: Kodierung nach Kategorien
       \end{itemize}
     \end{itemize}
   \column{\colwidth}
@@ -124,9 +137,9 @@ aufzuzeigen.
   \begin{columns}[T]
   \column{\colwidth}
     \begin{itemize}
+      \item Mayring, 1983
       \item Ansatz für eine empirische, aber methodisch kontrollierte Analyse
       \item Ziel: Erstellung einer systematischen und intersubjektiv überprüfbaren Analysemethode
-      \item Mayring, 1983
       \item Kernstück: Festlegung der Kategorien und ihrer Abstraktion
     \end{itemize}
   \column{\colwidth}
@@ -210,17 +223,15 @@ aufzuzeigen.
   \end{columns}
 \end{frame}
 
-\begin{frame}{Resultate}
+\begin{frame}[T]{Resultate}
   \begin{itemize}
     \item Validierung des Projekt-Kataloges
     \item Clusterbildung
     \begin{itemize}
-      \item Geschichte
+      \item Geschichte und Evolution
       \item Struktur
-      \item Versioning Scheme
-      \item Release Schedule
-      \item Development Workflow
-      \item Development Life Cycle
+      \item Veröffentlichungsprozess
+      \item Entwicklungsmodelle
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -236,10 +247,10 @@ aufzuzeigen.
       \item Kommerzielle Motive
       \item Philosophische Motive
     \end{itemize}
-    \item Trotzdem \emph{Scratching one's itch}
     \item Kleine Gruppe von Gründern
-    \item Wachstumsschub nach Veröffentlichung
+    \item Wachstumsschub nach Erst-Veröffentlichung
     \item Weitere Wachstumsschübe vor großen Releases
+    \item Evolution der Entwicklungsmodelle
   \end{itemize}
   \column{\colwidth}
     \includegraphics[width=\textwidth]{gnome/commits_by_month}
@@ -253,6 +264,7 @@ aufzuzeigen.
 \begin{frame}{Struktur (1)}
 \begin{figure}[htbp]
   \centering
+  \setcounter{subfigure}{0}
   \subfloat[Drupal]
     {\includegraphics[width=.17\textwidth]{drupal/roles}} \quad
   \subfloat[Plone]
@@ -289,7 +301,7 @@ aufzuzeigen.
   \end{center}
 \end{frame}
 
-\begin{frame}{Versioning Scheme}
+\begin{frame}{Veröffentlichungsprozess (1)}
   \begin{center}
   \begin{tabularx}{\textwidth}{Xccc}
     \toprule
@@ -310,15 +322,15 @@ aufzuzeigen.
   \end{center}
 \end{frame}
 
-\begin{frame}{Release Schedule}
+\begin{frame}{Veröffentlichungsprozess (2)}
   \vspace{-1.4em}
 \begin{figure}[htbp]
   \centering
+  \setcounter{subfigure}{0}
   \subfloat[PHP]
     {\includegraphics[width=.46\textwidth]{php/cycle}}
   \subfloat[GNOME]
     {\includegraphics[width=.46\textwidth]{gnome/cycle}} \\
-
   \subfloat[KDE]
     {\includegraphics[width=.46\textwidth]{kde/cycle}}
   \subfloat[Fedora]
@@ -326,14 +338,21 @@ aufzuzeigen.
 \end{figure}
 \end{frame}
 
-\begin{frame}{Development Workflow}
-  \includegraphics[width=\textwidth]{gnome/feature}
-\end{frame}
-
-
-\begin{frame}{Development Life Cycle (1)}
+\begin{frame}{Entwicklungsmodelle: Vergleich Wasserfallmodell}
   \begin{center}
-  \begin{columns}
+  \begin{columns}[T]
+  \column{\colwidth}
+  \begin{itemize}
+    \item Royce, 1970
+    \item Oft zu finden in
+    \begin{itemize}
+      \item Jungen Projekten
+      \item Protoypen
+      \item Module
+    \end{itemize}
+    \item Wiederverwendung der einzelnen Phasen
+    \item Iterative Modelle herrschen jedoch vor
+  \end{itemize}
   \column{\colwidth}
   \includegraphics[width=\textwidth]{waterfall}
 
@@ -341,6 +360,25 @@ aufzuzeigen.
   Royce (1970)
   }
 
+  \end{columns}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Entwicklungsprozess}
+  \includegraphics[width=\textwidth]{gnome/feature}
+\end{frame}
+
+\begin{frame}{Entwicklungsmodelle: Vergleich Spiralmodell}
+  \begin{center}
+  \begin{columns}[T]
+  \column{\colwidth}
+  \begin{itemize}
+    \item Boehm, 1988
+    \item Iteratives und evolutionäres Modell
+    \item Jedoch fixe Einteilung der einzelnen Phasen
+    \item Teilweise fehlende Re-Evaluation
+    \item Teilweise komplexere Modelle
+  \end{itemize}
   \column{\colwidth}
   \includegraphics[width=\textwidth]{spiral}
 
@@ -352,18 +390,44 @@ aufzuzeigen.
   \end{center}
 \end{frame}
 
-\begin{frame}{Development Life Cycle (2)}
+\begin{frame}{Entwicklungsmodelle: Vergleich Agile Methoden}
   \begin{center}
+  \begin{columns}[T]
+  \column{0.33\textwidth}
+  \begin{itemize}
+    \item Hohe Ähnlichkeit
+    \begin{itemize}
+      \item Agile Prozesse
+      \item Enge Beziehung mit Benutzern
+      \item Schnelle Entwicklung und Iteration
+      \item Prototypen
+    \end{itemize}
+    \item Allerdings
+    \begin{itemize}
+      \item Keine Co-Lokation
+      \item Enge Beziehung mit Benutzern
+      \item \emph{Führungskräfte}
+      \item Kundeninteraktion
+    \end{itemize}
+  \end{itemize}
+  \column{0.6\textwidth}
+  \includegraphics[width=\textwidth]{xp}
 
-    \includegraphics[width=\textwidth]{scrum}
+  {\tiny\hfill
+  Extreme Programming, Beck (1999)
+  }
+  \vspace{1em}
 
-    {\tiny\hfill
-    Sutherland and Schwaber (1995)
-    }
+  \includegraphics[width=\textwidth]{scrum}
+
+  {\tiny\hfill
+  Scrum, Sutherland and Schwaber (1995)
+  }
+  \end{columns}
   \end{center}
 \end{frame}
 
-\begin{frame}{Development Life Cycle (3)}
+\begin{frame}{Entwicklungsmodelle (3)}
   \begin{center}
     \includegraphics[width=\textwidth]{ossd}
 
@@ -373,9 +437,28 @@ aufzuzeigen.
   \end{center}
 \end{frame}
 
+
+\begin{frame}{Zusammenfassung}
+  \begin{itemize}
+    \item Viele Gemeinsamkeiten
+    \begin{itemize}
+    \item Hierachie
+    \item Ähnliche Veröffentlichungsprozesse
+    \item Keine Deckung mit traditionellen oder agilen SE Methoden
+    \item Gemeinsames Entwicklungsmodell für FOSS Projekte
+    \end{itemize}
+    \item Ausblick
+    \begin{itemize}
+      \item Zusätzliche Projekte
+      \item Evolution der Entwicklungsmodelle
+      \item Fixierte Releasezyklen
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
 \begin{frame}
   \begin{center}
-  {\Huge Vielen Dank für die Aufmerksamkeit}
+  {\Large Vielen Dank für die Aufmerksamkeit}
   \end{center}
 \end{frame}
 
