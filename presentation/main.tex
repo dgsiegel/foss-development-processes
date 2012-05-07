@@ -47,18 +47,18 @@
 \begin{frame}{Problemstellung}
 
 \begin{beamercolorbox}[sep=1em]{title page header}
-  Wie funktionieren FOSS Projekte, welche Strukturen haben diese und welche
-  Arbeitsweisen werden verwendet. Dabei werden FOSS Projekte dahingehend
-  untersucht, gemeinsame Modelle zu finden und diese in einer Klassifizierung
-  darzustellen. Zusätzlich werden diese mit traditionellen
-  Softwareentwicklungsmodellen verglichen um Gemeinsamkeiten oder Unterschiede
-  aufzuzeigen.
+  Wie funktionieren Freie und Open Source Software (FOSS) Projekte, welche
+  Strukturen haben diese und welche Arbeitsweisen werden verwendet. Dabei
+  werden FOSS Projekte dahingehend untersucht, gemeinsame Modelle zu finden und
+  diese in einer Klassifizierung darzustellen. Zusätzlich werden diese mit
+  traditionellen Softwareentwicklungsmodellen verglichen um Gemeinsamkeiten
+  der Unterschiede aufzuzeigen.
 \end{beamercolorbox}
 \end{frame}
 
 \begin{frame}{Kriterien für die Projektauswahl}
   \begin{beamercolorbox}[sep=1em]{title page header}
-    Ziel: Ermöglichung einer guten Selektion der Projekte, in der eine Analyse
+    Ziel: Ermöglichung einer guten Auswahl der Projekte, in der eine Analyse
     sinnvolle Ergebnisse liefert.
   \end{beamercolorbox}
 
@@ -151,31 +151,31 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Analyse: Python}
+\begin{frame}{Analyse: Beispiel aus Python}
   \begin{center}
     \includegraphics[height=0.8\textheight]{python/commits_by_author}
   \end{center}
 \end{frame}
 
-\begin{frame}{Analyse: KDE}
+\begin{frame}{Analyse: Beispiel aus KDE}
   \begin{center}
     \includegraphics[height=0.8\textheight]{kde/commits_by_year}
   \end{center}
 \end{frame}
 
-\begin{frame}{Analyse: GNOME}
+\begin{frame}{Analyse: Beispiel aus GNOME}
   \begin{center}
     \includegraphics[width=\textwidth]{gnome/punchcard}
   \end{center}
 \end{frame}
 
-\begin{frame}{Analyse: Drupal}
+\begin{frame}{Analyse: Beispiel aus Drupal}
   \begin{center}
     \includegraphics[height=0.8\textheight]{drupal/commits_by_month}
   \end{center}
 \end{frame}
 
-\begin{frame}{Analyse: PHP}
+\begin{frame}{Analyse: Beispiel aus PHP}
   \begin{center}
     \includegraphics[height=0.8\textheight]{php/authors_by_month}
   \end{center}
@@ -231,7 +231,7 @@
       \item Geschichte und Evolution
       \item Struktur
       \item Veröffentlichungsprozess
-      \item Entwicklungsmodelle
+      \item Entwicklungsprozess \& -modelle
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -250,10 +250,9 @@
     \item Kleine Gruppe von Gründern
     \item Wachstumsschub nach Erst-Veröffentlichung
     \item Weitere Wachstumsschübe vor großen Releases
-    \item Evolution der Entwicklungsmodelle
   \end{itemize}
   \column{\colwidth}
-    \includegraphics[width=\textwidth]{gnome/commits_by_month}
+    \includegraphics[width=\textwidth]{gnome/authors_by_month}
 
     {\tiny\hfill
     GNOME
@@ -301,28 +300,7 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{Veröffentlichungsprozess (1)}
-  \begin{center}
-  \begin{tabularx}{\textwidth}{Xccc}
-    \toprule
-    \tableheadline{Project} & \tableheadline{Major} & \tableheadline{Minor} & \tableheadline{Micro} \\
-    \midrule
-    Debian          & \checkmark & \checkmark & \checkmark \\
-    Drupal          & \checkmark &            & \checkmark \\
-    Fedora          & \checkmark &            &            \\
-    GNOME           & \checkmark & \checkmark & \checkmark \\
-    KDE             & \checkmark & \checkmark & \checkmark \\
-    MySQL/MariaDB   & \checkmark & \checkmark & \checkmark \\
-    PHP             & \checkmark & \checkmark & \checkmark \\
-    Plone           & \checkmark & \checkmark & \checkmark \\
-    PostgreSQL      & \checkmark & \checkmark & \checkmark \\
-    Python          & \checkmark & \checkmark & \checkmark \\
-    \bottomrule
-  \end{tabularx}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Veröffentlichungsprozess (2)}
+\begin{frame}{Veröffentlichungsprozess}
   \vspace{-1.4em}
 \begin{figure}[htbp]
   \centering
@@ -336,6 +314,10 @@
   \subfloat[Fedora]
     {\includegraphics[width=.46\textwidth]{fedora/cycle}}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Entwicklungsprozess}
+  \includegraphics[width=\textwidth]{gnome/feature}
 \end{frame}
 
 \begin{frame}{Entwicklungsmodelle: Vergleich Wasserfallmodell}
@@ -362,10 +344,6 @@
 
   \end{columns}
   \end{center}
-\end{frame}
-
-\begin{frame}{Entwicklungsprozess}
-  \includegraphics[width=\textwidth]{gnome/feature}
 \end{frame}
 
 \begin{frame}{Entwicklungsmodelle: Vergleich Spiralmodell}
@@ -405,7 +383,6 @@
     \item Allerdings
     \begin{itemize}
       \item Keine Co-Lokation
-      \item Enge Beziehung mit Benutzern
       \item \emph{Führungskräfte}
       \item Kundeninteraktion
     \end{itemize}
@@ -427,7 +404,7 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{Entwicklungsmodelle (3)}
+\begin{frame}{Entwicklungsmodell für FOSS Projekte}
   \begin{center}
     \includegraphics[width=\textwidth]{ossd}
 
