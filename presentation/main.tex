@@ -21,6 +21,9 @@
 \graphicspath{{../doc/figures/}}
 \captionsetup{format=hang,font=small}
 
+\newlength{\colwidth}
+\setlength{\colwidth}{0.465\textwidth}
+
 \author{Daniel Siegel}
 \title{Typical Development Processes of}% Free and Open Source Software Projects}
 \subtitle{Free and Open Source Software Projects}
@@ -96,8 +99,8 @@ aufzuzeigen.
 \end{frame}
 
 \begin{frame}[t]{Grounded Theory}
-  \begin{columns}
-  \column{.50\textwidth}
+  \begin{columns}[T]
+  \column{\colwidth}
     \begin{itemize}
       \item Sozialwissenschaftlicher Ansatz zur systematischen Auswertung von qualitativen Daten
       \item Ziel: Theoriegenerierung
@@ -108,7 +111,7 @@ aufzuzeigen.
           \item Wichtigster Unterschied: Codierung nach Kategorien
       \end{itemize}
     \end{itemize}
-  \column{.50\textwidth}
+  \column{\colwidth}
     \includegraphics[height=0.74\textheight]{grounded_theory}
 
     {\tiny\hfill
@@ -118,15 +121,15 @@ aufzuzeigen.
 \end{frame}
 
 \begin{frame}[t]{Qualitative Inhaltsanalyse nach Mayring}
-  \begin{columns}
-  \column{.50\textwidth}
+  \begin{columns}[T]
+  \column{\colwidth}
     \begin{itemize}
       \item Ansatz für eine empirische, aber methodisch kontrollierte Analyse
       \item Ziel: Erstellung einer systematischen und intersubjektiv überprüfbaren Analysemethode
       \item Mayring, 1983
       \item Kernstück: Festlegung der Kategorien und ihrer Abstraktion
     \end{itemize}
-  \column{.50\textwidth}
+  \column{\colwidth}
     \includegraphics[height=0.74\textheight]{mayring}
 
     {\tiny\hfill
@@ -165,9 +168,9 @@ aufzuzeigen.
   \end{center}
 \end{frame}
 
-\begin{frame}[t]{Project Analysis Catalogue}
-  \begin{columns}
-  \column{.50\textwidth}
+\begin{frame}{Project Analysis Catalogue}
+  \begin{columns}[T]
+  \column{\colwidth}
   \begin{enumerate}
     \item Description of the Project
     \item Project Category
@@ -187,8 +190,7 @@ aufzuzeigen.
       \item Role of the Founders
     \end{enumerate}
   \end{enumerate}
-  \column{.50\textwidth}
-  \pause
+  \column{\colwidth}
   \begin{enumerate}
     \setcounter{enumi}{6}
     \item Release Process
@@ -225,7 +227,7 @@ aufzuzeigen.
 
 \begin{frame}{Geschichte}
   \begin{columns}
-  \column{.50\textwidth}
+  \column{\colwidth}
   \begin{itemize}
     \item Unterschiedliche Herkunft
     \begin{itemize}
@@ -239,7 +241,7 @@ aufzuzeigen.
     \item Wachstumsschub nach Veröffentlichung
     \item Weitere Wachstumsschübe vor großen Releases
   \end{itemize}
-  \column{.50\textwidth}
+  \column{\colwidth}
     \includegraphics[width=\textwidth]{gnome/commits_by_month}
 
     {\tiny\hfill
@@ -332,14 +334,14 @@ aufzuzeigen.
 \begin{frame}{Development Life Cycle (1)}
   \begin{center}
   \begin{columns}
-  \column{.50\textwidth}
+  \column{\colwidth}
   \includegraphics[width=\textwidth]{waterfall}
 
   {\tiny\hfill
   Royce (1970)
   }
 
-  \column{.50\textwidth}
+  \column{\colwidth}
   \includegraphics[width=\textwidth]{spiral}
 
   {\tiny\hfill
