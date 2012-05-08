@@ -162,12 +162,6 @@ by his role in the Qt project.
 
 \subsection{Release Process} % {{{
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{kde/releases}
-  \caption[Major Releases of KDE]{Platform and standard releases of KDE.}
-\end{figure}
-
 The KDE project uses a versioning scheme with three numbers and distinguishes
 between major and minor releases
 \cite{KDEReleaseTeam,KDEReleaseSchedule,KDESchedule}. The numbers are called
@@ -185,6 +179,12 @@ except bug fixes or small enhancements. Beginning with \ac{KDE SC}~4 the cycle
 changed to a major release every six months and a maintenance release roughly
 every month except when a major release comes out.
 
+\begin{figure}[thbp]
+  \centering
+  \includegraphics[width=\textwidth]{kde/releases}
+  \caption[Major Releases of KDE]{Platform and standard releases of KDE.}
+\end{figure}
+
 To ensure the release schedule, the release team publishes a new release
 schedule after each major release. The schedule includes all deadlines and
 freezes which will lead to the next major release and includes future
@@ -199,7 +199,13 @@ Approximately three weeks before the first beta release no new features are
 allowed except already approved and planned features. Not finalized features
 have to be postponed to the next major release.
 
-\begin{figure}[hbtp]
+\paragraph{Dependency Freeze}
+
+Approximately two weeks before the first beta release no new or additional
+dependency versions are allowed anymore. However it is possible to request an
+exception by the release team.
+
+\begin{figure}[bhtp]
   \centering
   \includegraphics[width=\textwidth]{kde/punchcard}
   \caption[Time Based View on Commits, KDE]
@@ -209,7 +215,7 @@ have to be postponed to the next major release.
   \label{fig:kde:p}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[thbp]
   \centering
   \includegraphics[width=0.8\textwidth]{kde/commits_by_month}
   \caption[Commits by Month, KDE]
@@ -217,12 +223,6 @@ have to be postponed to the next major release.
     phase of KDE~4 and following releases is quite visible.}
   \label{fig:kde:cbm}
 \end{figure}
-
-\paragraph{Dependency Freeze}
-
-Approximately two weeks before the first beta release no new or additional
-dependency versions are allowed anymore. However it is possible to request an
-exception by the release team.
 
 \paragraph{Soft Message, Soft API and Hard Feature Freeze}
 

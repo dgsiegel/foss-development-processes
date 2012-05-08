@@ -182,16 +182,6 @@ reviewed by other developers, who in case the need arises, discuss the change
 on the developers mailing list. Generally the result is often a more
 comprehensive change or new features.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{php/commits_by_month}
-  \caption[Commits by Month, PHP]
-  {Amount of commits per month of core contributors. Even if the previous
-    graphs showed a stalling development, the recent happenings in 2012 appear
-    to show an again growing project.}
-  \label{fig:php:cbm}
-\end{figure}
-
 To help the development and decision process, the PHP project keeps track of
 new ideas, features and proposals through so called \ac{RFC} \cite{PHPRFC}.
 Those are documents which describe the new feature and its rationale. A
@@ -201,6 +191,16 @@ for it. The \ac{RFC} process begins with the author's submission of the
 list. Depending on the importance and affected sections of the PHP project, the
 following discussion period is set to a minimum of one to two weeks. It can be
 longer however, but not shorter \cite{PHPVoting}.
+
+\begin{figure}[thbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/commits_by_month}
+  \caption[Commits by Month, PHP]
+  {Amount of commits per month of core contributors. Even if the previous
+    graphs showed a stalling development, the recent happenings in 2012 appear
+    to show an again growing project.}
+  \label{fig:php:cbm}
+\end{figure}
 
 After the discussion period has passed, the author can either call for a vote
 or extend the discussion period as needed \cite{PHPVoting}. The vote is
@@ -221,6 +221,17 @@ PHP community, such as participants of PHP related discussions or developers of
 PHP appendant projects can participate in the voting process. Those however
 have to be chosen by PHP developers \cite{PHPWhoVote}.
 
+During the whole development process, a \ac{RFC} has an assignment status,
+which can be one of the following \cite{PHPRFC}.
+
+\paragraph{Draft}
+
+Once a \ac{RFC} gets submitted to the PHP wiki, it gets this status assigned.
+The Draft status means, that the \ac{RFC} is not ready yet for a discussion,
+however it can be improved also by other people and a preliminary discussion
+can be started.
+
+\vfill
 \begin{figure}[hbtp]
   \centering
   \begin{tikzpicture}[auto]
@@ -265,16 +276,6 @@ have to be chosen by PHP developers \cite{PHPWhoVote}.
     between 20 and 30 authors.}
   \label{fig:php:abm}
 \end{figure}
-
-During the whole development process, a \ac{RFC} has an assignment status,
-which can be one of the following \cite{PHPRFC}.
-
-\paragraph{Draft}
-
-Once a \ac{RFC} gets submitted to the PHP wiki, it gets this status assigned.
-The Draft status means, that the \ac{RFC} is not ready yet for a discussion,
-however it can be improved also by other people and a preliminary discussion
-can be started.
 
 \paragraph{Discussion}
 
