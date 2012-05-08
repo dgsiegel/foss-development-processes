@@ -85,7 +85,7 @@ the following categories \cite{DrupalCoreDevelopers}.
 
 All developers who bring in code or documentation for Drupal Core are known as
 core contributors. All modification proposals are checked by another core
-committer in a review process and then either accepted or dropped.
+committer in a review process and are then either accepted or dropped.
 
 \paragraph{Maintainer}
 
@@ -144,8 +144,8 @@ Drupal~5 a three numbers versioning scheme was used.
 
 While the time periods between single Drupal Core major releases are not bound,
 the time until a stable release is divided into single phases
-\cite{DrupalReleaseCycle}. The length of a single phase is not fixated either
-but limited by a range of factors which will be explained in the following.
+\cite{DrupalReleaseCycle}. The length of a single phase is not fixated either,
+but is limited by a range of factors which will be explained in the following.
 
 \paragraph{Code Thaw}
 
@@ -178,7 +178,7 @@ initiatives are allowed. Though changes will be accepted to fix errors or add
 missing functionality.
 
 At the end of this phase, the \ac{API} freeze will be declared. At this point
-in time, the \ac{API} can not be changed anymore except critical errors are
+in time, the \ac{API} can only be changed when critical errors are
 found and have to be corrected.
 
 \paragraph{Polish Phase}
@@ -195,19 +195,18 @@ of the phase string freeze and user interface freeze will be put in place.
 
 \paragraph{Release Phase}
 
-Lastly there will be several alpha, beta, release candidates and in the long
-run the stable version released. The first release candidate will be published
-once there are no more critical bugs present. Additional release candidates
-will be released if new critical bugs appear, otherwise, if no new critical
-bugs appear, the final release is published.
+Lastly, several alpha, beta, release candidates and in the long run the stable
+version will be released. The first release candidate is published once there
+are no more known critical bugs. Additional release candidates are released if
+new critical bugs appear, otherwise the final release is published.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{drupal/commits_by_month}
   \caption[Commits by Month, Drupal]
   {Amount of commits per month of core contributors. Again, the peak in 2009
-    and 2010 seems to match the development of Drupal~7. The low thereafter
-    is then related to the planning phase of Drupal~8.}
+    and 2010 seems to match the development of Drupal~7. The subsequent low is
+    then related to the planning phase of Drupal~8.}
   \label{fig:drupal:cbm}
 \end{figure}
 
@@ -221,15 +220,15 @@ queues, which is a bug tracking system on \url{drupal.org}. While it is still
 used for communication, bugs and new features, the development process features
 a number of core initiatives which will stand for a major area of Drupal
 \cite{DrupalInitiatives}. Each initiative has one or two initiative owners who
-lead the development and coordinates the initiative while working closely with
+lead the development and coordinate the initiative while working closely with
 Dries Buytaert.
 
 Initiatives can be created by any Drupal developer, however Dries Buytaert
-choses which initiative will be followed for the next major release of Drupal.
-He also choses the initiative leaders and remains in close contact with them.
-Furthermore each initiative has defined a small set of goals which should be
+choses which initiative will be followed for the next major release. He also
+choses the initiative leaders and remains in close contact with them.
+Furthermore each initiative defines a small set of goals which should be
 reached by the time of the next major release. For the Drupal~8 release, the
-following initiatives will be followed.
+following initiatives will be followed:
 
 \begin{itemize}
   \item Configuration Management
@@ -244,10 +243,9 @@ following initiatives will be followed.
   \centering
   \includegraphics[width=0.8\textwidth]{drupal/authors_by_month}
   \caption[Authors by Month, Drupal]
-  {Amount of distinct authors of Drupal Core over time. Due to their
-  policy, only certain developers are allowed to commit to the repository.
-  Furthermore the project only recently started adding author names to the
-  commits.}
+  {Amount of distinct authors of Drupal Core over time. Due to their policy,
+    only certain developers are allowed to commit to the repository. The
+    project recently started adding author names to the commits.}
   \label{fig:drupal:abm}
 \end{figure}
 

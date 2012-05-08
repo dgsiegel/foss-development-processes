@@ -4,7 +4,7 @@
 
 PHP is a server side, interpreted programming language designed for web
 applications and development \cite{PHPIntro}. As such, it requires a web server
-with a connected PHP installation, though it can also be used with a command
+with a connected PHP installation. However it can also be used with a command
 line interface. It is widely available for all major platforms and is licensed
 under the PHP License \cite{PHPManual}. It is worth noticing, that while it is
 a Free Software license, it is incompatible to the widely used \ac{GPL}. PHP
@@ -50,9 +50,9 @@ completely. One of the most important features of the new approach was to
 provide an interface for modules, which can be used directly from the
 programming language.
 
-The design of the language was improved further in 1998 improving performance
-and the modularity of modules and code. The new engine was called Zend Engine
-and provided the core of PHP~4.0, which was released in 2000.
+The design of the language was changed further in 1998 improving performance
+and the modularity of the codebase. The new engine was called Zend Engine and
+provided the core of PHP~4.0, which was released in 2000.
 
 Four years later, PHP~5 was released featuring the successor Zend Engine~2.0.
 This release was incompatible to the previous 4.0 version and a large
@@ -92,7 +92,7 @@ through that list. Of course, several \ac{IRC} channels and blogs of PHP
 developers are also used.
 
 Officially, there is no categorizing of developers and everyone is treated
-equally. However the project uses a concept named karma, which means
+equally. However the project uses a concept named \emph{karma}, which means
 that one increases his karma by contributing to the project with code,
 discussions and new ideas \cite{Magnusson2010}. Furthermore, several people are
 responsible for different parts of the code or modules and can be classified
@@ -149,15 +149,14 @@ concepts.
 In 2010, the PHP project set up a new release plan with detailed information
 about how the release process should work \cite{PHPRelease}. Before,
 individuals decided when a release happened and which features it included. The
-new release cycle features two Release Managers, who are voted by PHP
-developers and are managing the release process. The PHP project uses a
-versioning scheme with three numbers for releases: major, minor and micro.
-Major releases get published quite seldom, can break backwards compatibility
-and are planned a long time in advance. Minor releases can have new features
-and bug fixes, however backwards compatibility must be kept. Micro release are
-bug fix only releases where backwards and \ac{API} compatibility must be kept.
-Each major release is followed by a number of minor releases, which themselves
-are followed by a number of micro releases.
+new release cycle features two Release Managers who are voted by PHP
+developers. The PHP project uses a versioning scheme with three numbers for
+releases: major, minor and micro. Major releases get published quite seldom,
+can break backwards compatibility and are planned a long time in advance. Minor
+releases can have new features and bug fixes, however backwards compatibility
+must be kept. Micro release are bug fix only releases where backwards and
+\ac{API} compatibility must be kept. Each major release is followed by a number
+of minor releases, which themselves are followed by a number of micro releases.
 
 \begin{figure}[thbp]
   \centering
@@ -211,17 +210,16 @@ at least one week, but can be extended if required.
 Depending on the importance of a \ac{RFC}, it takes either 2/3 of all votes or
 \unit[50]{\%} plus one to get accepted. The importance is defined by whether it
 actually changes the syntax or behaviour of the PHP language and is therefore
-irreversible or not. A failed proposal can be resurrected at least six months
-after the last vote or if the author makes considerable changes to the
+irreversible or not. A failed proposal can be resurrected at earliest six
+months after the last vote or if the author makes considerable changes to the
 \ac{RFC}. There is no definition by the PHP project, what considerable changes
-mean, however the opinion is that it should be changed in a matter, that it
-significantly can change a vote's outcome.
+are, however the opinion is that it should be changed in a way, that it
+significantly influences a vote's outcome.
 
-All PHP developers are allowed to vote and if needed, representatives from
-the PHP community, such as participants of PHP related discussions or
-developers of PHP appendant projects can participate in the
-voting process. Those however have to be chosen by PHP developers
-\cite{PHPWhoVote}.
+All PHP developers are allowed to vote and, if needed, representatives from the
+PHP community, such as participants of PHP related discussions or developers of
+PHP appendant projects can participate in the voting process. Those however
+have to be chosen by PHP developers \cite{PHPWhoVote}.
 
 \begin{figure}[hbtp]
   \centering
@@ -268,8 +266,8 @@ voting process. Those however have to be chosen by PHP developers
   \label{fig:php:abm}
 \end{figure}
 
-During the whole development process, a \ac{RFC} gets a status assigned, which
-can be one of the following \cite{PHPRFC}.
+During the whole development process, a \ac{RFC} has an assignment status,
+which can be one of the following \cite{PHPRFC}.
 
 \paragraph{Draft}
 
@@ -292,8 +290,8 @@ voting site.
 
 \paragraph{Accepted}
 
-Once a voting was successful, the \ac{RFC} is accepted and will be implemented
-or in the near future.
+Once a voting was successful, the \ac{RFC} is accepted and can be implemented.
+
 
 \paragraph{Declined}
 
@@ -302,7 +300,7 @@ and several changes to it, the author can resubmit it.
 
 \paragraph{Implemented}
 
-If the voting was successful, the \ac{RFC} will get implemented or taken into
+If the voting was successful, the \ac{RFC} will be implemented or taken into
 action if it describes a community process.
 
 \paragraph{Withdrawn}
