@@ -11,6 +11,8 @@
 \begin{document}
 
 \tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
 
 \begin{tikzpicture}[auto]
   \node[role]
@@ -20,9 +22,14 @@
   \node[role, below=0.5em of ft]
     (developer) {Core Developer};
 
-  \node[fill=skyblue3!110, right=0.5em of leader, minimum height=2em] {};
-  \node[fill=skyblue2, right=0.5em of ft, minimum height=2em] {};
-  \node[fill=skyblue1, right=0.5em of developer, minimum height=2em] {};
+  \begin{pgfonlayer}{background}
+  \node[rounded corners, fill=skyblue3!110, right=-0.7em of leader, minimum height=2em] {};
+  \node[fill=white, right=-1.1em of leader, minimum height=2em] {};
+  \node[rounded corners, fill=skyblue2, right=-0.7em of ft, minimum height=2em] {};
+  \node[fill=white, right=-1.1em of ft, minimum height=2em] {};
+  \node[rounded corners, fill=skyblue1, right=-0.7em of developer, minimum height=2em] {};
+  \node[fill=white, right=-1.1em of developer, minimum height=2em] {};
+  \end{pgfonlayer}
 
 \end{tikzpicture}
 

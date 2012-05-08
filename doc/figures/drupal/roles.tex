@@ -11,6 +11,8 @@
 \begin{document}
 
 \tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
 
 \begin{tikzpicture}[auto]
   \node[role, minimum height=5em]
@@ -24,9 +26,14 @@
   \node[role, below=0.5em of maintainer]
     (contributor) {Core Contributor};
 
-  \node[fill=skyblue3!110, left=0.5em of dummy, minimum height=5em] {};
-  \node[fill=skyblue2, left=0.5em of maintainer, minimum height=2em] {};
-  \node[fill=skyblue1, left=0.5em of contributor, minimum height=2em] {};
+  \begin{pgfonlayer}{background}
+  \node[rounded corners, fill=skyblue3!110, left=-0.7em of dummy, minimum height=5em] {};
+  \node[fill=white, left=-1.1em of dummy, minimum height=5em] {};
+  \node[rounded corners, fill=skyblue2, left=-0.7em of maintainer, minimum height=2em] {};
+  \node[fill=white, left=-1.1em of maintainer, minimum height=2em] {};
+  \node[rounded corners, fill=skyblue1, left=-0.7em of contributor, minimum height=2em] {};
+  \node[fill=white, left=-1.1em of contributor, minimum height=2em] {};
+  \end{pgfonlayer}
 
 \end{tikzpicture}
 

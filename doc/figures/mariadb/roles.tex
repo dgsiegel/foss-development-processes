@@ -11,20 +11,25 @@
 \begin{document}
 
 \tikzstyle{role} = [rectangle, rounded corners, draw=black, text width=10em, minimum height=2em, text centered]
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
 
 \begin{tikzpicture}[auto]
-  \node[role, minimum height=5em]
-    (dummy) {};
-  \node[above=-2.0em of dummy, rectangle, text centered]
-    (captains) {Captain};
-  \node[role, below=-3em of dummy, text width=6.5em]
+  \node[role]
     (release) {Release Coordinator};
-  \node[role, below=0.5em of dummy]
+  \node[role, below=0.5em of release]
+    (captains) {Captains};
+  \node[role, below=0.5em of captains]
     (developer) {Developer};
 
-  \node[fill=skyblue2, above right=-2em and 0.5em of dummy, minimum height=2em] {};
-  \node[fill=skyblue3!110, below right=-2.7em and 0.5em of dummy, minimum height=2.7em] {};
-  \node[fill=skyblue1, right=0.5em of developer, minimum height=2em] {};
+  \begin{pgfonlayer}{background}
+  \node[rounded corners, fill=skyblue3!110, right=-0.7em of release, minimum height=2em] {};
+  \node[fill=white, right=-1.1em of release, minimum height=2em] {};
+  \node[rounded corners, fill=skyblue2, right=-0.7em of captains, minimum height=2em] {};
+  \node[fill=white, right=-1.1em of captains, minimum height=2em] {};
+  \node[rounded corners, fill=skyblue1, right=-0.7em of developer, minimum height=2em] {};
+  \node[fill=white, right=-1.1em of developer, minimum height=2em] {};
+  \end{pgfonlayer}
 
 \end{tikzpicture}
 
