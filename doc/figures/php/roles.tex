@@ -14,13 +14,18 @@
 
 \begin{tikzpicture}[auto]
   \node[role]
-    (leader) {Language Designer};
+    (leader) {\emph{Language Designer}};
   \node[role, below left=0.5em and -5.7em of leader, text width=5em, minimum height=3em]
     (mauthor) {Author};
   \node[role, below right=0.5em and -4.7em of leader, text width=4em, minimum height=3em]
     (author) {Module Author};
   \node[role, below=4em of leader]
     (developer) {Developer};
+
+  \node[fill=skyblue3!110, right=0.5em of leader, minimum height=2em] {};
+  \node[fill=skyblue2, below right=0.5em and 0.5em of leader, minimum height=3em] {};
+  \node[fill=skyblue1, right=0.5em of developer, minimum height=2em] {};
+
 \end{tikzpicture}
 
 \end{document}

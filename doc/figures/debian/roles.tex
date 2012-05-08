@@ -14,7 +14,7 @@
 
 \begin{tikzpicture}[auto]
   \node[role]
-    (leader) {Project Leader};
+    (leader) {\emph{Project Leader}};
   \node[role, below=0.5em of leader]
     (committee) {Technical Committee};
   \node[role, below=0.5em of committee]
@@ -23,6 +23,13 @@
     (maintainer) {Maintainer};
   \node[role, below=0.5em of maintainer]
     (contributor) {Contributor};
+
+  \node[fill=skyblue3!110, right=0.5em of leader, minimum height=2em] {};
+  \node[fill=skyblue3!110, right=0.5em of committee, minimum height=2em] {};
+  \node[fill=skyblue2, right=0.5em of developer, minimum height=2em] {};
+  \node[fill=skyblue2, right=0.5em of maintainer, minimum height=2em] {};
+  \node[fill=skyblue1, right=0.5em of contributor, minimum height=2em] {};
+
 \end{tikzpicture}
 
 \end{document}

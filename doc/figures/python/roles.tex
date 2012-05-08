@@ -14,13 +14,19 @@
 
 \begin{tikzpicture}[auto]
   \node[role]
-    (leader) {BDFL};
+    (leader) {\emph{BDFL}};
   \node[role, below=0.5em of leader]
     (expert) {Expert};
   \node[role, below=0.5em of expert]
     (core) {Core Developer};
   \node[role, below=0.5em of core]
     (developer) {Developer};
+
+  \node[fill=skyblue3!110, left=0.5em of leader, minimum height=2em] {};
+  \node[fill=skyblue2, left=0.5em of expert, minimum height=2em] {};
+  \node[fill=skyblue2, left=0.5em of core, minimum height=2em] {};
+  \node[fill=skyblue1, left=0.5em of developer, minimum height=2em] {};
+
 \end{tikzpicture}
 
 \end{document}
