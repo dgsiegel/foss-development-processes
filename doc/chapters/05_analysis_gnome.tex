@@ -33,6 +33,7 @@ workstations and large enterprises but also on mobile devices. With the recent
 GNOME~3 release a major overhaul with a significant redesign of the desktop
 environment and an entirely new user interface took place \cite{GNOMEPress}.
 
+\vfill
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{gnome/commits_by_author}
@@ -93,6 +94,15 @@ similar roles for each module. Only very few teams and roles stand above all
 modules. In this respect the developer community can be very much be seen as a
 flat structure \cite{GNOMETeams,German2003,GNOMEDesignTeam,GNOMEReleaseTeam}.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{gnome/commits_by_year}
+  \caption[Commits by Year, GNOME]
+  {Yearly overview of commits to GNOME Core. The leap in 2008 appears to be
+    related to GNOME~2.22 or GNOME~2.24.}
+  \label{fig:gnome:cby}
+\end{figure}
+
 \paragraph{Committer}
 
 Any person who contributed a reasonable amount of improvements to the GNOME
@@ -115,15 +125,6 @@ administer several modules. To become a maintainer one has either to create a
 new module which gets incorporated into the GNOME project or be asked by
 another maintainer.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{gnome/commits_by_year}
-  \caption[Commits by Year, GNOME]
-  {Yearly overview of commits to GNOME Core. The leap in 2008 appears to be
-    related to GNOME~2.22 or GNOME~2.24.}
-  \label{fig:gnome:cby}
-\end{figure}
-
 \paragraph{Release Team}
 
 This team is responsible for a wide range of tasks concerning the development
@@ -133,6 +134,12 @@ freeze break requests and defining the module list for GNOME releases. The team
 size is not fixed and can vary over time. Membership is only by invitation and
 often only when one person leaves the team to free up one space. The leaving
 person may recommend a new team member which the team will decide upon.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{gnome/gnome-timeline}
+  \caption[GNOME 3.4 Release Schedule]{Release schedule which will lead to GNOME 3.4.}
+\end{figure}
 
 \paragraph{Design Team}
 
@@ -153,18 +160,6 @@ visionaries.
 
 \subsection{Release Process} % {{{
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{gnome/releases}
-  \caption[Major Releases of GNOME]{Major releases of GNOME.}
-\end{figure}
-
-\begin{figure}[hbtp]
-  \centering
-  \includegraphics[width=0.95\textwidth]{gnome/gnome-timeline}
-  \caption[GNOME 3.4 Release Schedule]{Release schedule which will lead to GNOME 3.4.}
-\end{figure}
-
 The GNOME project uses a versioning scheme with three numbers. However, it only
 distinguishes between major and minor releases
 \cite{GNOMEDevelopmentSchedule,GNOMESchedule}. The numbers are however
@@ -175,6 +170,22 @@ shell and \ac{GTK}+3 for GNOME~3.x. For the minor version number the GNOME
 project uses odd numbers indicating an unstable series and even numbers for
 stable releases. For example the unstable 3.1.x series will become the stable
 3.2.x release series.
+
+\vfill
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=\textwidth]{gnome/releases}
+  \caption[Major Releases of GNOME]{Major releases of GNOME.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{gnome/commits_by_month}
+  \caption[Commits by Month, GNOME]
+  {Amount of commits per month of core contributors. The project quite shows a
+    linear growth with peaks every six months.}
+  \label{fig:gnome:cbm}
+\end{figure}
 
 The release schedule is fixed with a new major release appearing every six
 months. To achieve this, the release team publishes a release schedule in the
@@ -190,6 +201,7 @@ releases which are distributed over six months. The schedule furthermore
 includes proposal and freeze periods which will be described in the following
 \cite{GNOMEDevelopmentSchedule,GNOMESchedule}.
 
+\vfill
 \begin{figure}[bhtp]
   \centering
   \includegraphics[width=\textwidth]{gnome/punchcard}
@@ -202,11 +214,12 @@ includes proposal and freeze periods which will be described in the following
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{gnome/commits_by_month}
-  \caption[Commits by Month, GNOME]
-  {Amount of commits per month of core contributors. The project quite shows a
-    linear growth with peaks every six months.}
-  \label{fig:gnome:cbm}
+  \includegraphics[width=0.8\textwidth]{gnome/authors_by_month}
+  \caption[Authors by Month, GNOME]
+  {Amount of distinct authors of GNOME Core over time. Especially the
+    development of GNOME~3 which started in 2010 appears to have attracted
+    additional developers.}
+  \label{fig:gnome:abm}
 \end{figure}
 
 \paragraph{Feature proposal period}
@@ -237,16 +250,6 @@ With the release of the release candidate no source code changes are allowed
 without approval of the release team. Documentation and translation however can
 continue. After publishing the next major GNOME release the Hard Code Freeze
 ends but all other freezes remain in action for the stable series.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{gnome/authors_by_month}
-  \caption[Authors by Month, GNOME]
-  {Amount of distinct authors of GNOME Core over time. Especially the
-    development of GNOME~3 which started in 2010 appears to have attracted
-    additional developers.}
-  \label{fig:gnome:abm}
-\end{figure}
 
 % }}}
 

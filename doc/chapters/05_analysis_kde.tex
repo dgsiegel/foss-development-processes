@@ -89,16 +89,6 @@ collaboration with the GNOME project.
   \caption[Previous and Planned KDE Conferences]{Previous and planned KDE conferences.}
 \end{table}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{kde/commits_by_author}
-  \caption[Commits by Most Active Authors, KDE]
-  {Monthly activity of the most active KDE Base developers. The most active
-    developers almost switched completely when comparing the inception phase to
-    nowadays.}
-  \label{fig:kde:cba}
-\end{figure}
-
 Due to the size of the KDE project it is organized around many independent
 teams with a communication structure between them. There are few groups who
 stand above those teams and only take care about coordinating the project
@@ -123,11 +113,12 @@ project.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{kde/commits_by_year}
-  \caption[Commits by Year, KDE]
-  {Yearly overview of commits to KDE Base. The development and release of KDE~4
-    and following releases in 2008 certainly attracted a lot of attention.}
-  \label{fig:kde:cby}
+  \includegraphics[width=0.8\textwidth]{kde/commits_by_author}
+  \caption[Commits by Most Active Authors, KDE]
+  {Monthly activity of the most active KDE Base developers. The most active
+    developers almost switched completely when comparing the inception phase to
+    nowadays.}
+  \label{fig:kde:cba}
 \end{figure}
 
 \paragraph{Core Team}
@@ -150,6 +141,15 @@ other release team members who actually implement the releases. The release
 team makes sure that all modules are following the release schedule and are in
 a good shape. Also they decide on code freeze breaks and take decision about
 future features of a release.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{kde/commits_by_year}
+  \caption[Commits by Year, KDE]
+  {Yearly overview of commits to KDE Base. The development and release of KDE~4
+    and following releases in 2008 certainly attracted a lot of attention.}
+  \label{fig:kde:cby}
+\end{figure}
 
 \paragraph{KDE Founder}
 
@@ -179,10 +179,19 @@ except bug fixes or small enhancements. Beginning with \ac{KDE SC}~4 the cycle
 changed to a major release every six months and a maintenance release roughly
 every month except when a major release comes out.
 
-\begin{figure}[thbp]
+\begin{figure}[hbtp]
   \centering
   \includegraphics[width=\textwidth]{kde/releases}
   \caption[Major Releases of KDE]{Platform and standard releases of KDE.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{kde/commits_by_month}
+  \caption[Commits by Month, KDE]
+  {Amount of commits per month of core contributors. Again, the development
+    phase of KDE~4 and following releases is quite visible.}
+  \label{fig:kde:cbm}
 \end{figure}
 
 To ensure the release schedule, the release team publishes a new release
@@ -205,25 +214,6 @@ Approximately two weeks before the first beta release no new or additional
 dependency versions are allowed anymore. However it is possible to request an
 exception by the release team.
 
-\begin{figure}[bhtp]
-  \centering
-  \includegraphics[width=\textwidth]{kde/punchcard}
-  \caption[Time Based View on Commits, KDE]
-  {Time based view on commits of core contributors. The times are almost
-    equally distributed probably meaning that there exist a lot of employed and
-    volunteering developers in the community.}
-  \label{fig:kde:p}
-\end{figure}
-
-\begin{figure}[thbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{kde/commits_by_month}
-  \caption[Commits by Month, KDE]
-  {Amount of commits per month of core contributors. Again, the development
-    phase of KDE~4 and following releases is quite visible.}
-  \label{fig:kde:cbm}
-\end{figure}
-
 \paragraph{Soft Message, Soft API and Hard Feature Freeze}
 
 A week before the first beta release no new strings and changes to the
@@ -231,6 +221,16 @@ existing messages can be made except corrections. Additionally the existing
 \ac{API} should be almost finished and if changes are made they should be
 reported to the relevant teams. Lastly no new features can be added to the
 projects, even if they were planned for this release cycle.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{kde/authors_by_month}
+  \caption[Authors by Month, KDE]
+  {Amount of distinct authors of KDE Base over time. The project appears to
+    grow quite linearly with a small down before the start of the KDE~4
+    development and the appropriate boost during and after the development.}
+  \label{fig:kde:abm}
+\end{figure}
 
 \paragraph{Beta Release}
 
@@ -247,14 +247,15 @@ documentation must be finished and can't be changed anymore.
 Approximately a month before the final release the first release candidate will
 be published. Two weeks later the second release candidate follows.
 
-\begin{figure}[htbp]
+\vfill
+\begin{figure}[hbtp]
   \centering
-  \includegraphics[width=0.8\textwidth]{kde/authors_by_month}
-  \caption[Authors by Month, KDE]
-  {Amount of distinct authors of KDE Base over time. The project appears to
-    grow quite linearly with a small down before the start of the KDE~4
-    development and the appropriate boost during and after the development.}
-  \label{fig:kde:abm}
+  \includegraphics[width=\textwidth]{kde/punchcard}
+  \caption[Time Based View on Commits, KDE]
+  {Time based view on commits of core contributors. The times are almost
+    equally distributed probably meaning that there exist a lot of employed and
+    volunteering developers in the community.}
+  \label{fig:kde:p}
 \end{figure}
 
 \paragraph{Final Release}

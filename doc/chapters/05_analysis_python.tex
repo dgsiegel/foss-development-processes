@@ -113,6 +113,15 @@ be asked to decide on features or bugs.
   \label{fig:python:p}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{python/commits_by_month}
+  \caption[Commits by Month, Python]
+  {Amount of commits per month of core contributors. Again this matches with
+    the development phases of Python~2 and Python~3.}
+  \label{fig:python:cbm}
+\end{figure}
+
 \paragraph{Benevolent Dictator For Life (BDFL)}
 
 Guido van Rossum is the only person who holds this title. As the leader of the
@@ -135,6 +144,7 @@ promulgated every six months, although they can be released in shorter time
 periods too. Besides, each release is proceeded by several alpha, beta and
 release candidate releases which are testing releases.
 
+\vfill
 \begin{figure}[bhtp]
   \centering
   \includegraphics[width=\textwidth]{python/releases}
@@ -143,11 +153,8 @@ release candidate releases which are testing releases.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{python/commits_by_month}
-  \caption[Commits by Month, Python]
-  {Amount of commits per month of core contributors. Again this matches with
-    the development phases of Python~2 and Python~3.}
-  \label{fig:python:cbm}
+  \includegraphics[width=0.9\textwidth]{python/pep8}
+  \caption[Excerpt from \acl{PEP} 8]{Excerpt from \ac{PEP} 8: Style Guide for Python Code.}
 \end{figure}
 
 % }}}
@@ -172,13 +179,16 @@ revised until the community reaches a consensus. \acp{PEP} can then either be
 approved or rejected. They are the primary way to propose new features and on
 approval are finalized with the commit of a patch.
 
+The Python project defines three types of \acp{PEP}.
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{python/pep8}
-  \caption[Excerpt from \acl{PEP} 8]{Excerpt from \ac{PEP} 8: Style Guide for Python Code.}
+  \includegraphics[width=0.8\textwidth]{python/authors_by_month}
+  \caption[Authors by Month, Python]
+  {Amount of distinct authors of CPython over time. Python~2 seemed to provide
+    a major reason for developers to join.}
+  \label{fig:python:abm}
 \end{figure}
-
-The Python project defines three types of \acp{PEP}.
 
 \begin{enumerate}
 
@@ -217,15 +227,6 @@ status. From there, the \ac{PEP} workflow begins.
 
 This is the default state of any new \ac{PEP} on submission, as described
 above.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{python/authors_by_month}
-  \caption[Authors by Month, Python]
-  {Amount of distinct authors of CPython over time. Python~2 seemed to provide
-    a major reason for developers to join.}
-  \label{fig:python:abm}
-\end{figure}
 
 \paragraph{Deferred}
 
@@ -266,7 +267,14 @@ Mostly for Informational \textsmaller{PEPs}, subsequent versions can replace a
 \ac{PEP}. In this case the original \ac{PEP} would be marked as Replaced and
 superseded by the new \ac{PEP}.
 
-\vfil
+\paragraph{Active}
+
+Informational and Process \textsmaller{PEPs} can also be marked as Active, if they will never
+be completed. For example \ac{PEP}~1 \cite{Warsaw2000}, which describes the
+process of \acp{PEP} has its status set to Active, as it is continually
+improved and adapted to new workflows.
+
+\vfill
 \begin{figure}[hbtp]
   \centering
   \begin{tikzpicture}[auto]
@@ -304,13 +312,6 @@ superseded by the new \ac{PEP}.
   \end{tikzpicture}
   \caption[Status Paths of \aclp{PEP}]{Possible paths of the status of \aclp{PEP}.}
 \end{figure}
-
-\paragraph{Active}
-
-Informational and Process \textsmaller{PEPs} can also be marked as Active, if they will never
-be completed. For example \ac{PEP}~1 \cite{Warsaw2000}, which describes the
-process of \acp{PEP} has its status set to Active, as it is continually
-improved and adapted to new workflows.
 
 % }}}
 

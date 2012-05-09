@@ -116,6 +116,12 @@ account however will only be granted if a reference person approves.
   \label{fig:php:p}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/release_plan}
+  \caption[Preliminary PHP Release Cycle]{Preliminary PHP release cycle.}
+\end{figure}
+
 \paragraph{Module Author}
 
 Each developer has the possibility to become a module author. This role has the
@@ -140,12 +146,6 @@ concepts.
 
 \subsection{Release Process} % {{{
 
-\begin{figure}[bhtp]
-  \centering
-  \includegraphics[width=\textwidth]{php/releases}
-  \caption[Major Releases of PHP]{Major releases of PHP.}
-\end{figure}
-
 In 2010, the PHP project set up a new release plan with detailed information
 about how the release process should work \cite{PHPRelease}. Before,
 individuals decided when a release happened and which features it included. The
@@ -158,10 +158,21 @@ must be kept. Micro release are bug fix only releases where backwards and
 \ac{API} compatibility must be kept. Each major release is followed by a number
 of minor releases, which themselves are followed by a number of micro releases.
 
-\begin{figure}[thbp]
+\vfill
+\begin{figure}[hbtp]
   \centering
-  \includegraphics[width=0.8\textwidth]{php/release_plan}
-  \caption[Preliminary PHP Release Cycle]{Preliminary PHP release cycle.}
+  \includegraphics[width=\textwidth]{php/releases}
+  \caption[Major Releases of PHP]{Major releases of PHP.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{php/commits_by_month}
+  \caption[Commits by Month, PHP]
+  {Amount of commits per month of core contributors. Even if the previous
+    graphs showed a stalling development, the recent happenings in 2012 appear
+    to show an again growing project.}
+  \label{fig:php:cbm}
 \end{figure}
 
 Starting with PHP~5.4 a major or minor release will get published each year.
@@ -192,16 +203,6 @@ list. Depending on the importance and affected sections of the PHP project, the
 following discussion period is set to a minimum of one to two weeks. It can be
 longer however, but not shorter \cite{PHPVoting}.
 
-\begin{figure}[thbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{php/commits_by_month}
-  \caption[Commits by Month, PHP]
-  {Amount of commits per month of core contributors. Even if the previous
-    graphs showed a stalling development, the recent happenings in 2012 appear
-    to show an again growing project.}
-  \label{fig:php:cbm}
-\end{figure}
-
 After the discussion period has passed, the author can either call for a vote
 or extend the discussion period as needed \cite{PHPVoting}. The vote is
 announced on the mailing list and followed by a voting period which should be
@@ -224,14 +225,6 @@ have to be chosen by PHP developers \cite{PHPWhoVote}.
 During the whole development process, a \ac{RFC} has an assignment status,
 which can be one of the following \cite{PHPRFC}.
 
-\paragraph{Draft}
-
-Once a \ac{RFC} gets submitted to the PHP wiki, it gets this status assigned.
-The Draft status means, that the \ac{RFC} is not ready yet for a discussion,
-however it can be improved also by other people and a preliminary discussion
-can be started.
-
-\vfill
 \begin{figure}[hbtp]
   \centering
   \begin{tikzpicture}[auto]
@@ -276,6 +269,13 @@ can be started.
     between 20 and 30 authors.}
   \label{fig:php:abm}
 \end{figure}
+
+\paragraph{Draft}
+
+Once a \ac{RFC} gets submitted to the PHP wiki, it gets this status assigned.
+The Draft status means, that the \ac{RFC} is not ready yet for a discussion,
+however it can be improved also by other people and a preliminary discussion
+can be started.
 
 \paragraph{Discussion}
 
